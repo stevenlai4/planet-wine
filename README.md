@@ -34,9 +34,9 @@ An eccommerce website about selling wine
 
 -   Login
 -   Register
+-   Gallery
 -   Landing Page
 -   Shop
--   Checkout
 -   Contact
 
 ## Designs
@@ -50,7 +50,7 @@ An eccommerce website about selling wine
 
 ### Font Choice
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"> -->
 
 ### Design Principles
 
@@ -71,6 +71,8 @@ An eccommerce website about selling wine
 -   Login Button
 -   Sign Up link
 
+![Login](./img/login-img.png)
+
 ### Sign Up:
 
 -   Labels/Inputs: Name, Birthday, Email, Phone, Address, Password & Confirm Password
@@ -83,6 +85,14 @@ An eccommerce website about selling wine
 -   Banner / Carousel
 -   Heading / Introduction
 
+![Home](./img/index-img.png)
+
+### Gallery:
+
+-   Pictures
+
+![Gallery](./img/gallery-img.png)
+
 ### Shop:
 
 -   Search
@@ -90,15 +100,13 @@ An eccommerce website about selling wine
 -   Wine Products (Picture, Types, Price, Name, Descrption)
 -   Input for quantity(type=number)
 
-### Checkout
-
--   Checkout List (Name, Price, Quantity)
--   Subtotal/Total
--   Checkout Button
+![Shop](./img/shop-img.png)
 
 ### Contact
 
 -   Feedback Form (Name, Customer Email, Message, Submit)
+
+![contact](./img/contact-img.png)
 
 ### Footer
 
