@@ -1,4 +1,4 @@
-# Food Ecommerce website | Planet Wine
+# Wine Ecommerce website | Planet Wine
 
 ###### Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
 
@@ -26,7 +26,6 @@ An eccommerce website about selling wine
 ### Non-functional
 
 -   18+ popup
--   Search
 -   Sorting/Filtering
 -   User shopping cart interactions
 
@@ -37,6 +36,8 @@ An eccommerce website about selling wine
 -   Gallery
 -   Landing Page
 -   Shop
+-   Cart
+-   Checkout
 -   Contact
 
 ## Designs
