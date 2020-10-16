@@ -1,4 +1,4 @@
-# Food Ecommerce website | Planet Wine
+# Wine Ecommerce website | Planet Wine
 
 ###### Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
 
@@ -26,7 +26,6 @@ An eccommerce website about selling wine
 ### Non-functional
 
 -   18+ popup
--   Search
 -   Sorting/Filtering
 -   User shopping cart interactions
 
@@ -37,6 +36,8 @@ An eccommerce website about selling wine
 -   Gallery
 -   Landing Page
 -   Shop
+-   Cart
+-   Checkout
 -   Contact
 
 ## Designs
@@ -65,7 +66,7 @@ An eccommerce website about selling wine
 
 -   Navbar (Nav items, Login link, Register link)
 
-### Sign In:
+### Sign In
 
 -   Labels/Inputs: Account & Password
 -   Login Button
@@ -73,7 +74,7 @@ An eccommerce website about selling wine
 
 ![Login](./img/login-img.png)
 
-### Sign Up:
+### Sign Up
 
 -   Labels/Inputs: Name, Birthday, Email, Phone, Address, Password & Confirm Password
 -   Sign up button
@@ -102,6 +103,24 @@ An eccommerce website about selling wine
 
 ![Shop](./img/shop-img.png)
 
+### Cart:
+
+-   Checkout Item list
+-   Price/Total Price
+-   Continue Shopping Link
+-   Checkout Button
+
+![Cart](./img/cart-img.png)
+
+### Checkout:
+
+-   Shipping Info Form
+-   Submit Button
+-   Receipt
+-   Back to Home Link
+
+![Checkout](./img/checkout-img.png)
+
 ### Contact
 
 -   Feedback Form (Name, Customer Email, Message, Submit)
@@ -110,8 +129,6 @@ An eccommerce website about selling wine
 
 ### Footer
 
--   Phone
--   Email
 -   Address
 -   Social Media
 
