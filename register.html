@@ -4,20 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
+
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Sign in</a></li>
+        <li><a href="register.html">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section>
     <article>
       <form>
         <h1>Register</h1>
         <label for="user">Email Address</label><br>
-        <input type="email" id="user" name="id"><br>
+        <input type="email" id="user" name="id" required><br>
         <label for="password">Password</label><br>
-        <input type="password" id="password" name="password"><br>
+        <input type="password" id="password" name="password" required><br>
         <a href="login.html">Already have an account? Login here.</a><br>
         <button type="submit">Submit</button>
       </form>
     </article>
   </section>
+  
+  <script src="scripts/index.js"></script>
 </body>
 </html>
