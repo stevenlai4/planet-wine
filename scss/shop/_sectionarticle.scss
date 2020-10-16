@@ -1,0 +1,9 @@
+#sideArticle {
+  display: flex;
+  article {
+    padding: 1rem;
+    &:nth-of-type(1) {
+      width: 10rem;
+    }
+  }
+}

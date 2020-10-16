@@ -31,28 +31,30 @@
       <p>Vineyards farmed responsibly. Serious wine presented with a warm sense of humor. This is Frog's Leap. Bring a bottle to your table. Stash a few in your Cellar. Lift a glass with friends. Drink it. We'll make more.</p>
     </header>
 
-    <article> <!-- Side bar filter -->
-      <div>
-        <h2>Sort by</h2>
-        <p>+</p>
-        <input type="radio" id="highLow" name="listOrder" value="1">
-        <label for="highLow">Price - High to Low</label><br>
-        <input type="radio" id="lowHigh" name="listOrder" value="2">
-        <label for="lowHigh">Price - Low to High</label><br>
-      </div>
-      <div>
-        <h2>Filter</h2>
-        <input type="checkbox" id="lowPrice" name="lowPrice" value="1">
-        <label for="lowPrice">$5.00 - $10.00</label><br> <!-- Price range for this can be editted by js -->
-        <input type="checkbox" id="midPrice" name="midPrice" value="2">
-        <label for="midPrice">$14.99 - $30.00</label><br>
-        <input type="checkbox" id="highPrice" name="highPrice" value="3">
-        <label for="highPrice">$50.00 - $100.00</label><br>
-      </div>
-    </article>
+    <div id="sideArticle">
+      <article> <!-- Side bar filter -->
+        <div>
+          <h2>Sort by</h2>
+          <p>+</p>
+          <input type="radio" id="highLow" name="listOrder" value="1">
+          <label for="highLow">Price - High to Low</label><br>
+          <input type="radio" id="lowHigh" name="listOrder" value="2">
+          <label for="lowHigh">Price - Low to High</label><br>
+        </div>
+        <div>
+          <h2>Filter</h2>
+          <input type="checkbox" id="lowPrice" name="lowPrice" value="1">
+          <label for="lowPrice">$5.00 - $10.00</label><br> <!-- Price range for this can be editted by js -->
+          <input type="checkbox" id="midPrice" name="midPrice" value="2">
+          <label for="midPrice">$14.99 - $30.00</label><br>
+          <input type="checkbox" id="highPrice" name="highPrice" value="3">
+          <label for="highPrice">$50.00 - $100.00</label><br>
+        </div>
+      </article>
 
-    <article id="wineDisplay">
-    </article>
+      <article id="wineDisplay">
+      </article>
+    </div>
 
     <article>
       <!-- Use background image for this article with opacitiy set lower -->

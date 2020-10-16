@@ -50,9 +50,15 @@ section header {
   text-align: center; }
   section header h1 {
     font-weight: bold;
-    font-size: 2rem;
-    padding: 1rem; }
+    font-size: 2rem; }
   section header p {
-    padding: 0 20%; }
+    padding: 1rem 20%; }
+
+#sideArticle {
+  display: flex; }
+  #sideArticle article {
+    padding: 1rem; }
+    #sideArticle article:nth-of-type(1) {
+      width: 10rem; }
 
 /*# sourceMappingURL=shop.css.map */
