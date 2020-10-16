@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout</title>
-  <script src="https://kit.fontawesome.com/19a6b4f60e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="gallery.html">Checkout</a></li>
-        <li><a href="contact.html">Contact</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout</title>
+        <script
+            src="https://kit.fontawesome.com/19a6b4f60e.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Icons for for the user and cart -->
+                <ul class="login-cart">
+                    <!--Login-->
+                    <li>
+                        <a href="login.html"><i class="fas fa-user"></i></a>
+                    </li>
+                    <!--Cart-->
+                    <li>
+                        <a href="cart.html"
+                            ><i class="fas fa-shopping-cart"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Icons for for the user and cart -->
-        <li><a href="login.html"><i class="fas fa-user"></i></a></li>
-        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <footer>
-    <h5>Planet wine</h5>
-    <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-    <div>
-      <p><i class="fab fa-facebook-square"></i></p>
-      <p><i class="fab fa-instagram"></i></p>
-      <p><i class="fab fa-twitter-square"></i></p>
-      <p><i class="fab fa-youtube-square"></i></p>
-    </div>
-    <p>&copy; All Right Reserved</p>
-  </footer>
+        <footer>
+            <h5>Planet wine</h5>
+            <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#"> <i class="fab fa-facebook"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <p>&copy; All Right Reserved</p>
+        </footer>
 
-  <script src="scripts/index.js"></script>
-</body>
+        <script src="scripts/index.js"></script>
+    </body>
 </html>
