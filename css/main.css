@@ -168,4 +168,21 @@ footer {
       color: white;
       font-size: 2rem; }
 
+body {
+  color: #929292;
+  font-family: 'Cormorant', serif; }
+
+h1 {
+  font-size: 40px; }
+
+.item-title {
+  color: #c7b198; }
+
+.quantity-box {
+  height: 40px;
+  width: 40px; }
+
+.proceed-btn {
+  background-color: #c7b198; }
+
 /*# sourceMappingURL=main.css.map */
