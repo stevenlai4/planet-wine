@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
-  <script src="https://kit.fontawesome.com/19a6b4f60e.js" crossorigin="anonymous"></script> 
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://kit.fontawesome.com/19a6b4f60e.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="gallery.html">Checkout</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-        <!-- Icons for for the user and cart -->
-        <li><a href="login.html"><i class="fas fa-user"></i></a></li>
-        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section>
     <header>
-      <h1>Your Cart</h1>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+                <!-- Icons for for the user and cart -->
+            <ul class="login-cart">
+                    <!--Login-->
+                <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                <!--Cart-->
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <article>
-      <!--product list-->   
-      <div class="products"> 
-        <!--product img-->    
-        <div class = "product" img src="#" ></div>
-        <!--product caption-->      
-        <a href="#" class="title">2017 Merlot 750ml</a>
-        <!--product price-->    
-        <div class="price">$60.00</div>
-        <!--section for continous shopping/checkout-->
-        <p>Continous Shopping</p>
-        <button type="Continous-Shopping">Proceed to checkout</button>
-        <p>Subtotal</p>
-        <p>$60.00</p>
-      </div>
-    </article>
-  </section>
+    <section>
+        <header>
+            <h1>Your Cart</h1>
+        </header>
 
-  <footer>
-    <h5>Planet wine</h5>
-    <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-    <div class="social">
-      <ul>
-        <li>
-          <a href="#"> <i class="fab fa-facebook"></i> </a>
-        </li>
-        <li>
-          <a href="#"> <i class="fab fa-twitter"></i> </a>
-        </li>
-        <li>
-          <a href="#"> <i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#"> <i class="fab fa-youtube"></i></a>
-        </li>
-      </ul>
-    </div>
-    <p>&copy; All Right Reserved</p>
-  </footer>
-  
-  <script src="scripts/index.js"></script>
+        <article>
+        <!--product list-->   
+            <div class="products"> 
+                <!--product img-->    
+                <div class = "product" img src="#" ></div>
+                <!--product caption-->      
+                <a href="#" class="title">2017 Merlot 750ml</a>
+                <!--product price-->    
+                <div class="price">$60.00</div>
+                <!--section for continous shopping/checkout-->
+                <p>Continous Shopping</p>
+                <button type="Continous-Shopping">Proceed to checkout</button>
+                <p>Subtotal</p>
+                <p>$60.00</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <h5>Planet wine</h5>
+        <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy; All Right Reserved</p>
+    </footer>
+    
+    <script src="scripts/index.js"></script>
 </body>
 </html>
