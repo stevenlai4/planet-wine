@@ -31,7 +31,7 @@ section header {
       width: 100%; }
       #sideArticle article:nth-of-type(2) div {
         padding: 1rem;
-        width: 30%;
+        width: 25%;
         text-align: center; }
         #sideArticle article:nth-of-type(2) div > * {
           margin: 0.5rem; }
