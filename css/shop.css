@@ -1,39 +1,53 @@
 section header {
-  text-align: center; }
+  text-align: center;
+  padding: 1rem; }
   section header h1 {
     font-weight: bold;
     font-size: 2rem; }
   section header p {
     padding: 1rem 20%; }
 
-#sideArticle {
+.sideArticle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  #sideArticle article {
+  .sideArticle article {
     padding: 1rem; }
-    #sideArticle article h2 {
+    .sideArticle article h2 {
       font-weight: bold;
       font-size: 1.25rem; }
-    #sideArticle article:nth-of-type(1) {
+    .sideArticle article:nth-of-type(1) {
       width: 20rem; }
-      #sideArticle article:nth-of-type(1) div {
+      .sideArticle article:nth-of-type(1) div {
         padding: 1rem; }
-        #sideArticle article:nth-of-type(1) div > * {
+        .sideArticle article:nth-of-type(1) div > * {
           margin: 0.5rem 0; }
-    #sideArticle article:nth-of-type(2) {
+    .sideArticle article:nth-of-type(2) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       width: 100%; }
-      #sideArticle article:nth-of-type(2) div {
+      .sideArticle article:nth-of-type(2) div {
         padding: 1rem;
         width: 25%;
         text-align: center; }
-        #sideArticle article:nth-of-type(2) div > * {
+        .sideArticle article:nth-of-type(2) div > * {
           margin: 0.5rem; }
+
+.imgArticle {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/img/index-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0; }
+  .imgArticle > * {
+    padding: 1rem; }
+  .imgArticle h5 {
+    font-weight: bold;
+    font-size: 1.25rem; }
 
 /*# sourceMappingURL=shop.css.map */
