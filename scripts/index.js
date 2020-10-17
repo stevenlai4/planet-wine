@@ -2,37 +2,37 @@ var wineData =
 [
   {
     "id": "1",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine1",
     "price": "$100.00"
   },
   {
     "id": "2",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine2",
     "price": "$30.00"
   },
   {
     "id": "3",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine3",
     "price": "$10.00"
   },
   {
     "id": "4",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine4",
     "price": "$100.00"
   },
   {
     "id": "5",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine5",
     "price": "$30.00"
   },
   {
     "id": "6",
-    "image": "#",
+    "image": "/img/shop-img.png",
     "name": "TestWine6",
     "price": "$10.00"
   }
