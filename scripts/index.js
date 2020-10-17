@@ -1,4 +1,3 @@
-
 function createUUID() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -135,106 +134,42 @@ function test() {
 
 test();
 
-/*
-// Base Menu Class
-class Item {
-  constructor(name, cost) {
-    this.name = name;
-    this.cost = cost;
-  }
+var wineData =
+    [
+        {
+            "id": "1",
+            "image": "#",
+            "name": "TestWine1",
+            "price": "$100.00"
+        },
+        {
+            "id": "2",
+            "image": "#",
+            "name": "TestWine2",
+            "price": "$30.00"
+        },
+        {
+            "id": "3",
+            "image": "#",
+            "name": "TestWine3",
+            "price": "$10.00"
+        }
+    ]
+
+displayWine();
+
+function displayWine() {
+    var out = "";
+    wineData.forEach(wine => {
+        out += "<div>";
+        out += "<img src='" + wine.image + "'>";
+        out += "<h2>" + wine.name + "</h2>";
+        out += "<p>" + wine.price + "</p>";
+        out += "<input type='number' id='wine" + wine.id + "' name='wine" + wine.id + "' min='1' max='100'>";
+        out += "<button id='wineButton" + wine.id + "'>Add</button>";
+        out += "</div>";
+        document.querySelector("#wineDisplay").innerHTML += out;
+        out = "";
+    });
 }
 
-// Submenu Class
-class SubMenu {
-  constructor(name, cost) {
-    this.name = name;
-    this.items = [];
-  }
-
-  addMenuItem(name, cost) {
-    this.items.push(new Item(name, cost));
-  }
-
-  // Function   - getPrice
-  // Parameter  - selection number
-  // Return     - the selected item's description and cost
-  getPrice(selection) {
-    return [this.items[selection - 1].name, this.items[selection - 1].cost];
-  }
-
-  getLength() {
-    return this.items.length;
-  }
-}
-
-// Menu Manager
-class Manager {
-  static APPETIZER = 0;
-  static ENTREE = 1;
-  static DESSERT = 2;
-  static BEVERAGE = 3;
-
-  constructor() {
-    this.subMenus = [];
-    // Menu Objects and initialization
-
-    let appetizer = new SubMenu("Appetizer Menu");
-    let entree = new SubMenu("Entree Menu");
-    let dessert = new SubMenu("Dessert Menu");
-    let beverage = new SubMenu("Beverage Menu");
-
-    this.subMenus.push(appetizer);
-    this.subMenus.push(entree);
-    this.subMenus.push(dessert);
-    this.subMenus.push(beverage);
-
-    appetizer.addMenuItem("** No Selection **", "0.00");
-    appetizer.addMenuItem("Deep Fried Calamari", "7.50");
-    appetizer.addMenuItem("Soup du Jour", "4.99");
-    appetizer.addMenuItem("Garden Salad", "3.99");
-    appetizer.addMenuItem("Garlic Bread", "4.50");
-
-    entree.addMenuItem("** No Selection **", "0.00");
-    entree.addMenuItem("Rib-Steak", "15.95");
-    entree.addMenuItem("Fettuccini", "11.25");
-    entree.addMenuItem("Pan-Fried Sole", "17.95");
-    entree.addMenuItem("Meiterranean Patter", "13.50");
-    entree.addMenuItem("Vegetarian Lasagna", "9.00");
-
-    dessert.addMenuItem("** No Selection **", "0.00");
-    dessert.addMenuItem("Ice Cream Sundae", "2.95");
-    dessert.addMenuItem("Cheesecake", "5.00");
-    dessert.addMenuItem("Chocolate Truffle Cake", "6.00");
-    dessert.addMenuItem("Raspberry Mousse", "4.50");
-
-    beverage.addMenuItem("** No Selection **", "0.00");
-    beverage.addMenuItem("Water", "0.00");
-    beverage.addMenuItem("Juice", "2.00");
-    beverage.addMenuItem("Pop", "2.00");
-    beverage.addMenuItem("Milk", "2.00");
-    beverage.addMenuItem("Coffee", "1.75");
-    beverage.addMenuItem("Tea", "1.75");
-  }
-
-  getMenu(subMenuID) {
-    return this.subMenus[subMenuID];
-  }
-
-  getMenuName(subMenuID) {
-    return this.subMenus[subMenuID].name;
-  }
-  getLength(subMenuID) {
-    return this.subMenus[subMenuID].getLength();
-  }
-
-  getPrice(subMenuID, selection) {
-    return this.subMenus[subMenuID].getPrice(selection);
-  }
-
-  getMax() {
-    return this.subMenus.length;
-  }
-}
-
-let manager = new Manager();
-*/
