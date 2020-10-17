@@ -1,28 +1,133 @@
-footer {
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #444444;
-    color: white;
-    padding: 2px;
-}
-
-
-
-.social ul {
-    list-style: none;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\000031}}
+header {
+  text-align: center;
+  font-family: 'Cormorant', Verdana, sans-serif;
+  text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\000037}}
+  header > nav {
     display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content:center;
-    
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #444444;
+    font-size: 0.8rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000316}}
+    header > nav.grid-container {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-rows: 1.4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000321}}
+      header > nav.grid-container ul {
+        margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000325}}
+        header > nav.grid-container ul.grid-item {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          list-style-type: none;
+          justify-content: center;
+          align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000333}}
+        header > nav.grid-container ul.nav {
+          justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000337}}
+        header > nav.grid-container ul.cart {
+          justify-content: flex-end;
+          padding-right: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000342}}
+        header > nav.grid-container ul a {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          display: block;
+          padding: .6em 0.8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_header\.scss}line{font-family:\0000350}}
+        header > nav.grid-container ul.cart a {
+          font-size: 1.5rem;
+          padding: .6em 0.4em; }
 
-.social li a {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_footer\.scss}line{font-family:\000031}}
+footer {
+  background-color: #444444;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  line-height: 1.4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_footer\.scss}line{font-family:\000038}}
+  footer > h5 {
+    font-family: 'Cormorant', Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_footer\.scss}line{font-family:\0000317}}
+  footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0.5rem 0 0 0;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_footer\.scss}line{font-family:\0000326}}
+    footer > ul > li {
+      flex: 0 1 5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_footer\.scss}line{font-family:\0000328}}
+      footer > ul > li > a {
+        text-align: center;
+        color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\000033}}
+.wrapper {
+  width: 90%;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\000039}}
+  .wrapper > img {
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000315}}
+  .wrapper hr {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000324}}
+  .wrapper > form > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.4;
+    grid-gap: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000330}}
+    .wrapper > form > div > label {
+      text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000334}}
+    .wrapper > form > div > label, .wrapper > form > div > input, .wrapper > form > div > span {
+      display: block;
+      padding: 0 10px;
+      margin: 10px;
+      width: 90%;
+      font-size: 1.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000343}}
+  .wrapper > form > input {
+    text-align: center;
+    background-color: #EF7204;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 5px;
     color: white;
-    font-size: 2rem;
-    display: inline;
-    padding: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-shadow: 0px 3px 3px #E6ED1E; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000359}}
+  .wrapper .backToHome {
+    text-align: left;
+    font-size: 1.5rem;
+    left: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/BCIT_SSD\/Frontend_Essentials\/front-end-project\/front-end-project-nappingbed\/scss\/_checkout\.scss}line{font-family:\0000365}}
+    .wrapper .backToHome > a {
+      padding: 10px; }
 
-}
 /*# sourceMappingURL=main.css.map */
