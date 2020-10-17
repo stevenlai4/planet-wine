@@ -3,55 +3,43 @@ header {
     text-align: center;
     font-family: 'Cormorant', Verdana, sans-serif;
     text-transform: uppercase;
+
+    > h2 {
+        font-size: 1.5rem;
+        line-height: $line-height;
+    }
     
     > nav {
 
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         background-color: $footer-backgroundColor;
-        font-size: 0.8rem;
 
-        &.grid-container {
-            display: grid;
-            grid-template-columns: 1fr 4fr 1fr;
-            grid-template-rows: $line-height;
+        > ul {
+            display: flex;
 
-            ul {
-
-                margin: 0;
-
-                &.grid-item {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    list-style-type: none;
-                    justify-content: center;
-                    align-items: center;
+            &.nav-items {
+                justify-content: center;
+                align-items: center;
+                // keep the width as 100% so the navigation section will display in the middle of the view 
+                width: 100%;
+                li {
+                    padding: 1rem;
                 }
-                &.nav {
-                    justify-content: center;
-                }
-            
-                &.cart {
-                    justify-content: flex-end;
-                    padding-right: 1em;
-                }
-
-                a {
-                    text-decoration: none;
-                    text-align: center;
-                    color: white;
-                    display: block;
-                    padding: .6em 0.8em;
-                }
-
-                &.cart  a {
+            }
+    
+            &.login-cart {    
+                justify-content: flex-end; 
+                align-items: center;    
+                width: 5%;
+                li {
+                    padding: 1rem 2rem 1rem 0;
                     font-size: 1.5rem;
-                    padding: .6em 0.4em;
                 }
+            }
 
+            a {
+                text-decoration: none;
+                color: white;
             }
         }
     }
