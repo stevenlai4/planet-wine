@@ -1,8 +1,59 @@
 .Login-Title {
-  font-size: 40px;
+  font-size: 55px;
   text-align: center;
   font-family: Cormorant;
-  margin-top: auto;
+  margin-top: 3%;
+}
+
+.Login-Form {
+  margin-left: 13%;
+  margin-top: 5%;
+  display: flex;
+}
+.Login-Form label {
+  font-size: 20px;
+}
+.Login-Form input {
+  padding: 15px 250px 10px 7px;
+  margin: 25px;
+  box-sizing: border-box;
+  font-size: 20px;
+  margin-left: auto;
+}
+.Login-Form button {
+  padding: 15px 30px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.Create {
+  display: flex;
+  margin: 0 20% 0 0;
+}
+.Create h5 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.Create p {
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+.Create button {
+  padding: 15px 175px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

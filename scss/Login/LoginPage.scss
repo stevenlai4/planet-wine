@@ -1,0 +1,73 @@
+// Login Page
+
+.Login-Title{
+    font-size: 55px;
+    text-align: center;
+    font-family: Cormorant;
+    margin-top: 3%;
+}
+
+// Login user name and password
+.Login-Form {
+   
+    margin-left: 13%;
+    margin-top: 5%;
+    display: flex;
+
+
+    label {
+        font-size: 20px;
+
+
+    }
+    
+    input {
+        padding: 15px 250px 10px 7px;
+        margin: 25px;
+        box-sizing: border-box;
+        font-size: 20px;
+        margin-left: auto;
+    }
+
+    button {
+        padding: 15px 30px;
+        background-color: #c7b198;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+
+}
+
+// Creating an account
+.Create { 
+    display: flex;
+    margin: 0 20% 0 0;
+
+    h5{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    p { 
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    button {
+        padding: 15px 175px;
+        background-color: #c7b198;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+// image
+img {
+   max-width: 100%;
+   height: auto;
+   margin-top: 10px;
+}
