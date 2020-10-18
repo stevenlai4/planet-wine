@@ -4,15 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contact</title>
-        <script
-            src="https://kit.fontawesome.com/19a6b4f60e.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/19a6b4f60e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <header>
-            <img src="#" />
+            <section id = "banner"></section>
             <!-- Logo goes here -->
             <nav>
                 <ul class="nav-items">
@@ -34,43 +34,35 @@
                         ></a>
                     </li>
                 </ul>
-            </nav>
-
-            <img src="#" />
+            </nav>    
             <!-- Banner image -->
+            <div class = "contact-image">  </div>
+        
         </header>
+            <div class = wrapper-form>
 
-        <!-- Form section -->
-        <section>
-            <article>
                 <form>
-                    <h1>Questions?</h1>
-                    <label for="name">Name</label><br />
-                    <input
-                        type="email"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                    /><br />
-                    <label for="email">Email Address</label><br />
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Email"
-                    /><br />
-                    <label for="message">Feedback</label><br />
-                    <input
-                        type="textbox"
-                        id="message"
-                        name="message"
-                        required
-                        placeholder="Leave a comment"
-                    /><br />
-                    <button type="submit">Submit</button>
+                    <h1>Questions?</h1>      
+                    <label for = "Name">Name</label>
+                    <br>
+                    <input type="text" placeholder="Enter your name ..">
+                    <br>
+            
+                    <label for = "Email">Email</label>
+                    <br>
+                    <input type = "text"  placeholder="Enter your Email .. ">
+                    <br>
+            
+                    <label for ="Question">Question</label>
+                    <textarea placeholder="Leave your questions .. "></textarea>
+                    <br>
+                    <div class="text-center">
+                        <a href = "index.html"><button type="button" class="btn submit-btn ">Submit</button></a>
+                    </div>
                 </form>
-            </article>
-        </section>
+            </div>
+
+
 
         <!-- Footer section -->
         <footer>
