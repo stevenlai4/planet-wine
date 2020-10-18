@@ -1,13 +1,13 @@
-
+$phoneLandscape: 670px;
 
 .wrapper {
     width: 90%;
-    text-align: center;
     line-height: $line-height;
     margin: 0 auto;
 
     > h1 {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     > img {
@@ -24,38 +24,33 @@
     }
 
     > form {
-
+        width:100%;
         > div {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: $line-height; 
-            grid-gap: 10px;  
-            
-            > label {
-                text-align: right;
-            }         
+            grid-template-columns: 1fr;       
 
-            > label, > input, > span {
+            > label, > input, > empty {
                 display: block;
-                padding: 0 10px;
-                margin: 10px;
-                width:90%;
-                font-size: 1.5rem;
+                margin: 5px 0;
+                font-size: 1.2rem;
+            }
+
+            empty {
+                display: none;
             }
         }
 
+        // submit button
         > input {
-            text-align: center;
-            background-color: $palette-brown;
-            padding: 0.5rem;
-            margin: 1rem;
-            border-radius: 5px;
-            color:white;
+            display: block;
+            margin: 1rem auto;
             font-size: 1.2rem;
+            background-color: $palette-brown;
+            padding: 0.8rem;
+            border-radius: 5px;
             letter-spacing: 1px;
             text-decoration: none;
             text-shadow: 0px 3px 3px $palette-brown;
-
         }
     }
     
@@ -67,8 +62,53 @@
        
 
         > a {
-            padding: 10px;
-            color: white;
+
+            text-decoration: none;
+            color: black;
+                         
+            > i  {
+                margin-right: 10px;
+                padding: 5px;
+            }
         }
     }
 }
+
+/* 
+  ##Device = Tablet or Desktop (Portrait)
+*/
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        > form {
+    
+            > div {
+                display: grid;
+                grid-template-rows: $line-height;   
+                grid-template-columns: 2fr 1fr 1fr 2fr;
+
+
+                > label, > input, > span {
+                    font-size: 1.5rem;
+                    padding: 0 5px;
+                    margin: 10px;
+                }
+
+                empty {
+                    display: block;
+                }
+
+                > label {
+                    text-align: right;
+                }  
+
+                > input {
+                    font-size: 1.2rem;
+                }
+            }
+
+            
+        }
+    }
+  }
+
+
