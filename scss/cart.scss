@@ -1,25 +1,36 @@
 $primary-color:#c7b198;
 $secondary-color:#929292;
 
-body{
+body {
     color: $secondary-color;
     font-family: 'Cormorant', serif;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-.item-title{
+hr {
+    width: 85%;
+}
+
+.product-item {
+    max-width: 100%;
+    @media screen and (min-width:768px) {
+        width: 25%;
+    }
+}
+
+.item-title {
     color: $primary-color;
 }
 
-.quantity-box{
+.quantity-box {
     height: 40px;
     width: 40px;
 }
 
-.proceed-btn{
+.proceed-btn {
     background-color: $primary-color;
     color: white;
 }

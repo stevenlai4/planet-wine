@@ -1,0 +1,28 @@
+body {
+  color: #929292;
+  font-family: 'Cormorant', serif; }
+
+h1 {
+  font-size: 40px; }
+
+hr {
+  width: 85%; }
+
+.product-item {
+  max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .product-item {
+      width: 25%; } }
+
+.item-title {
+  color: #c7b198; }
+
+.quantity-box {
+  height: 40px;
+  width: 40px; }
+
+.proceed-btn {
+  background-color: #c7b198;
+  color: white; }
+
+/*# sourceMappingURL=cart.css.map */
