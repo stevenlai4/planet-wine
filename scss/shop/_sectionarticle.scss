@@ -15,7 +15,7 @@
             }
             div {
                 @include basic-spacing;
-                & > * {
+                > * {
                     margin: 0.5rem 0;
                 }
             }
@@ -28,7 +28,7 @@
                 @include basic-spacing;
                 width: 100%;
                 text-align: center;
-                & > * {
+                > * {
                     margin: 0.5rem;
                 }
                 @media screen and (min-width:map-get($breakpoint, tablet)) {
@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 0;
-    & > * {
+    > * {
         @include basic-spacing;
     }
     h5 {
