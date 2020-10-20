@@ -1,14 +1,4 @@
 @import 'reset';
 @import 'navigation';
-@import 'cart/cart';
-@import 'contact/contact';
-@import 'shop/shop';
 @import 'footer';
 
-header {
-    text-align: center;
-
-    img {
-        width: 150px;
-    }
-}
