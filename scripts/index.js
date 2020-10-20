@@ -1,6 +1,9 @@
 function createUUID() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (
+        c
+    ) {
+        var r = (Math.random() * 16) | 0,
+            v = c == 'x' ? r : (r & 0x3) | 0x8;
         return v.toString(16);
     });
 }
@@ -11,7 +14,7 @@ const RuturnCode = {
     SUCCESS: 'Function return success',
 };
 
-const CustomersFile = "./customers.json";
+const CustomersFile = './customers.json';
 
 class Wine {
     constructor(name, picture, brand, price, descrption, quantity) {
@@ -35,12 +38,11 @@ class Wines {
 }
 
 class CustomerInventory extends Wines {
-
     constructor() {
         super();
     }
 
-    // the customer wine only contains wine name and quantity 
+    // the customer wine only contains wine name and quantity
     addWine(name, quantity) {
         // add a number of wine into the database: check the quantities against the inventory
         var ret = RuturnCode.ERROR;
@@ -55,12 +57,29 @@ class CustomerInventory extends Wines {
     }
 }
 
-
 class Inventory extends Wines {
     constructor() {
         super();
-        this.wines.set("Russia Wine 1", new Wine("Russia Wine 1", "/images/russia/1.png", 22.22, "Drunk Russia Man", 100));
-        this.wines.set("China Wine 1", new Wine("China Wine 1", "/images/china/1.png", 22.22, "Drunk China Man", 100));
+        this.wines.set(
+            'Russia Wine 1',
+            new Wine(
+                'Russia Wine 1',
+                '/images/russia/1.png',
+                22.22,
+                'Drunk Russia Man',
+                100
+            )
+        );
+        this.wines.set(
+            'China Wine 1',
+            new Wine(
+                'China Wine 1',
+                '/images/china/1.png',
+                22.22,
+                'Drunk China Man',
+                100
+            )
+        );
     }
 
     getQuantities(name) {
@@ -77,22 +96,17 @@ class Customer {
         this.email = email;
         this.phone = phone;
         this.address = password;
-        this.wines = new Map();         // wine list but the quantity is the purchased wine quantities
+        this.wines = new Map(); // wine list but the quantity is the purchased wine quantities
     }
 
     addWine(name, quantity) {
         return addWine(name, quantity);
     }
 
-    removeWine(wineName, quantity) {
-
-    }
-
+    removeWine(wineName, quantity) {}
 }
 
-
 class Customers {
-
     constructor() {
         this.customers = new Map();
     }
@@ -110,14 +124,12 @@ class Customers {
     }
 
     readJSONFile() {
-        // // Read JSON file 
+        // // Read JSON file
         // const fs = require("fs");
         // fs.readFile(CustomersFile, (err, data) => {
         //     if (err) throw err;
-
         //     // convert JSON string to Map
         //     var obj = JSON.parse(jsonStr, (key, value) => {
-
         //         return value;
         //     });
         // });
@@ -128,48 +140,51 @@ let gCustomers = new Customers();
 let gInventory = new Inventory();
 
 function test() {
-    gCustomers.add(new Customer("Karen Mok", "1900", "", "", "", ""));
+    gCustomers.add(new Customer('Karen Mok', '1900', '', '', '', ''));
     gCustomers.saveJSONFile();
-};
+}
 
 test();
 
-var wineData =
-    [
-        {
-            "id": "1",
-            "image": "#",
-            "name": "TestWine1",
-            "price": "$100.00"
-        },
-        {
-            "id": "2",
-            "image": "#",
-            "name": "TestWine2",
-            "price": "$30.00"
-        },
-        {
-            "id": "3",
-            "image": "#",
-            "name": "TestWine3",
-            "price": "$10.00"
-        }
-    ]
+var wineData = [
+    {
+        id: '1',
+        image: '#',
+        name: 'TestWine1',
+        price: '$100.00',
+    },
+    {
+        id: '2',
+        image: '#',
+        name: 'TestWine2',
+        price: '$30.00',
+    },
+    {
+        id: '3',
+        image: '#',
+        name: 'TestWine3',
+        price: '$10.00',
+    },
+];
 
 displayWine();
 
 function displayWine() {
-    var out = "";
-    wineData.forEach(wine => {
-        out += "<div>";
+    var out = '';
+    wineData.forEach((wine) => {
+        out += '<div>';
         out += "<img src='" + wine.image + "'>";
-        out += "<h2>" + wine.name + "</h2>";
-        out += "<p>" + wine.price + "</p>";
-        out += "<input type='number' id='wine" + wine.id + "' name='wine" + wine.id + "' min='1' max='100'>";
+        out += '<h2>' + wine.name + '</h2>';
+        out += '<p>' + wine.price + '</p>';
+        out +=
+            "<input type='number' id='wine" +
+            wine.id +
+            "' name='wine" +
+            wine.id +
+            "' min='1' max='100'>";
         out += "<button id='wineButton" + wine.id + "'>Add</button>";
-        out += "</div>";
-        document.querySelector("#wineDisplay").innerHTML += out;
-        out = "";
+        out += '</div>';
+        document.querySelector('#wineDisplay').innerHTML += out;
+        out = '';
     });
 }
-
