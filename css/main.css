@@ -149,47 +149,36 @@ nav {
 
 body {
   color: #929292;
-  font-family: "Cormorant", serif;
-}
+  font-family: 'Cormorant', serif; }
 
 h1 {
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 hr {
-  width: 85%;
-}
+  width: 85%; }
 
 .product-item {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .product-item {
-    width: 25%;
-  }
-}
+  max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .product-item {
+      width: 25%; } }
 
 .item-title {
-  color: #c7b198;
-}
+  color: #c7b198; }
 
 .quantity-box {
   height: 40px;
-  width: 40px;
-}
+  width: 40px; }
 
 .proceed-btn {
   background-color: #c7b198;
-  color: white;
-}
+  color: white; }
 
 .cont-shopping {
   text-decoration: none;
-  color: #929292;
-}
-.cont-shopping:hover {
-  color: #929292;
-}
+  color: #929292; }
+  .cont-shopping:hover {
+    color: #929292; }
 
 .contact-image {
   height: 50vh;
@@ -199,8 +188,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .wrapper-form {
   margin: 10%;
@@ -210,36 +198,30 @@ hr {
   border-radius: 5px;
   margin-bottom: 5%;
   margin-top: 5%;
-  font-family: "Cormorant", serif;
-  color: #000;
-}
-.wrapper-form h1 {
-  text-align: center;
-  color: black;
-}
-.wrapper-form input {
-  border: #000;
-  padding: 10px;
-  margin: 1%;
-  width: 95%;
-  border-radius: 5px;
-}
-.wrapper-form label {
-  margin: 1%;
-  border-radius: 5px;
-}
-.wrapper-form textarea {
-  border: #000;
-  padding: 10px;
-  margin: 1%;
-  width: 95%;
-  height: 200px;
-  border-radius: 5px;
-}
-.wrapper-form .submit-btn {
-  background-color: silver;
-  margin: 1%;
-}
+  font-family: 'Cormorant', serif;
+  color: #000; }
+  .wrapper-form h1 {
+    text-align: center;
+    color: black; }
+  .wrapper-form input {
+    border: #000;
+    padding: 10px;
+    margin: 1%;
+    width: 95%;
+    border-radius: 5px; }
+  .wrapper-form label {
+    margin: 1%;
+    border-radius: 5px; }
+  .wrapper-form textarea {
+    border: #000;
+    padding: 10px;
+    margin: 1%;
+    width: 95%;
+    height: 200px;
+    border-radius: 5px; }
+  .wrapper-form .submit-btn {
+    background-color: silver;
+    margin: 1%; }
 
 footer {
   text-align: center;
@@ -263,10 +245,8 @@ footer {
       font-size: 2rem; }
 
 header {
-  text-align: center;
-}
-header img {
-  width: 150px;
-}
+  text-align: center; }
+  header img {
+    width: 150px; }
 
 /*# sourceMappingURL=main.css.map */
