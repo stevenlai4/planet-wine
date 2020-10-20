@@ -60,7 +60,6 @@
         }
     }
 
-    // <empty> tag is a placeholder hidden now.
     .wrapper {
         width: 90%;
         line-height: $line-height;
@@ -88,14 +87,14 @@
             width:100%;
             > div {
                 // each item is block displaying line after line 
-                > label, > input, > empty {
+                > label, > input, > div {
                     display: block;
                     margin: 5px 0;
                     font-size: 1.2rem;
                 }
 
-                // hide <empty> 
-                empty {
+                // hide <div> 
+                > div {
                     display: none;
                 }
             }
@@ -172,7 +171,6 @@
 
 /* 
   ##Device = Tablet or Desktop (Portrait). 
-  <empty> tag will show to form a 6 rows x 4 columns grid. 
 */
 @media screen and (min-width: $phoneLandscape) {
     .wrapper {
@@ -183,14 +181,14 @@
                 grid-template-rows: $line-height;   
                 grid-template-columns: 2fr 1fr 1fr 2fr; 
 
-                > label, > input, > empty {
+                > label, > input, > div {
                     font-size: 1.5rem;
                     padding: 0 5px;
                     margin: 10px;
                 }
 
-                // <empty> tag will show to form a 6 rows x 4 columns grid. 
-                empty {
+                // <div> tag will show to form a 6 rows x 4 columns grid. 
+                div {
                     display: block;
                 }
 

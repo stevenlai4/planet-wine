@@ -125,7 +125,6 @@ table {
 #checkout {
   /* 
     ##Device = Tablet or Desktop (Portrait). 
-    <empty> tag will show to form a 6 rows x 4 columns grid. 
   */ }
   #checkout header {
     text-align: center;
@@ -173,11 +172,11 @@ table {
       margin-bottom: 1rem; }
     #checkout .wrapper > form {
       width: 100%; }
-      #checkout .wrapper > form > div > label, #checkout .wrapper > form > div > input, #checkout .wrapper > form > div > empty {
+      #checkout .wrapper > form > div > label, #checkout .wrapper > form > div > input, #checkout .wrapper > form > div > div {
         display: block;
         margin: 5px 0;
         font-size: 1.2rem; }
-      #checkout .wrapper > form > div empty {
+      #checkout .wrapper > form > div > div {
         display: none; }
       #checkout .wrapper > form > input {
         display: block;
@@ -228,11 +227,11 @@ table {
       display: grid;
       grid-template-rows: 1.4;
       grid-template-columns: 2fr 1fr 1fr 2fr; }
-      #checkout .wrapper > form > div > label, #checkout .wrapper > form > div > input, #checkout .wrapper > form > div > empty {
+      #checkout .wrapper > form > div > label, #checkout .wrapper > form > div > input, #checkout .wrapper > form > div > div {
         font-size: 1.5rem;
         padding: 0 5px;
         margin: 10px; }
-      #checkout .wrapper > form > div empty {
+      #checkout .wrapper > form > div div {
         display: block; }
       #checkout .wrapper > form > div > label {
         text-align: right; }
