@@ -103,24 +103,24 @@ class Customers {
 
     saveJSONFile() {
         // convert Map to JSON string
-        const jsonStr = JSON.stringify(Array.from(gCustomers.customers.entries()));
-        // save JSON to file
-        const fs = require("fs");
-        fs.writeFile(CustomersFile, jsonStr, err => { console.log("Error happens while saving customers.json") })
+        // const jsonStr = JSON.stringify(Array.from(gCustomers.customers.entries()));
+        // // save JSON to file
+        // const fs = require("fs");
+        // fs.writeFile(CustomersFile, jsonStr, err => { console.log("Error happens while saving customers.json") })
     }
 
     readJSONFile() {
-        // Read JSON file 
-        const fs = require("fs");
-        fs.readFile(CustomersFile, (err, data) => {
-            if (err) throw err;
+        // // Read JSON file 
+        // const fs = require("fs");
+        // fs.readFile(CustomersFile, (err, data) => {
+        //     if (err) throw err;
 
-            // convert JSON string to Map
-            var obj = JSON.parse(jsonStr, (key, value) => {
+        //     // convert JSON string to Map
+        //     var obj = JSON.parse(jsonStr, (key, value) => {
 
-                return value;
-            });
-        });
+        //         return value;
+        //     });
+        // });
     }
 }
 
