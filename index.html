@@ -8,28 +8,35 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@1,600&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <!-- Use background image is the easiest for this -->
-                <img src="#" />
-                <!-- Logo goes here -->
-                <h1>Planet Wine</h1>
-                <!-- Giant text -->
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam eligendi quo quis cumque quae quaerat quas eum possimus
-                    soluta libero, non enim sit suscipit delectus animi.
-                    Perspiciatis, alias! Velit, asperiores.
-                </p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="gallery.html">Checkout</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        <main class="index">
+            <!-- Nav for tablet size or smaller -->
+            <nav class="tablet-mobile-nav">
+                <ul class="menu">
+                    <li class="toggle">
+                        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item tablet-mobile-logo">
+                        <a href="index.html"><img src="img/logo.png" /></a>
+                    </li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="shop.html">Shop</a></li>
+                    <li class="nav-item">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="Login.html">Login</a></li>
+                    <li class="nav-item"><a href="Cart.html">Cart</a></li>
                 </ul>
+            </nav>
+
+            <div class="login-cart">
                 <ul>
                     <!-- Icons for for the user and cart -->
                     <li>
@@ -43,31 +50,38 @@
                     </li>
                     <!--Cart-->
                 </ul>
-            </nav>
-        </header>
-
-        <footer>
-            <h5>Planet wine</h5>
-            <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-twitter"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
             </div>
-            <p>&copy; All Right Reserved</p>
-        </footer>
+
+            <!-- Logo goes here -->
+            <a class="desktop-logo" href="index.html"
+                ><img src="img/logo-index.png"
+            /></a>
+
+            <div class="center-content active-center-content">
+                <!-- Heading Title -->
+                <h1>Planet Wine</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur autem assumenda reprehenderit molestias sunt
+                    aliquid
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur autem assumenda reprehenderit molestias sunt
+                    aliquid
+                </p>
+
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
 
         <script src="scripts/index.js"></script>
+        <script src="scripts/nav-toggle.js"></script>
     </body>
 </html>

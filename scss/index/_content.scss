@@ -1,0 +1,191 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.index {
+    background-image: url('../../img/index-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+
+    .tablet-mobile-nav {
+        display: none;
+    }
+
+    .login-cart ul {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+
+        li {
+            margin-right: 25px;
+        }
+
+        a {
+            color: white;
+        }
+
+        i {
+            font-size: 40px;
+        }
+    }
+
+    .desktop-logo img {
+        width: 80px;
+        margin: 2% 0 0 2%;
+    }
+
+    .center-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        animation-name: fade-in;
+        animation-duration: 3s;
+
+        h1 {
+            font-size: 10rem;
+            font-family: $index-h1-font;
+        }
+
+        p {
+            margin: 30px 0;
+        }
+
+        .desktop-nav {
+            display: block;
+            background-color: transparent;
+            width: 100%;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                li:not(:last-of-type) {
+                    margin-right: 50px;
+                }
+
+                a {
+                    font-size: 2rem;
+                    font-style: italic;
+                    font-family: $index-nav-font;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    .index {
+        .tablet-mobile-nav {
+            .toggle {
+                padding: 0;
+                text-align: left;
+
+                .fas {
+                    padding: 20px;
+                }
+            }
+
+            padding: 0;
+            display: block;
+            background-color: transparent;
+            text-align: center;
+
+            .tablet-mobile-logo img {
+                width: 400px;
+            }
+
+            .nav-item {
+                display: none;
+                animation-name: fade-out;
+                animation-duration: 2s;
+            }
+
+            .nav-item:not(.tablet-mobile-logo) {
+                font-size: 3.5rem;
+                margin: 40px 0;
+            }
+        }
+
+        .active-menu .nav-item {
+            display: block;
+            animation-name: fade-in;
+            animation-duration: 2s;
+        }
+
+        .login-cart ul {
+            display: none;
+        }
+
+        .desktop-logo {
+            display: none;
+        }
+
+        .center-content {
+            display: none;
+            animation-name: fade-out;
+            animation-duration: 2s;
+
+            h1 {
+                font-size: 7rem;
+            }
+
+            p {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .desktop-nav {
+                display: none;
+            }
+        }
+
+        .active-center-content {
+            display: block;
+            animation-name: fade-in;
+            animation-duration: 2s;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    .index {
+        .tablet-mobile-nav {
+            .tablet-mobile-logo img {
+                width: 200px;
+            }
+
+            .nav-item:not(.tablet-mobile-logo) {
+                font-size: 2rem;
+                margin: 25px 0;
+            }
+        }
+
+        .center-content {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
