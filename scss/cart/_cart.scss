@@ -1,5 +1,5 @@
-$primary-color:#c7b198;
-$secondary-color:#929292;
+$primary-color: #c7b198;
+$secondary-color: #929292;
 
 body {
     color: $secondary-color;
@@ -16,7 +16,7 @@ hr {
 
 .product-item {
     max-width: 100%;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         width: 25%;
     }
 }
@@ -33,4 +33,13 @@ hr {
 .proceed-btn {
     background-color: $primary-color;
     color: white;
+}
+
+.cont-shopping {
+    text-decoration: none;
+    color: $secondary-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
 }
