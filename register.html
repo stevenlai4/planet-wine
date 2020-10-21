@@ -15,24 +15,23 @@
             <img src="#" />
             <!-- Logo goes here -->
             <nav>
-                <ul>
+                <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <ul>
-                    <!-- Icons for for the user and cart -->
+              
+                <!-- Icons for for the user and cart -->
+                <ul class="login-cart">
+                    <!--Login-->
                     <li>
                         <a href="login.html"><i class="fas fa-user"></i></a>
                     </li>
-                    <!--Login-->
-                    <li>
-                        <a href="cart.html"
-                            ><i class="fas fa-shopping-cart"></i
-                        ></a>
-                    </li>
                     <!--Cart-->
+                    <li>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -44,15 +43,16 @@
 
             <article>
                 <form>
-                    <label for="user">Email</label><br />
-                    <input type="email" id="user" name="id" required /><br />
-                    <label for="password">Password</label><br />
+                    <label for="user">Email</label><br>
+                    <input type="email" id="user" name="id" required><br>
+                    <label for="password">Password</label><br>
+
                     <input
                         type="password"
                         id="password"
                         name="password"
                         required
-                    /><br />
+                    ><br>
 
                     <button type="submit">Submit</button>
                 </form>
@@ -69,11 +69,21 @@
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-            <div>
-                <p><i class="fab fa-facebook-square"></i></p>
-                <p><i class="fab fa-instagram"></i></p>
-                <p><i class="fab fa-twitter-square"></i></p>
-                <p><i class="fab fa-youtube-square"></i></p>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
             </div>
             <p>&copy; All Right Reserved</p>
         </footer>
