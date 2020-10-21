@@ -38,25 +38,64 @@
         </header>
 
         <section>
-            <header>
+            <div class="RegForm">
                 <h1>Account Registeration</h1>
-            </header>
+            </div>
 
-            <article>
+            <div class="Main-form">
                 <form>
-                    <label for="user">Email</label><br />
-                    <input type="email" id="user" name="id" required /><br />
-                    <label for="password">Password</label><br />
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        required
-                    /><br />
+                    <div id="inner-form"> <!--First and last name inputs-->
+                        <h2 class="Title-name">Name:</h2>
+                        <label class="firstLabel" for="firstName">First Name</label><br>
+                        <input class ="firstName" type="text" id="user" name="id" required>
+                        <label class="lastLabel" for="lastName">Last Name</label><br>
+                        <input class ="lastName" type="text" id="user" name="id" required>
 
-                    <button type="submit">Submit</button>
+                        <!-- Address inputs -->
+                        <h2 class="Title-name">Address:</h2>
+                        <input class="address" type="text" name="address" required /><br>
+                        <label class="postal-Label">Postal Code</label>
+                        <input class="postal" type="text" name="postal_code" /><br>
+                        
+                        <!-- Country selector -->
+                        <h2 class="Title-name">Country</h2>
+                        <select class="country" name="country">
+                            <option selected="selected" required>Choose Country</option>
+                                <option> USA</option>
+                                <option>Canada</option>
+                        </select>
+                        
+                        <!-- email input -->
+                        <h2 class="Title-name">Email</h2>
+                        <input class="email" type="email" name="email" required /><br>
+
+                        <!-- Phone number and area code -->
+                        <h2 class="Title-name">Phone</h2>
+                        <input class="areaCode" type="text" name="area_code" required /><br>
+                        <label class="area-code">Area Code</label>
+                        <input class="number" type="text" name="phone">
+                        <label class= "phone-number">Phone Number</label>
+
+                        <!-- password and password confirmation -->
+                        <h2 class="Title-name">Password</h2>
+                        <label class="password" for="password">Password</label><br/>
+                        <input 
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        /><br>
+                        <label class="confirmPassword" for="password"> Confirm Password</label><br/>
+                        <input 
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        /><br>
+                        <button class type="submit">Submit</button>
+                    </div>
                 </form>
-            </article>
+            </div>
 
             <article>
                 <h5>Sign in to account</h5>

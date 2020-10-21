@@ -1,73 +1,3 @@
-.Login-Title {
-  font-size: 55px;
-  text-align: center;
-  font-family: Cormorant;
-  margin-top: 3%;
-}
-
-.Login-Form {
-  margin-left: 18%;
-  margin-top: 5%;
-  display: flex;
-  margin-bottom: 10%;
-}
-.Login-Form label {
-  font-size: 20px;
-}
-.Login-Form input {
-  padding: 15px 250px 15px 10px;
-  margin: 25px;
-  box-sizing: border-box;
-  font-size: 22px;
-  margin-left: auto;
-  overflow: hidden;
-}
-.Login-Form button {
-  padding: 15px 30px;
-  background-color: #c7b198;
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.Create {
-  display: flex;
-  margin: 0 0 0 26.5%;
-}
-.Create h5 {
-  font-size: 35px;
-  margin-bottom: 10%;
-}
-.Create p {
-  font-size: 22px;
-  margin-bottom: 25px;
-}
-.Create button {
-  padding: 15px 170px;
-  background-color: #c7b198;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10%;
-}
-
-.Login-image {
-  background: url("../../Images/barrels.jpg");
-  width: 100%;
-  background-size: cover;
-  height: 450px;
-  margin-top: 8px;
-  background-position: center;
-}
-.Login-image h1 {
-  font-size: 100px;
-  color: white;
-  position: absolute;
-  text-align: center;
-  margin: 9% 0 0 23%;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -254,6 +184,175 @@ footer ul li:not(:last-of-type) {
 footer ul a {
   color: white;
   font-size: 2rem;
+}
+
+.Login-Title {
+  font-size: 55px;
+  text-align: center;
+  font-family: Cormorant;
+  margin-top: 3%;
+}
+
+.Login-Form {
+  margin-left: 18%;
+  margin-top: 5%;
+  display: flex;
+  margin-bottom: 10%;
+}
+.Login-Form label {
+  font-size: 20px;
+}
+.Login-Form input {
+  padding: 15px 250px 15px 10px;
+  margin: 25px;
+  box-sizing: border-box;
+  font-size: 22px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.Login-Form button {
+  padding: 15px 30px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.Create {
+  display: flex;
+  margin: 0 0 0 26.5%;
+}
+.Create h5 {
+  font-size: 35px;
+  margin-bottom: 10%;
+}
+.Create p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.Create button {
+  padding: 15px 170px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.Login-image {
+  background: url("../../Images/barrels.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  margin-top: 8px;
+  background-position: center;
+}
+.Login-image h1 {
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 9% 0 0 23%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.RegForm {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  width: 900px;
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.Main-form {
+  width: 900px;
+  background-color: #c7b198;
+  margin: auto;
+  border: 1px solid black;
+}
+.Main-form form {
+  padding: 10px;
+}
+.Main-form #inner-form {
+  width: 100%;
+  height: auto;
+}
+.Main-form .Title-name {
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 125px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.Main-form .firstName {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .lastName {
+  position: relative;
+  left: 500px;
+  top: -78px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .firstLabel {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 201px;
+  top: 30px;
+}
+.Main-form .lastLabel {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 270px;
+  top: -1px;
+}
+.Main-form .address {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 40px;
+  font-size: 18px;
+}
+.Main-form .postal {
+  position: relative;
+  left: 369px;
+  top: -76px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .postal-Label {
+  position: relative;
+  left: 485px;
+  top: -45px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */
