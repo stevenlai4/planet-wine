@@ -266,20 +266,21 @@ footer ul a {
   padding-top: 20px;
   padding-bottom: 10px;
   margin-top: 40px;
-  width: 900px;
+  width: 800px;
   background-color: #444444;
   color: white;
   text-align: center;
   border-radius: 15px 15px 0px 0px;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
 }
 
 .Main-form {
-  width: 900px;
+  width: 800px;
   background-color: #c7b198;
   margin: auto;
   border: 1px solid black;
+  margin-bottom: 40px;
 }
 .Main-form form {
   padding: 10px;
@@ -416,7 +417,7 @@ footer ul a {
 .Main-form .confirmInput {
   position: relative;
   left: 470px;
-  top: -104px;
+  top: -106px;
   line-height: 35px;
   border-radius: 6px;
   padding: 0 22px;
@@ -434,7 +435,7 @@ footer ul a {
   text-transform: capitalize;
   font-size: 18px;
   left: 470px;
-  top: -37px;
+  top: -44px;
 }
 .Main-form .Reg-Button {
   padding: 15px 170px;
