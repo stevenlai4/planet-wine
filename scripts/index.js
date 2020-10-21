@@ -146,68 +146,65 @@ function test() {
 
 test();
 
+// var wineData = [
+//     {
+//         id: '1',
+//         image: '#',
+//         name: 'TestWine1',
+//         price: '$100.00',
+//     },
+//     {
+//         id: '2',
+//         image: '#',
+//         name: 'TestWine2',
+//         price: '$30.00',
+//     },
+//     {
+//         id: '3',
+//         image: '#',
+//         name: 'TestWine3',
+//         price: '$10.00',
+//     },
+// ];
+
 var wineData = [
     {
         id: '1',
-        image: '#',
+        image: '/img/shop-img.png',
         name: 'TestWine1',
         price: '$100.00',
     },
     {
         id: '2',
-        image: '#',
+        image: '/img/shop-img.png',
         name: 'TestWine2',
         price: '$30.00',
     },
     {
         id: '3',
-        image: '#',
+        image: '/img/shop-img.png',
         name: 'TestWine3',
         price: '$10.00',
     },
+    {
+        id: '4',
+        image: '/img/shop-img.png',
+        name: 'TestWine4',
+        price: '$100.00',
+    },
+    {
+        id: '5',
+        image: '/img/shop-img.png',
+        name: 'TestWine5',
+        price: '$30.00',
+    },
+    {
+        id: '6',
+        image: '/img/shop-img.png',
+        name: 'TestWine6',
+        price: '$10.00',
+    },
 ];
-
-  /*
-var wineData =
-[
-  {
-    "id": "1",
-    "image": "/img/shop-img.png",
-    "name": "TestWine1",
-    "price": "$100.00"
-  },
-  {
-    "id": "2",
-    "image": "/img/shop-img.png",
-    "name": "TestWine2",
-    "price": "$30.00"
-  },
-  {
-    "id": "3",
-    "image": "/img/shop-img.png",
-    "name": "TestWine3",
-    "price": "$10.00"
-  },
-  {
-    "id": "4",
-    "image": "/img/shop-img.png",
-    "name": "TestWine4",
-    "price": "$100.00"
-  },
-  {
-    "id": "5",
-    "image": "/img/shop-img.png",
-    "name": "TestWine5",
-    "price": "$30.00"
-  },
-  {
-    "id": "6",
-    "image": "/img/shop-img.png",
-    "name": "TestWine6",
-    "price": "$10.00"
-  }
-]
-*/
 
 displayWine();
 

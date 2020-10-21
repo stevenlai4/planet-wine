@@ -10,7 +10,7 @@
             width: 20rem;
             align-self: flex-start;
             display: none;
-            @media screen and (min-width:map-get($breakpoint, tablet)) {
+            @media screen and (min-width: map-get($breakpoint, tablet)) {
                 display: block;
             }
             div {
@@ -31,10 +31,10 @@
                 > * {
                     margin: 0.5rem;
                 }
-                @media screen and (min-width:map-get($breakpoint, tablet)) {
+                @media screen and (min-width: map-get($breakpoint, tablet)) {
                     width: 40%;
                 }
-                @media screen and (min-width:map-get($breakpoint, desktop)) {
+                @media screen and (min-width: map-get($breakpoint, desktop)) {
                     width: 25%;
                 }
             }
@@ -49,7 +49,11 @@
 .imgArticle {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("/img/index-img.png");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url('/img/index-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 0;
