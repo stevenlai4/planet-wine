@@ -1,3 +1,4 @@
+// Animation @keyframes
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -16,17 +17,15 @@
     }
 }
 
+// Desktop Size
 .index {
     background-image: url('../../img/index-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow-y: auto;
     color: white;
-
-    .tablet-mobile-nav {
-        display: none;
-    }
 
     .login-cart ul {
         display: flex;
@@ -70,70 +69,12 @@
         p {
             margin: 30px 0;
         }
-
-        .desktop-nav {
-            display: block;
-            background-color: transparent;
-            width: 100%;
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-
-                li:not(:last-of-type) {
-                    margin-right: 50px;
-                }
-
-                a {
-                    font-size: 2rem;
-                    font-style: italic;
-                    font-family: $index-nav-font;
-                }
-            }
-        }
     }
 }
 
+// Tablet Size
 @media screen and (max-width: map-get($breakpoint, tablet)) {
     .index {
-        .tablet-mobile-nav {
-            .toggle {
-                padding: 0;
-                text-align: left;
-
-                .fas {
-                    padding: 20px;
-                }
-            }
-
-            padding: 0;
-            display: block;
-            background-color: transparent;
-            text-align: center;
-
-            .tablet-mobile-logo img {
-                width: 400px;
-            }
-
-            .nav-item {
-                display: none;
-                animation-name: fade-out;
-                animation-duration: 2s;
-            }
-
-            .nav-item:not(.tablet-mobile-logo) {
-                font-size: 3.5rem;
-                margin: 40px 0;
-            }
-        }
-
-        .active-menu .nav-item {
-            display: block;
-            animation-name: fade-in;
-            animation-duration: 2s;
-        }
-
         .login-cart ul {
             display: none;
         }
@@ -155,10 +96,6 @@
                 padding-left: 4%;
                 padding-right: 4%;
             }
-
-            .desktop-nav {
-                display: none;
-            }
         }
 
         .active-center-content {
@@ -169,6 +106,7 @@
     }
 }
 
+// Mobile Size
 @media screen and (max-width: map-get($breakpoint, mobile)) {
     .index {
         .tablet-mobile-nav {
