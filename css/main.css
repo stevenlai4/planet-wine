@@ -290,7 +290,7 @@ footer ul a {
 }
 .Main-form .Title-name {
   margin-left: 25px;
-  margin-top: 15px;
+  margin-top: 10px;
   width: 125px;
   font-size: 25px;
   font-weight: 700;
@@ -353,6 +353,102 @@ footer ul a {
   border-radius: 6px;
   padding: 0 22px;
   font-size: 18px;
+}
+.Main-form .country {
+  position: relative;
+  left: 200px;
+  top: -45px;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+.Main-form .email {
+  position: relative;
+  left: 200px;
+  top: -37px;
+  width: 480px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 40px;
+  font-size: 20px;
+}
+.Main-form .areaCode {
+  position: relative;
+  text-align: center;
+  left: 200px;
+  top: -37px;
+  width: 90px;
+  line-height: 35px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.Main-form .number {
+  position: relative;
+  left: 245px;
+  top: -75px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .areaLabel {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 201px;
+  top: -37px;
+}
+.Main-form .phone-number {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 10px;
+  top: -37px;
+}
+.Main-form .password {
+  position: relative;
+  left: 200px;
+  top: -50px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .confirmInput {
+  position: relative;
+  left: 470px;
+  top: -104px;
+  line-height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 18px;
+}
+.Main-form .passwordLabel {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 201px;
+  top: 10px;
+}
+.Main-form .confirmLabel {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 18px;
+  left: 470px;
+  top: -37px;
+}
+.Main-form .Reg-Button {
+  padding: 15px 170px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.Main-form .Exists {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 20px;
+  left: 470px;
+  top: -37px;
 }
 
 /*# sourceMappingURL=main.css.map */

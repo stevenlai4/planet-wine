@@ -36,7 +36,7 @@
 
     .Title-name{ // form titles
         margin-left: 25px;
-        margin-top: 15px;
+        margin-top: 10px;
         width: 125px;
         font-size: 25px;
         font-weight: 700;
@@ -44,7 +44,7 @@
     }
         //First and last name inputs & labels
 
-    .firstName {
+    .firstName { //input
         position: relative;
         left: 200px;
         top: -37px;
@@ -81,7 +81,7 @@
     }
 
     //address Inputs---------
-    .address {
+    .address { // input
         position: relative;
         left: 200px;
         top: -37px;
@@ -91,7 +91,7 @@
         font-size: 18px;
     }
 
-    .postal {
+    .postal { //input
         position: relative;
         left: 369px;
         top: -76px;
@@ -110,4 +110,126 @@
         padding: 0 22px;
         font-size: 18px;
     }
+
+    .country {
+        position: relative;
+        left: 200px;
+        top: -45px;
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+
+    // Contact details
+    .email { //inputs
+        position: relative;
+        left: 200px;
+        top: -37px;
+        width: 480px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 40px;
+        font-size: 20px;
+    }
+
+    .areaCode { //inputs
+        position: relative;
+        text-align: center;
+        left: 200px;
+        top: -37px;
+        width: 90px;
+        line-height: 35px;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+
+    .number {
+
+        position: relative;
+        left: 245px;
+        top: -75px;
+        line-height: 35px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 18px;
+
+    }
+
+    .areaLabel {
+
+        position: relative;
+        text-transform: capitalize;
+        font-size: 18px;
+        left: 201px;
+        top: -37px;
+    }
+
+    .phone-number {
+
+        position: relative;
+        text-transform: capitalize;
+        font-size: 18px;
+        left: 10px;
+        top: -37px;
+    }
+
+    .password {
+
+        position: relative;
+        left: 200px;
+        top: -50px;
+        line-height: 35px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 18px;
+
+    }
+
+    .confirmInput {
+
+        position: relative;
+        left: 470px;
+        top: -104px;
+        line-height: 35px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 18px;
+    }
+
+    .passwordLabel {
+
+        position: relative;
+        text-transform: capitalize;
+        font-size: 18px;
+        left: 201px;
+        top: 10px;
+
+    }
+
+    .confirmLabel {
+
+        position: relative;
+        text-transform: capitalize;
+        font-size: 18px;
+        left: 470px;
+        top: -37px;
+
+    }
+
+    .Reg-Button {
+        padding: 15px 170px;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Exists {
+        position: relative;
+        text-transform: capitalize;
+        font-size: 20px;
+        left: 470px;
+        top: -37px;
+
+    }
+    
 }

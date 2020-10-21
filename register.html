@@ -58,51 +58,53 @@
                         <input class="postal" type="text" name="postal_code" /><br>
                         
                         <!-- Country selector -->
-                        <h2 class="Title-name">Country</h2>
+                        <h2 class="Title-name">Country:</h2>
                         <select class="country" name="country">
-                            <option selected="selected" required>Choose Country</option>
-                                <option> USA</option>
+                            <option selected="selected" required>Choose Country...</option>
+                                <option> United States</option>
                                 <option>Canada</option>
                         </select>
                         
                         <!-- email input -->
-                        <h2 class="Title-name">Email</h2>
+                        <h2 class="Title-name">Email:</h2>
                         <input class="email" type="email" name="email" required /><br>
 
                         <!-- Phone number and area code -->
-                        <h2 class="Title-name">Phone</h2>
-                        <input class="areaCode" type="text" name="area_code" required /><br>
-                        <label class="area-code">Area Code</label>
-                        <input class="number" type="text" name="phone">
+                        <h2 class="Title-name">Phone:</h2>
+                        <input class="areaCode" type="text" name="area_code" maxlength="3" required /><br>
+                        <label class="areaLabel">Area Code</label>
+                        <input class="number" type="text" name="phone" maxlength="7">
                         <label class= "phone-number">Phone Number</label>
 
                         <!-- password and password confirmation -->
-                        <h2 class="Title-name">Password</h2>
-                        <label class="password" for="password">Password</label><br/>
+                        <h2 class="Title-name">Password:</h2>
+                        <label class="passwordLabel" for="password">Password</label><br/>
                         <input 
+                            class="password"
                             type="password"
                             id="password"
                             name="password"
                             required
                         /><br>
-                        <label class="confirmPassword" for="password"> Confirm Password</label><br/>
+                        <label class="confirmLabel" for="password"> Confirm Password</label><br/>
                         <input 
+                            class="confirmInput"
                             type="password"
                             id="password"
                             name="password"
                             required
                         /><br>
-                        <button class type="submit">Submit</button>
+                        <button class="Reg-Button" type="submit">Submit</button>
+                        <article class="Exists">
+                            <p>Already have an account? <br>
+                                Sign in <a href="login.html">Here</a>
+                            </p>
+                            <!-- Same issue as the link on login.html -->
+                        </article>
                     </div>
                 </form>
             </div>
 
-            <article>
-                <h5>Sign in to account</h5>
-                <p>Already have an account? Sign in here.</p>
-                <a href="login.html">Account Login</a>
-                <!-- Same issue as the link on login.html -->
-            </article>
         </section>
 
         <footer>
