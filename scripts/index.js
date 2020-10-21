@@ -146,27 +146,6 @@ function test() {
 
 test();
 
-// var wineData = [
-//     {
-//         id: '1',
-//         image: '#',
-//         name: 'TestWine1',
-//         price: '$100.00',
-//     },
-//     {
-//         id: '2',
-//         image: '#',
-//         name: 'TestWine2',
-//         price: '$30.00',
-//     },
-//     {
-//         id: '3',
-//         image: '#',
-//         name: 'TestWine3',
-//         price: '$10.00',
-//     },
-// ];
-
 var wineData = [
     {
         id: '1',

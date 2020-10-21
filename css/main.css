@@ -88,8 +88,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -103,94 +102,75 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 header {
-  text-align: center;
-}
-header img {
-  width: 150px;
-}
+  text-align: center; }
+  header img {
+    width: 150px; }
 
 nav {
   display: flex;
   padding: 20px 0;
-  background-color: #444444;
-}
-nav .nav-items {
-  display: flex;
-  width: 95%;
-  justify-content: center;
-}
-nav .nav-items li:not(:last-of-type) {
-  padding-right: 110px;
-}
-nav .login-cart {
-  display: flex;
-  width: 5%;
-  justify-content: space-around;
-}
-nav .login-cart li {
-  padding-right: 15px;
-}
-nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
+  background-color: #444444; }
+  nav .nav-items {
+    display: flex;
+    width: 95%;
+    justify-content: center; }
+    nav .nav-items li:not(:last-of-type) {
+      padding-right: 110px; }
+  nav .login-cart {
+    display: flex;
+    width: 5%;
+    justify-content: space-around; }
+    nav .login-cart li {
+      padding-right: 15px; }
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white; }
 
 footer {
   text-align: center;
   justify-content: space-around;
   background-color: #444444;
   color: white;
-  padding: 20px 0;
-}
-footer h5,
-footer p {
-  margin: 18px 0;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-footer ul li:not(:last-of-type) {
-  margin-right: 40px;
-}
-footer ul a {
-  color: white;
-  font-size: 2rem;
-}
+  padding: 20px 0; }
+  footer h5,
+  footer p {
+    margin: 18px 0; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center; }
+    footer ul li:not(:last-of-type) {
+      margin-right: 40px; }
+    footer ul a {
+      color: white;
+      font-size: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
