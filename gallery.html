@@ -8,19 +8,17 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
-        <!-- Bootstrap CSS -->
         <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-            crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="css/gallery.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <!-- Header -->
         <header>
-            <img src="img/logo.png" />
+            <a href="index.html"><img src="img/logo.png" /></a>
             <!-- Logo goes here -->
             <nav>
                 <ul class="nav-items">
@@ -48,18 +46,118 @@
         <main class="gallery">
             <h1>Gallery</h1>
 
-            <article>
+            <article class="container">
                 <!-- Images goes here, formated with css -->
-                <div class="gallery-col">
-                    <img src="img/cart-img.png" />
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
                 </div>
-
-                <div class="gallery-col">
-                    <a href="#">
-                        <img src="img/cart-img.png" />
-                    </a>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
                 </div>
             </article>
+
+            <!-- Modal 1-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 2-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 3-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 4-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 5-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 6-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 7-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 8-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 9-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 10-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 11-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 12-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
         </main>
 
         <!-- Footer -->
@@ -86,16 +184,6 @@
         </footer>
 
         <script src="scripts/index.js"></script>
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"
-        ></script>
+        <script src="scripts/gallery_modal.js"></script>
     </body>
 </html>
