@@ -8,12 +8,23 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/contact.css" />
     </head>
     <body>
         <header>
-            <img src="#" />
             <!-- Logo goes here -->
+            <img src="img/logo.png" />
             <nav>
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -35,60 +46,73 @@
                     </li>
                 </ul>
             </nav>
-
-            <img src="#" />
-            <!-- Banner image -->
         </header>
 
-        <!-- Form section -->
         <section>
-            <article>
+            <!-- Banner image -->
+            <div class="contact-image"></div>
+
+            <div class="wrapper-form">
                 <form>
                     <h1>Questions?</h1>
-                    <label for="name">Name</label><br />
+                    <label for="Name">Name</label>
+                    <br />
                     <input
-                        type="email"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                    /><br />
-                    <label for="email">Email Address</label><br />
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Email"
-                    /><br />
-                    <label for="message">Feedback</label><br />
-                    <input
-                        type="textbox"
-                        id="message"
-                        name="message"
+                        id="Name"
+                        type="text"
+                        placeholder="Enter your name .."
                         required
-                        placeholder="Leave a comment"
-                    /><br />
-                    <button type="submit">Submit</button>
+                    />
+                    <br />
+
+                    <label for="Email">Email</label>
+                    <br />
+                    <input
+                        id="Email"
+                        type="email"
+                        placeholder="Enter your Email .. "
+                        required
+                    />
+                    <br />
+
+                    <label for="Question">Question</label>
+                    <textarea
+                        placeholder="Leave your questions .."
+                        required
+                    ></textarea>
+                    <br />
+
+                    <div class="text-center">
+                        <button
+                            type="button"
+                            class="btn submit-btn"
+                            value="Submit"
+                        >
+                            Submit
+                        </button>
+                    </div>
                 </form>
-            </article>
+            </div>
         </section>
 
         <!-- Footer section -->
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
+
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#"> <i class="fab fa-facebook"></i> </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
