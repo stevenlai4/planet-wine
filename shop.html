@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shop</title>
-        <script 
-            src="https://kit.fontawesome.com/19a6b4f60e.js" 
+        <script
+            src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/shop.css" />
     </head>
     <body>
         <header>
-            <img src="#" />
             <!-- Logo goes here -->
+            <img src="img/logo.png" />
             <nav>
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -22,6 +22,7 @@
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
                 <!-- Icons for for the user and cart -->
                 <ul class="login-cart">
                     <!--Login-->
@@ -30,7 +31,9 @@
                     </li>
                     <!--Cart-->
                     <li>
-                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="cart.html"
+                            ><i class="fas fa-shopping-cart"></i
+                        ></a>
                     </li>
                 </ul>
             </nav>
@@ -39,31 +42,62 @@
         <section>
             <header>
                 <h1>Shop</h1>
-                <p>Vineyards farmed responsibly. Serious wine presented with a warm sense of humor. This is Frog's Leap. Bring a bottle to your table. Stash a few in your Cellar. Lift a glass with friends. Drink it. We'll make more.</p>
+                <p>
+                    Vineyards farmed responsibly. Serious wine presented with a
+                    warm sense of humor. This is Frog's Leap. Bring a bottle to
+                    your table. Stash a few in your Cellar. Lift a glass with
+                    friends. Drink it. We'll make more.
+                </p>
             </header>
 
             <div class="sideArticle">
-                <article> <!-- Side bar filter -->
+                <article>
+                    <!-- Side bar filter -->
                     <div>
-                    <h2>Sort by</h2>
-                    <input type="radio" id="highLow" name="listOrder" value="1">
-                    <label for="highLow">Price - High to Low</label><br>
-                    <input type="radio" id="lowHigh" name="listOrder" value="2">
-                    <label for="lowHigh">Price - Low to High</label><br>
+                        <h2>Sort by</h2>
+                        <input
+                            type="radio"
+                            id="highLow"
+                            name="listOrder"
+                            value="1"
+                        />
+                        <label for="highLow">Price - High to Low</label><br />
+                        <input
+                            type="radio"
+                            id="lowHigh"
+                            name="listOrder"
+                            value="2"
+                        />
+                        <label for="lowHigh">Price - Low to High</label><br />
                     </div>
                     <div>
-                    <h2>Filter</h2>
-                    <input type="checkbox" id="lowPrice" name="lowPrice" value="1">
-                    <label for="lowPrice">$5.00 - $10.00</label><br> <!-- Price range for this can be editted by js -->
-                    <input type="checkbox" id="midPrice" name="midPrice" value="2">
-                    <label for="midPrice">$14.99 - $30.00</label><br>
-                    <input type="checkbox" id="highPrice" name="highPrice" value="3">
-                    <label for="highPrice">$50.00 - $100.00</label><br>
+                        <h2>Filter</h2>
+                        <input
+                            type="checkbox"
+                            id="lowPrice"
+                            name="lowPrice"
+                            value="1"
+                        />
+                        <label for="lowPrice">$5.00 - $10.00</label><br />
+                        <!-- Price range for this can be editted by js -->
+                        <input
+                            type="checkbox"
+                            id="midPrice"
+                            name="midPrice"
+                            value="2"
+                        />
+                        <label for="midPrice">$14.99 - $30.00</label><br />
+                        <input
+                            type="checkbox"
+                            id="highPrice"
+                            name="highPrice"
+                            value="3"
+                        />
+                        <label for="highPrice">$50.00 - $100.00</label><br />
                     </div>
                 </article>
 
-                <article id="wineDisplay">
-                </article>
+                <article id="wineDisplay"></article>
             </div>
 
             <article class="imgArticle">
@@ -79,6 +113,7 @@
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
+
             <div class="social">
                 <ul>
                     <li>
