@@ -80,14 +80,12 @@ function displayWine(wineData) {
         var input = document.querySelector("#wine" + btnId);
         btn.addEventListener("click", function() {
             var quantity;
-            var storeObj;
             if (localStorage.getItem(btnId) == null) {
                 quantity = input.value;
             } else {
-                quantity = JSON.parse(localStorage.getItem(btn.id)).amount + parseInt(input.value);
+                quantity = localStorage.getItem(btnId).amount + parseInt(input.value);
             }
-            storeObj = {id: btnId, amount: quantity};
-            localStorage.setItem(btnId, JSON.stringify(storeObj));
+            localStorage.setItem(btnId, quantity);
         });
     });
 }
