@@ -9,9 +9,13 @@
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/checkout.css" />
     </head>
+
     <body>
         <header>
+            <!-- Logo goes here -->
+            <img src="img/logo.png" />
             <nav>
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -35,25 +39,75 @@
             </nav>
         </header>
 
+        <div class="wrapper">
+            <!--logo-->
+            <img src="./img/shop-img.png" alt="logo" />
+            <h1>Shipping information</h1>
+
+            <!--form-->
+            <form>
+                <hr />
+                <div>
+                    <label for="Name">FIRST NAME & LAST NAME</label>
+                    <input type="text" placeholder="FIRST NAME .." />
+                    <input type="text" placeholder="LAST NAME .." />
+                    <div></div>
+
+                    <label for="Street Address">STREET ADDRESS</label>
+                    <input type="text" placeholder="STREET ADDRESS .." />
+                    <div></div>
+                    <div></div>
+
+                    <label for="City">CITY</label>
+                    <input type="text" placeholder="CITY .." />
+                    <div></div>
+                    <div></div>
+
+                    <label for="country">COUNTRY</label>
+                    <input type="text" placeholder="COUNTRY .." />
+                    <div></div>
+                    <div></div>
+
+                    <label for="Postal code">POSTAL CODE</label>
+                    <input type="text" placeholder="POSTAL CODE .." />
+                    <div></div>
+                    <div></div>
+
+                    <label for="phone">PHONE</label>
+                    <input type="text" placeholder="PHONE .." />
+                    <div></div>
+                </div>
+                <input type="Submit" value="Submit" id="Submit" />
+                <hr />
+            </form>
+
+            <div class="backToHome">
+                <a href="#"> <i class="fas fa-caret-left"></i>Back to Home</a>
+            </div>
+            <article>
+                <div id="output"></div>
+            </article>
+        </div>
+
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="#"> <i class="fab fa-facebook"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-twitter"></i> </a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
+
+            <ul>
+                <li>
+                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+
             <p>&copy; All Right Reserved</p>
         </footer>
 
