@@ -81,13 +81,13 @@ function displayWine(wineData) {
         btn.addEventListener("click", function() {
             var quantity;
             var storeObj;
-            if (localStorage.getItem(btn.id) == null) {
+            if (localStorage.getItem(btnId) == null) {
                 quantity = input.value;
             } else {
                 quantity = JSON.parse(localStorage.getItem(btn.id)).amount + parseInt(input.value);
             }
             storeObj = {id: btnId, amount: quantity};
-            localStorage.setItem(btn.id, JSON.stringify(storeObj));
+            localStorage.setItem(btnId, JSON.stringify(storeObj));
         });
     });
 }
