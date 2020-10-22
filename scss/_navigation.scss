@@ -1,39 +1,104 @@
-header {
-    text-align: center;
-
-    img {
-        width: 150px;
-    }
+header img{
+    display:block;
+    margin: 15px auto;
+    width: 150px;
 }
 
-nav {
+// .nav-main{
+//     align-items: center;
+// }
+
+nav {     
+    background-color:#444444;
+    position: relative;
     display: flex;
-    padding: 20px 0;
-    background-color: #444444;
-
-    .nav-items {
-        display: flex;
-        width: 95%;
-        justify-content: center;
-
-        li:not(:last-of-type) {
-            padding-right: 110px;
-        }
-    }
+    
 
     .login-cart {
+        position: absolute;
         display: flex;
         width: 5%;
         justify-content: space-around;
+        right: 20px;
+        top: 20px;
 
         li {
-            padding-right: 15px;
+            padding-right: 20px;
+
+            a {
+                color: white;
+                font-size: 20px;
+            }
         }
     }
 
-    a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
+    .menu {
+        margin: 0;
+        padding: 0;
+        width:100% ;
+        display: flex;
+        flex-direction: column;
+
+        .item {
+            display: none;
+
+            a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 20px;
+                line-height: 2;
+                padding: 30px / 2;
+                color: white;
+                transition: all .5s ease-in;
+        
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .active .item {
+        display: block;
+    }
+}
+//hamburger
+.toggle {
+    font-size: 2em;
+    padding: 2%;
+
+    .fas {
+        color:White;
+    }
+}
+
+
+// Desktop Size
+@media screen and (min-width:700px) {
+    .toggle {
+        display: none;
+    }
+    nav {
+        .login-cart {
+            top: 10px;
+        }
+
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        
+            .item{
+                display: block;
+                padding-right: 110px;
+            }
+
+            li:last-of-type{
+                padding-right: 0;
+            }
+        }
     }
 }
