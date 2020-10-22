@@ -1,0 +1,74 @@
+[
+    {
+      "id": "1",
+      "name": "Red Wine 1",
+      "type": "Red Wine",
+      "price": 10.99,
+      "quantity": "20",
+      "description": "This is Red Wine 1",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "name": "Red Wine 2",
+      "type": "Red Wine",
+      "price": 11.99,
+      "quantity": "20",
+      "description": "This is Red Wine 2",
+      "image": ""
+    },
+    {
+      "id": "3",
+      "name": "Red Wine 3",
+      "type": "Red Wine",
+      "price": 12.99,
+      "quantity": "20",
+      "description": "This is Red Wine 3",
+      "image": ""
+    },
+    {
+      "id": "4",
+      "name": "Red Wine 4",
+      "type": "Red Wine",
+      "price": 13.99,
+      "quantity": "20",
+      "description": "This is Red Wine 4",
+      "image": ""
+    },
+    {
+      "id": "5",
+      "name": "White Wine 5",
+      "type": "White Wine",
+      "price": 14.99,
+      "quantity": "20",
+      "description": "This is White Wine 4",
+      "image": ""
+    },
+    {
+      "id": "6",
+      "name": "White Wine 6",
+      "type": "White Wine",
+      "price": 15.99,
+      "quantity": "20",
+      "description": "This is White Wine 6",
+      "image": ""
+    },
+    {
+      "id": "7",
+      "name": "White Wine 7",
+      "type": "White Wine",
+      "price": 16.99,
+      "quantity": "20",
+      "description": "This is White Wine 7",
+      "image": ""
+    },
+    {
+      "id": "8",
+      "name": "White Wine 8",
+      "type": "White Wine",
+      "price": 17.99,
+      "quantity": "20",
+      "description": "This is White Wine 8",
+      "image": ""
+    }
+  ]
