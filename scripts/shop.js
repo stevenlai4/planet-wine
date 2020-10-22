@@ -6,7 +6,32 @@ document.addEventListener("DOMContentLoaded", () => {
 function showProducts() {
     const products = new Products();
     //Get from json before doing anything
-    products.getProducts().then(data => {        
+    products.getProducts().then(data => {
+        var tempData = [];
+        //Filter by type
+        if (document.querySelector("#redWine:checked") != null) {
+            tempData = data.filter(function(a) {
+                return a.type == "Red Wine";
+            });
+        }
+        
+        if (document.querySelector("#whiteWine:checked") != null) {
+            tempData = tempData.concat(data.filter(function(a) {
+                return a.type == "White Wine";
+            }));
+        }
+        data = tempData;
+        //Order by price
+        if (document.querySelector("[name=listOrder]:checked").value == 1) {
+            data.sort(function(a,b) {
+                return b.price - a.price;
+            });
+        } else {
+            data.sort(function(a,b) {
+                return a.price - b.price;
+            });
+        }
+        
         displayWine(data);
     });
 }
@@ -67,7 +92,7 @@ function displayWine(wineData) {
     });
 }
 
-var orderFilter = document.querySelectorAll("[name=listOrder]");
-orderFilter.forEach(order => order.addEventListener("change", function() {
+var filter = document.querySelectorAll(".filter");
+filter.forEach(order => order.addEventListener("change", function() {
     showProducts();
 }));
