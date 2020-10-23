@@ -144,19 +144,21 @@ nav {
   display: flex;
   padding: 20px 0;
   background-color: #444444;
+  position: relative;
 }
 nav .nav-items {
   display: flex;
-  width: 95%;
+  width: 100%;
   justify-content: center;
 }
 nav .nav-items li:not(:last-of-type) {
   padding-right: 110px;
 }
 nav .login-cart {
+  position: absolute;
   display: flex;
-  width: 5%;
   justify-content: space-around;
+  right: 0;
 }
 nav .login-cart li {
   padding-right: 15px;
