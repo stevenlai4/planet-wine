@@ -8,12 +8,16 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/gallery.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <header>
-            <!-- Logo goes here -->
-            <img src="img/logo.png" />
+            <a href="index.html"><img src="img/logo.png" /></a>
             <nav>
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -38,15 +42,122 @@
             </nav>
         </header>
 
-        <section>
-            <header>
-                <h1>Gallery</h1>
-            </header>
+        <main class="gallery">
+            <h1>Gallery</h1>
 
-            <article>
+            <article class="container">
                 <!-- Images goes here, formated with css -->
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img" src="img/cart-img.png" />
+                </div>
             </article>
-        </section>
+
+            <!-- Modal 1-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 2-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 3-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 4-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 5-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 6-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 7-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 8-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 9-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 10-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 11-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+            <!-- Modal 12-->
+            <div class="modal">
+                <span class="close">&times;</span>
+
+                <img class="modal-content modalImg" />
+            </div>
+        </main>
 
         <!-- Footer -->
         <footer>
@@ -70,6 +181,8 @@
             </div>
             <p>&copy; All Right Reserved</p>
         </footer>
+
         <script src="scripts/index.js"></script>
+        <script src="scripts/gallery_modal.js"></script>
     </body>
 </html>
