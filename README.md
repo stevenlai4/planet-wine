@@ -6,7 +6,7 @@ An eccommerce website about selling wine
 
 ## Roles
 
--   Project Manager / Scrum Master: KAREN MOK!
+-   Project Manager: Karen Mok
 
 -   WireFrame: Karen, Steven, Kalvin
 -   HTML: Kalvin, Karen, Wayne
