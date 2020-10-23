@@ -270,6 +270,8 @@ textarea {
 .main-content {
   padding: 10px;
   margin: auto;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
   background-color: #c7b198;
   width: 60%;
   text-align: center;
@@ -286,9 +288,11 @@ textarea {
     background-color: #c7b198;
     width: 95%;
     margin: auto;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
   }
 }
-/* form specific formatting */
+/* form specific format*/
 .form-group {
   display: flex;
   flex-direction: row;
@@ -313,10 +317,12 @@ textarea {
 .form-group .input-control {
   flex: 1 1 auto;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-right: 8px;
-  padding: 4px;
+  padding: 7px;
   margin-top: -4px;
+  font-size: 15px;
+  width: 90%;
 }
 
 button {
@@ -338,6 +344,15 @@ button {
     text-align: left;
     padding-right: 0;
     padding-left: 0;
+    margin-left: 3%;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    width: 93%;
+    min-width: 100px;
   }
 }
 
