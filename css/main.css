@@ -135,30 +135,24 @@ nav {
   display: flex;
   padding: 20px 0;
   background-color: #444444;
-  position: relative;
-}
-nav .nav-items {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-nav .nav-items li:not(:last-of-type) {
-  padding-right: 110px;
-}
-nav .login-cart {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  right: 0;
-}
-nav .login-cart li {
-  padding-right: 15px;
-}
-nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
+  position: relative; }
+  nav .nav-items {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    nav .nav-items li:not(:last-of-type) {
+      padding-right: 110px; }
+  nav .login-cart {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right: 0; }
+    nav .login-cart li {
+      padding-right: 15px; }
+  nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white; }
 
 footer {
   text-align: center;
@@ -182,10 +176,8 @@ footer {
       font-size: 2rem; }
 
 header {
-  text-align: center;
-}
-header img {
-  width: 150px;
-}
+  text-align: center; }
+  header img {
+    width: 150px; }
 
 /*# sourceMappingURL=main.css.map */
