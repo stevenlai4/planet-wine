@@ -1,18 +1,17 @@
+$primary-color: #c7b198;
+
+
 header img{
     display:block;
-    margin: 15px auto;
+    margin: 20px auto;
     width: 150px;
 }
-
-// .nav-main{
-//     align-items: center;
-// }
 
 nav {     
     background-color:#444444;
     position: relative;
     display: flex;
-    
+    border-radius: 0px 0px 5px 5px;
 
     .login-cart {
         position: absolute;
@@ -24,10 +23,19 @@ nav {
 
         li {
             padding-right: 20px;
+            
 
             a {
-                color: white;
+                color: white; 
                 font-size: 20px;
+                transition: all .5s ease-in;
+                padding:30px 0;
+           
+    
+
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
     }
@@ -48,12 +56,12 @@ nav {
                 text-align: center;
                 font-size: 20px;
                 line-height: 2;
-                padding: 30px / 2;
+                padding: 20px ;
                 color: white;
                 transition: all .5s ease-in;
         
                 &:hover {
-                    color: black;
+                    color: $primary-color;
                 }
             }
         }
@@ -63,6 +71,7 @@ nav {
         display: block;
     }
 }
+
 //hamburger
 .toggle {
     font-size: 2em;
@@ -75,13 +84,13 @@ nav {
 
 
 // Desktop Size
-@media screen and (min-width:700px) {
+@media screen and (min-width:900px) {
     .toggle {
         display: none;
     }
     nav {
         .login-cart {
-            top: 10px;
+            top: 30px;
         }
 
 
@@ -89,7 +98,6 @@ nav {
             display: flex;
             flex-direction: row;
             justify-content: center;
-
         
             .item{
                 display: block;
@@ -99,6 +107,6 @@ nav {
             li:last-of-type{
                 padding-right: 0;
             }
-        }
+        } 
     }
 }

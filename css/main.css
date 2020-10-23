@@ -128,13 +128,14 @@ table {
 
 header img {
   display: block;
-  margin: 15px auto;
+  margin: 20px auto;
   width: 150px; }
 
 nav {
   background-color: #444444;
   position: relative;
-  display: flex; }
+  display: flex;
+  border-radius: 0px 0px 5px 5px; }
   nav .login-cart {
     position: absolute;
     display: flex;
@@ -146,7 +147,11 @@ nav {
       padding-right: 20px; }
       nav .login-cart li a {
         color: white;
-        font-size: 20px; }
+        font-size: 20px;
+        transition: all .5s ease-in;
+        padding: 30px 0; }
+        nav .login-cart li a:hover {
+          color: #c7b198; }
   nav .menu {
     margin: 0;
     padding: 0;
@@ -161,11 +166,11 @@ nav {
         text-align: center;
         font-size: 20px;
         line-height: 2;
-        padding: 30px / 2;
+        padding: 20px;
         color: white;
         transition: all .5s ease-in; }
         nav .menu .item a:hover {
-          color: black; }
+          color: #c7b198; }
   nav .active .item {
     display: block; }
 
@@ -175,12 +180,12 @@ nav {
   .toggle .fas {
     color: White; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .toggle {
     display: none; }
 
   nav .login-cart {
-    top: 10px; }
+    top: 30px; }
   nav .menu {
     display: flex;
     flex-direction: row;

@@ -23,6 +23,7 @@
     h1 {
         text-align: center;
         color: black;
+        font-size: 30px;
     }
 
     input {
@@ -47,8 +48,17 @@
         border-radius: 5px;
     }
 
-    .submit-btn {
+    .submit-btn,
+    .popup-btn{
         background-color: silver;
         margin: 1%;
     }
+
+    .modal-header h2{
+        font-size: 30px;
+
+    }
+
+
 }
+
