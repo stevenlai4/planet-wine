@@ -9,11 +9,11 @@
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/shop.css" />
     </head>
     <body>
         <header>
-            <img src="#" />
-            <!-- Logo goes here -->
+            <a href="index.html"><img src="img/logo.png" /></a>
             <nav>
                 <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
@@ -21,6 +21,7 @@
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+
                 <!-- Icons for for the user and cart -->
                 <ul class="login-cart">
                     <!--Login-->
@@ -40,65 +41,65 @@
         <section>
             <header>
                 <h1>Shop</h1>
-            </header>
-
-            <article>
-                <!-- Side bar filter -->
-                <div>
-                    <h2>Sort by</h2>
-                    <p>+</p>
-                    <input
-                        type="radio"
-                        id="highLow"
-                        name="listOrder"
-                        value="1"
-                    />
-                    <label for="highLow">Price - High to Low</label><br />
-                    <input
-                        type="radio"
-                        id="lowHigh"
-                        name="listOrder"
-                        value="2"
-                    />
-                    <label for="lowHigh">Price - Low to High</label><br />
-                </div>
-                <div>
-                    <h2>Filter</h2>
-                    <input
-                        type="checkbox"
-                        id="lowPrice"
-                        name="lowPrice"
-                        value="1"
-                    />
-                    <label for="lowPrice">$5.00 - $10.00</label><br />
-                    <!-- Price range for this can be editted by js -->
-                    <input
-                        type="checkbox"
-                        id="midPrice"
-                        name="midPrice"
-                        value="2"
-                    />
-                    <label for="midPrice">$14.99 - $30.00</label><br />
-                    <input
-                        type="checkbox"
-                        id="highPrice"
-                        name="highPrice"
-                        value="3"
-                    />
-                    <label for="highPrice">$50.00 - $100.00</label><br />
-                </div>
-            </article>
-
-            <article id="wineDisplay">
                 <p>
                     Vineyards farmed responsibly. Serious wine presented with a
                     warm sense of humor. This is Frog's Leap. Bring a bottle to
                     your table. Stash a few in your Cellar. Lift a glass with
                     friends. Drink it. We'll make more.
                 </p>
-            </article>
+            </header>
 
-            <article>
+            <div class="sideArticle">
+                <article>
+                    <!-- Side bar filter -->
+                    <div>
+                        <h2>Sort by</h2>
+                        <input
+                            type="radio"
+                            id="highLow"
+                            name="listOrder"
+                            value="1"
+                        />
+                        <label for="highLow">Price - High to Low</label><br />
+                        <input
+                            type="radio"
+                            id="lowHigh"
+                            name="listOrder"
+                            value="2"
+                        />
+                        <label for="lowHigh">Price - Low to High</label><br />
+                    </div>
+                    <div>
+                        <h2>Filter</h2>
+                        <input
+                            type="checkbox"
+                            id="lowPrice"
+                            name="lowPrice"
+                            value="1"
+                        />
+                        <label for="lowPrice">$5.00 - $10.00</label><br />
+                        <!-- Price range for this can be editted by js -->
+                        <input
+                            type="checkbox"
+                            id="midPrice"
+                            name="midPrice"
+                            value="2"
+                        />
+                        <label for="midPrice">$14.99 - $30.00</label><br />
+                        <input
+                            type="checkbox"
+                            id="highPrice"
+                            name="highPrice"
+                            value="3"
+                        />
+                        <label for="highPrice">$50.00 - $100.00</label><br />
+                    </div>
+                </article>
+
+                <article id="wineDisplay"></article>
+            </div>
+
+            <article class="imgArticle">
                 <!-- Use background image for this article with opacitiy set lower -->
                 <h5>Your next order ships free.</h5>
                 <p>
@@ -111,19 +112,20 @@
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
+
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#"> <i class="fab fa-facebook"></i> </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="#"> <i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </li>
                 </ul>
             </div>
