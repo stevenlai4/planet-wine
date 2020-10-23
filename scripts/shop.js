@@ -85,10 +85,12 @@ function displayWine(wineData) {
         var btnId = btn.id.match(/(\d+)/)[0];
         var input = document.querySelector("#wine" + btnId);
         btn.addEventListener("click", function() {
-            if (input.value > 0) {
+            if (input.value > 0 && input.value <= 100) {
                 localStorage.setItem(btnId, input.value);
-            } else {
+            } else if (input.value == 0) {
                 localStorage.removeItem(btnId);
+            } else {
+                window.alert("Please enter a quantity number between 0 to 100");
             }
         });
     });
