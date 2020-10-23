@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
     products.getProducts().then(data => {
         localData = data;
-    }).then(() => {
         showProducts();
     });
 });
