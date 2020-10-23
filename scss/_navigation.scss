@@ -10,10 +10,11 @@ nav {
     display: flex;
     padding: 20px 0;
     background-color: #444444;
+    position: relative;
 
     .nav-items {
         display: flex;
-        width: 95%;
+        width: 100%;
         justify-content: center;
 
         li:not(:last-of-type) {
@@ -22,9 +23,10 @@ nav {
     }
 
     .login-cart {
+        position: absolute;
         display: flex;
-        width: 5%;
         justify-content: space-around;
+        right: 0;
 
         li {
             padding-right: 15px;
