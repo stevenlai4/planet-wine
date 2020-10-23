@@ -137,4 +137,5 @@ An eccommerce website about selling wine
 -   HTML
 -   CSS/SASS/Bootstrap/JQuery
 -   Javascript
+    1. LocalStorage Data Structure: 1: {3}, 3: {4}, 4:{5}, 7:{1} (Key is the wine ID, Value is the quantity purchased)
 -   JSON (Optional)
