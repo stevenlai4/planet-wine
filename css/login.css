@@ -1,0 +1,71 @@
+.Login-Title {
+  font-size: 55px;
+  text-align: center;
+  font-family: Cormorant;
+  margin-top: 3%;
+}
+
+.Login-Form {
+  margin-left: 18%;
+  margin-top: 5%;
+  display: flex;
+  margin-bottom: 10%;
+}
+.Login-Form label {
+  font-size: 20px;
+}
+.Login-Form input {
+  padding: 15px 250px 15px 10px;
+  margin: 25px;
+  box-sizing: border-box;
+  font-size: 22px;
+  margin-left: auto;
+  overflow: hidden;
+}
+.Login-Form button {
+  padding: 15px 30px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.Create {
+  display: flex;
+  margin: 0 0 0 26.5%;
+}
+.Create h5 {
+  font-size: 35px;
+  margin-bottom: 10%;
+}
+.Create p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.Create button {
+  padding: 15px 170px;
+  background-color: #c7b198;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.Login-image {
+  background: url("../../Images/barrels.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  margin-top: 8px;
+  background-position: center;
+}
+.Login-image h1 {
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  margin: 9% 0 0 23%;
+}
+
+/*# sourceMappingURL=login.css.map */
