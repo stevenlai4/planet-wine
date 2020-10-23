@@ -88,7 +88,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,76 +103,95 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 header {
-  text-align: center; }
-  header img {
-    width: 150px; }
+  text-align: center;
+}
+header img {
+  width: 150px;
+}
 
 nav {
   display: flex;
   padding: 20px 0;
-  background-color: #444444; }
-  nav .nav-items {
-    display: flex;
-    width: 95%;
-    justify-content: center; }
-    nav .nav-items li:not(:last-of-type) {
-      padding-right: 110px; }
-  nav .login-cart {
-    display: flex;
-    width: 5%;
-    justify-content: space-around; }
-    nav .login-cart li {
-      padding-right: 15px; }
-  nav a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white; }
+  background-color: #444444;
+}
+nav .nav-items {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+}
+nav .nav-items li:not(:last-of-type) {
+  padding-right: 110px;
+}
+nav .login-cart {
+  display: flex;
+  width: 5%;
+  justify-content: space-around;
+}
+nav .login-cart li {
+  padding-right: 15px;
+}
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
 
 footer {
   text-align: center;
   justify-content: space-around;
   background-color: #444444;
   color: white;
-  padding: 20px 0; }
-  footer h5,
-  footer p {
-    margin: 18px 0; }
-  footer ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content: center; }
-    footer ul li:not(:last-of-type) {
-      margin-right: 40px; }
-    footer ul a {
-      color: white;
-      font-size: 2rem; }
+  padding: 20px 0;
+}
+footer h5,
+footer p {
+  margin: 18px 0;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+footer ul li:not(:last-of-type) {
+  margin-right: 40px;
+}
+footer ul a {
+  color: white;
+  font-size: 2rem;
+}
 
 .Login-Title {
   font-size: 55px;
@@ -243,200 +263,82 @@ footer {
   margin: 9% 0 0 23%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.RegForm {
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-top: 40px;
-  width: 800px;
-  background-color: #444444;
-  color: white;
-  text-align: center;
-  border-radius: 15px 15px 0px 0px;
-  font-size: 40px;
-  font-weight: 300;
-}
-
-.Main-form {
-  width: 800px;
-  background-color: #c7b198;
-  margin: auto;
-  border: 1px solid black;
-  margin-bottom: 40px;
-}
-.Main-form form {
+.main-content {
   padding: 10px;
-}
-.Main-form #inner-form {
-  width: 100%;
-  height: auto;
-}
-.Main-form .Title-name {
-  margin-left: 25px;
-  margin-top: 10px;
-  width: 125px;
-  font-size: 25px;
-  font-weight: 700;
-}
-.Main-form .firstName {
-  position: relative;
-  left: 200px;
-  top: -37px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .lastName {
-  position: relative;
-  left: 500px;
-  top: -78px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .firstLabel {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 201px;
-  top: 30px;
-}
-.Main-form .lastLabel {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 270px;
-  top: -1px;
-}
-.Main-form .address {
-  position: relative;
-  left: 200px;
-  top: -37px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 40px;
-  font-size: 18px;
-}
-.Main-form .postal {
-  position: relative;
-  left: 369px;
-  top: -76px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .postal-Label {
-  position: relative;
-  left: 485px;
-  top: -45px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .country {
-  position: relative;
-  left: 200px;
-  top: -45px;
-  padding: 10px 40px;
-  font-size: 20px;
-}
-.Main-form .email {
-  position: relative;
-  left: 200px;
-  top: -37px;
-  width: 480px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0 40px;
-  font-size: 20px;
-}
-.Main-form .areaCode {
-  position: relative;
-  text-align: center;
-  left: 200px;
-  top: -37px;
-  width: 90px;
-  line-height: 35px;
-  border-radius: 6px;
-  font-size: 18px;
-}
-.Main-form .number {
-  position: relative;
-  left: 245px;
-  top: -75px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .areaLabel {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 201px;
-  top: -37px;
-}
-.Main-form .phone-number {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 10px;
-  top: -37px;
-}
-.Main-form .password {
-  position: relative;
-  left: 200px;
-  top: -50px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .confirmInput {
-  position: relative;
-  left: 470px;
-  top: -106px;
-  line-height: 35px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 18px;
-}
-.Main-form .passwordLabel {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 201px;
-  top: 10px;
-}
-.Main-form .confirmLabel {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 18px;
-  left: 470px;
-  top: -44px;
-}
-.Main-form .Reg-Button {
-  padding: 15px 170px;
-  background-color: green;
-  color: white;
-  font-size: 20px;
+  margin: auto;
+  background-color: #c7b198;
+  width: 60%;
   text-align: center;
 }
-.Main-form .Exists {
-  position: relative;
-  text-transform: capitalize;
-  font-size: 20px;
-  left: 470px;
-  top: -37px;
+.main-content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 8px;
+    background-color: #c7b198;
+    width: 95%;
+    margin: auto;
+  }
+}
+/* form specific formatting */
+.form-group {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.form-group label {
+  flex: none;
+  display: block;
+  width: 130px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.form-group label.right-inline {
+  text-align: right;
+  padding-right: 8px;
+  padding-left: 10px;
+  width: auto;
+}
+
+.form-group .input-control {
+  flex: 1 1 auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 4px;
+  margin-top: -4px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group .input-control {
+    margin-top: 2px;
+  }
+
+  .form-group label.right-inline {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

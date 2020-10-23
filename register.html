@@ -38,75 +38,60 @@
             </nav>
         </header>
 
-        <section>
-            <div class="RegForm">
-                <h1>Account Registeration</h1>
+        <article class="main-content">
+
+            <div class= "Form-title">
+              <h1>Registration</h1>
+
+            </div>
+            
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="input-control" required />
+          
+              <label class="right-inline">Last Name</label>
+              <input type="text" class="input-control" required />
+            </div>
+          
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="input-control" required />
+            </div>
+          
+            <div class="form-group">
+              <label>Address</label>
+              <textarea class="input-control"></textarea>
+            </div>
+          
+            <div class="form-group">
+              <label>Postal code</label>
+              <input type="" class="input-control" style="flex: 6" />    
             </div>
 
-            <div class="Main-form">
-                <form>
-                    <div id="inner-form"> <!--First and last name inputs-->
-                        <h2 class="Title-name">Name:</h2>
-                        <label class="firstLabel" for="firstName">First Name</label><br>
-                        <input class ="firstName" type="text" id="user" name="id" required>
-                        <label class="lastLabel" for="lastName">Last Name</label><br>
-                        <input class ="lastName" type="text" id="user" name="id" required>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="" class="input-control" style="flex: 6" />    
+              </div>
 
-                        <!-- Address inputs -->
-                        <h2 class="Title-name">Address:</h2>
-                        <input class="address" type="text" name="address" required /><br>
-                        <label class="postal-Label">Postal Code</label>
-                        <input class="postal" type="text" name="postal_code" /><br>
-                        
-                        <!-- Country selector -->
-                        <h2 class="Title-name">Country:</h2>
-                        <select class="country" name="country">
-                            <option selected="selected" required>Choose Country...</option>
-                                <option> United States</option>
-                                <option>Canada</option>
-                        </select>
-                        
-                        <!-- email input -->
-                        <h2 class="Title-name">Email:</h2>
-                        <input class="email" type="email" name="email" required /><br>
-
-                        <!-- Phone number and area code -->
-                        <h2 class="Title-name">Phone:</h2>
-                        <input class="areaCode" type="text" name="area_code" maxlength="3" required /><br>
-                        <label class="areaLabel">Area Code</label>
-                        <input class="number" type="text" name="phone" maxlength="7">
-                        <label class= "phone-number">Phone Number</label>
-
-                        <!-- password and password confirmation -->
-                        <h2 class="Title-name">Password:</h2>
-                        <label class="passwordLabel" for="password">Password</label><br/>
-                        <input 
-                            class="password"
-                            type="password"
-                            id="password"
-                            name="password"
-                            required
-                        /><br>
-                        <label class="confirmLabel" for="password"> Confirm Password</label><br/>
-                        <input 
-                            class="confirmInput"
-                            type="password"
-                            id="password"
-                            name="password"
-                            required
-                        /><br>
-                        <button class="Reg-Button" type="submit">Submit</button>
-                        <article class="Exists">
-                            <p>Already have an account? <br>
-                                Sign in <a href="login.html">Here</a>
-                            </p>
-                            <!-- Same issue as the link on login.html -->
-                        </article>
-                    </div>
-                </form>
+              <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="" class="input-control" style="flex: 6" />    
+              </div>
+          
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button>Submit</button>
             </div>
 
-        </section>
+            <article class="Exists">
+                <p>Already have an account? <br>
+                    Sign in <a href="login.html">Here</a>
+                </p>
+            </article>
+        
+          </article>
+
+                    
 
         <footer>
             <h5>Planet wine</h5>
