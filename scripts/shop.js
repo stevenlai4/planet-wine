@@ -66,12 +66,18 @@ function displayWine(wineData) {
             wine.id +
             "' name='wine" +
             wine.id +
-            "' min='1' max='100' value='1'>";
+            "' min='0' max='100' value='0'>";
         out += "<button id='wineButton" + wine.id + "' class='addButton'>Add</button>";
         out += '</div>';
         document.querySelector('#wineDisplay').innerHTML += out;
         out = '';
     });
+
+    for (var i=0; i<localStorage.length; i++) {
+        var btnId = localStorage.key(i);
+        var input = document.querySelector("#wine" + btnId);
+        input.value = localStorage.getItem(btnId);
+    }
 
     //Add click listener to button
     const addBtns = document.querySelectorAll('.addButton');
@@ -79,13 +85,11 @@ function displayWine(wineData) {
         var btnId = btn.id.match(/(\d+)/)[0];
         var input = document.querySelector("#wine" + btnId);
         btn.addEventListener("click", function() {
-            var quantity;
-            if (localStorage.getItem(btnId) == null) {
-                quantity = input.value;
+            if (input.value > 0) {
+                localStorage.setItem(btnId, input.value);
             } else {
-                quantity = localStorage.getItem(btnId).amount + parseInt(input.value);
+                localStorage.removeItem(btnId);
             }
-            localStorage.setItem(btnId, quantity);
         });
     });
 }
