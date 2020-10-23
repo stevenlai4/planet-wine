@@ -1,40 +1,14 @@
-//On page load
-document.addEventListener("DOMContentLoaded", () => {
-    showProducts();
-});
+var localData;
 
-function showProducts() {
+//On page load, load data to local variable
+document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
-    //Get from json before doing anything
     products.getProducts().then(data => {
-        var tempData = [];
-        //Filter by type
-        if (document.querySelector("#redWine:checked") != null) {
-            tempData = data.filter(function(a) {
-                return a.type == "Red Wine";
-            });
-        }
-        
-        if (document.querySelector("#whiteWine:checked") != null) {
-            tempData = tempData.concat(data.filter(function(a) {
-                return a.type == "White Wine";
-            }));
-        }
-        data = tempData;
-        //Order by price
-        if (document.querySelector("[name=listOrder]:checked").value == 1) {
-            data.sort(function(a,b) {
-                return b.price - a.price;
-            });
-        } else {
-            data.sort(function(a,b) {
-                return a.price - b.price;
-            });
-        }
-        
-        displayWine(data);
+        localData = data;
+    }).then(() => {
+        showProducts();
     });
-}
+});
 
 //Fetch data from json
 class Products {
@@ -52,6 +26,36 @@ class Products {
     }
 }
 
+//Rearrange product before displaying
+function showProducts() {
+    var tempData = [];
+    //Filter by type
+    if (document.querySelector("#redWine:checked") != null) {
+        tempData = localData.filter(function(a) {
+            return a.type == "Red Wine";
+        });
+    }
+    
+    if (document.querySelector("#whiteWine:checked") != null) {
+        tempData = tempData.concat(localData.filter(function(a) {
+            return a.type == "White Wine";
+        }));
+    }
+    //Order by price
+    if (document.querySelector("[name=listOrder]:checked").value == 1) {
+        tempData.sort(function(a,b) {
+            return b.price - a.price;
+        });
+    } else {
+        tempData.sort(function(a,b) {
+            return a.price - b.price;
+        });
+    }
+    
+    displayWine(tempData);
+}
+
+//Display wine in filtered order to shop page
 function displayWine(wineData) {
     //For displaying the wine on page
     var out = '';
@@ -73,10 +77,13 @@ function displayWine(wineData) {
         out = '';
     });
 
+    //Fill in value that have already been saved
     for (var i=0; i<localStorage.length; i++) {
         var btnId = localStorage.key(i);
         var input = document.querySelector("#wine" + btnId);
-        input.value = localStorage.getItem(btnId);
+        if (input != null) {
+            input.value = localStorage.getItem(btnId);
+        }
     }
 
     //Add click listener to button
@@ -96,6 +103,7 @@ function displayWine(wineData) {
     });
 }
 
+//Rewrite page each time filter is activated
 var filter = document.querySelectorAll(".filter");
 filter.forEach(order => order.addEventListener("change", function() {
     showProducts();
