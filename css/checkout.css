@@ -82,6 +82,14 @@ header {
       font-size: 1.2rem; }
     .wrapper > form > div .twoColumns {
       grid-column: 2 / 4; } }
+.line {
+  width: 100%;
+  border-bottom: 1px solid lightgray; }
+  @media screen and (min-width: 768px) {
+    .line {
+      margin-left: 55%;
+      width: 30%; } }
+
 .product-item {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
@@ -104,13 +112,5 @@ header {
   color: #929292; }
   .cont-shopping:hover {
     color: #929292; }
-
-.line {
-  width: 100%;
-  border-bottom: 1px solid lightgray; }
-  @media screen and (min-width: 768px) {
-    .line {
-      margin-left: 55%;
-      width: 30%; } }
 
 /*# sourceMappingURL=checkout.css.map */

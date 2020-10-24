@@ -148,6 +148,16 @@ header {
     }
 }
 
+// line separating total price and item price
+.line {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 55%;
+        width: 30%;
+    }
+}
 
 
 .product-item {
@@ -177,16 +187,6 @@ header {
 
     &:hover {
         color: $secondary-color;
-    }
-}
-
-.line {
-    width: 100%;
-    border-bottom: 1px solid lightgray;
-
-    @media screen and (min-width: 768px) {
-        margin-left: 55%;
-        width: 30%;
     }
 }
 
