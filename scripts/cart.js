@@ -142,19 +142,27 @@ const insertInput = (element) => {
 
     // Valid date input then calc total price
     if (element.value === '') {
+        window.alert('Please enter your quantity!');
         element.value = 0;
     } else if (isNaN(element.value)) {
+        window.alert('Please enter an integer number for the quantity!');
         element.value = localStorage.getItem(id);
     } else if (element.value < 0 || element.value > 100) {
-        window.alert('Please enter a quantity number between 0 to 100');
+        window.alert('Please enter a quantity number between 0 to 100!');
         element.value = localStorage.getItem(id);
     } else if (!Number.isInteger(Number(element.value))) {
+        window.alert('Please enter an integer number for the quantity!');
         element.value = Math.floor(element.value);
     }
     // Eliminating leading zero when there's one
     element.value = Number(element.value);
 
-    localStorage.setItem(id, element.value);
+    if (element.value == 0) {
+        localStorage.removeItem(id);
+    } else {
+        localStorage.setItem(id, element.value);
+    }
+
     calcTotalPrice(id, element.value.trim());
 };
 
@@ -177,7 +185,13 @@ const decreaseQuantity = (element) => {
 
     if (input[0].value > 0) {
         input[0].value = parseInt(input[0].value) - 1;
-        localStorage.setItem(id, input[0].value);
+
+        if (input[0].value == 0) {
+            localStorage.removeItem(id);
+        } else {
+            localStorage.setItem(id, input[0].value);
+        }
+
         calcTotalPrice(id, input[0].value);
     }
 };
