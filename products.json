@@ -5,7 +5,7 @@
         "type": "Red Wine",
         "price": 10.99,
         "description": "This is Red Wine 1",
-        "image": "./images/wine-1.jpeg"
+        "image": "./img/BottleShots_Rose.png"
     },
     {
         "id": "2",
@@ -21,7 +21,7 @@
         "type": "Red Wine",
         "price": 10.99,
         "description": "This is Red Wine 3",
-        "image": "./images/wine-3.jpeg"
+        "image": "./img/BottleShots_Rose.png"
     },
     {
         "id": "4",
