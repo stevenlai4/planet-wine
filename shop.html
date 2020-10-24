@@ -55,46 +55,44 @@
                 <article>
                     <!-- Side bar filter -->
                     <div>
-                        <h2>Sort by</h2>
+                        <h2>Price</h2>
                         <input
                             type="radio"
                             id="highLow"
                             name="listOrder"
+                            class="filter"
                             value="1"
+                            checked
                         />
                         <label for="highLow">Price - High to Low</label><br />
                         <input
                             type="radio"
                             id="lowHigh"
                             name="listOrder"
+                            class="filter"
                             value="2"
                         />
                         <label for="lowHigh">Price - Low to High</label><br />
                     </div>
                     <div>
-                        <h2>Filter</h2>
+                        <h2>Type</h2>
                         <input
                             type="checkbox"
-                            id="lowPrice"
-                            name="lowPrice"
-                            value="1"
+                            id="redWine"
+                            name="wineType"
+                            class="filter"
+                            checked
                         />
-                        <label for="lowPrice">$5.00 - $10.00</label><br />
+                        <label for="redWine">Red</label><br />
                         <!-- Price range for this can be editted by js -->
                         <input
                             type="checkbox"
-                            id="midPrice"
-                            name="midPrice"
-                            value="2"
+                            id="whiteWine"
+                            name="wineType"
+                            class="filter"
+                            checked
                         />
-                        <label for="midPrice">$14.99 - $30.00</label><br />
-                        <input
-                            type="checkbox"
-                            id="highPrice"
-                            name="highPrice"
-                            value="3"
-                        />
-                        <label for="highPrice">$50.00 - $100.00</label><br />
+                        <label for="whiteWine">White</label><br />
                     </div>
                 </article>
 
@@ -135,5 +133,6 @@
         </footer>
 
         <script src="scripts/index.js"></script>
+        <script src="scripts/shop.js"></script>
     </body>
 </html>
