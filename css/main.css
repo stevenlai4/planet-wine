@@ -1,36 +1,219 @@
-/*
-Error: Invalid CSS after ">>>>>>> main": expected "{", was ""
-        on line 8 of D:\Users\Wayne's Laptop\Documents\BCIT\Software System Developer\Week 5\Front End Project\front-end-project-nappingbed\scss\main.scss
-
-3: @import 'footer';
-4: <<<<<<< HEAD
-5: =======
-6: 
-7: >>>>>>> main
-
-Backtrace:
-D:\Users\Wayne's Laptop\Documents\BCIT\Software System Developer\Week 5\Front End Project\front-end-project-nappingbed\scss\main.scss:8
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Program Files (x86)/Koala/bin/sass:22:in `load'
-D:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \">>>>>>> main\": expected \"{\", was \"\"\A         on line 8 of D:\Users\Wayne's Laptop\Documents\BCIT\Software System Developer\Week 5\Front End Project\front-end-project-nappingbed\scss\main.scss\A \A 3: @import 'footer';\A 4: <<<<<<< HEAD\A 5: =======\A 6: \A 7: >>>>>>> main"; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header img {
+  display: block;
+  margin: 20px auto;
+  width: 150px; }
+
+nav {
+  background-color: #444444;
+  position: relative;
+  display: flex;
+  border-radius: 0px 0px 5px 5px; }
+  nav .login-cart {
+    position: absolute;
+    display: flex;
+    width: 5%;
+    justify-content: space-around;
+    right: 20px;
+    top: 20px; }
+    nav .login-cart li {
+      padding-right: 20px; }
+      nav .login-cart li a {
+        color: white;
+        font-size: 20px;
+        transition: all .5s ease-in;
+        padding: 30px 0; }
+        nav .login-cart li a:hover {
+          color: #c7b198; }
+  nav .menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    nav .menu .item {
+      display: none; }
+      nav .menu .item a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        line-height: 2;
+        padding: 20px;
+        color: white;
+        transition: all .5s ease-in; }
+        nav .menu .item a:hover {
+          color: #c7b198; }
+  nav .active .item {
+    display: block; }
+
+.toggle {
+  font-size: 2em;
+  padding: 2%; }
+  .toggle .fas {
+    color: White; }
+
+@media screen and (min-width: 900px) {
+  .toggle {
+    display: none; }
+
+  nav .login-cart {
+    top: 30px; }
+  nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    nav .menu .item {
+      display: block;
+      padding-right: 110px; }
+    nav .menu li:last-of-type {
+      padding-right: 0; } }
+footer {
+  text-align: center;
+  justify-content: space-around;
+  background-color: #444444;
+  color: white;
+  padding: 20px 0; }
+  footer h5,
+  footer p {
+    margin: 18px 0; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center; }
+    footer ul li:not(:last-of-type) {
+      margin-right: 40px; }
+    footer ul a {
+      color: white;
+      font-size: 2rem; }
+
+/*# sourceMappingURL=main.css.map */
