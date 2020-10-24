@@ -163,9 +163,11 @@ const increaseQuantity = (element) => {
     const id = element.dataset.wineId;
     const input = document.getElementsByName(`wine${id}`);
 
-    input[0].value = parseInt(input[0].value) + 1;
-    localStorage.setItem(id, input[0].value);
-    calcTotalPrice(id, input[0].value);
+    if (input[0].value < 100) {
+        input[0].value = parseInt(input[0].value) + 1;
+        localStorage.setItem(id, input[0].value);
+        calcTotalPrice(id, input[0].value);
+    }
 };
 
 // Decrease wine quantity when minus button clicked
