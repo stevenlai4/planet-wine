@@ -23,6 +23,9 @@
                     font-size: 2rem;
                     font-style: italic;
                     font-family: $index-nav-font;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
@@ -39,6 +42,7 @@
 
                 .fas {
                     padding: 20px;
+                    color: white;
                 }
             }
 
@@ -55,10 +59,16 @@
                 display: none;
                 animation-name: fade-out;
                 animation-duration: 2s;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                }
             }
 
             .nav-item:not(.tablet-mobile-logo) {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 margin: 40px 0;
             }
         }
