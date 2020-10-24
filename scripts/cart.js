@@ -93,9 +93,9 @@ const displayCart = () => {
             str += '</div>';
 
             str += '<div class="product-item">';
-            str += `<p id="total${key}" class="price my-5 mx-3 item-total">$${
+            str += `<p id="total${key}" class="price my-5 mx-3 item-total">$${(
                 productObj[key].price * localStorage.getItem(key)
-            }</p>`;
+            ).toFixed(2)}</p>`;
             str += '</div>';
             str += '</div>';
             str += '</div>';
