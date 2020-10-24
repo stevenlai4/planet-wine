@@ -5,7 +5,7 @@
       "type": "Red Wine",
       "price": 10.99,
       "description": "This is Red Wine 1",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "2",
@@ -13,7 +13,7 @@
       "type": "Red Wine",
       "price": 11.99,
       "description": "This is Red Wine 2",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "3",
@@ -21,7 +21,7 @@
       "type": "Red Wine",
       "price": 12.99,
       "description": "This is Red Wine 3",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "4",
@@ -29,15 +29,15 @@
       "type": "Red Wine",
       "price": 13.99,
       "description": "This is Red Wine 4",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "5",
       "name": "White Wine 5",
       "type": "White Wine",
       "price": 14.99,
-      "description": "This is White Wine 4",
-      "image": ""
+      "description": "This is White Wine 5",
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "6",
@@ -45,7 +45,7 @@
       "type": "White Wine",
       "price": 15.99,
       "description": "This is White Wine 6",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "7",
@@ -53,7 +53,7 @@
       "type": "White Wine",
       "price": 16.99,
       "description": "This is White Wine 7",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     },
     {
       "id": "8",
@@ -61,6 +61,6 @@
       "type": "White Wine",
       "price": 17.99,
       "description": "This is White Wine 8",
-      "image": ""
+      "image": "./img/BottleShots_Rose.png"
     }
   ]

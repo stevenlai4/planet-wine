@@ -1,0 +1,72 @@
+.gallery {
+    $grid-rows: 1;
+    $grid-cols: repeat(4, 1fr);
+    $grid-max-cols-per-row: 4;
+    $grid-row-gap: 0;
+    $grid-col-gap: 0;
+
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+    .container {
+        margin: 0 5%;
+
+        @include grid-creator(
+            $grid-rows,
+            $grid-cols,
+            $grid-max-cols-per-row,
+            $grid-row-gap,
+            $grid-col-gap
+        );
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    .gallery {
+        $grid-rows: 1;
+        $grid-cols: repeat(3, 1fr);
+        $grid-max-cols-per-row: 3;
+        $grid-row-gap: 0;
+        $grid-col-gap: 0;
+
+        .container {
+            @include grid-creator(
+                $grid-rows,
+                $grid-cols,
+                $grid-max-cols-per-row,
+                $grid-row-gap,
+                $grid-col-gap
+            );
+        }
+    }
+}
+
+@media screen and (max-width: map-get($breakpoint, mobile)) {
+    .gallery {
+        $grid-rows: 1;
+        $grid-cols: repeat(2, 1fr);
+        $grid-max-cols-per-row: 2;
+        $grid-row-gap: 0;
+        $grid-col-gap: 0;
+
+        .container {
+            @include grid-creator(
+                $grid-rows,
+                $grid-cols,
+                $grid-max-cols-per-row,
+                $grid-row-gap,
+                $grid-col-gap
+            );
+        }
+    }
+}
