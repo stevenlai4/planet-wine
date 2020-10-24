@@ -17,13 +17,15 @@
 <body>
     <header>
         <!-- Logo goes here -->
-        <img src="img/logo.png" />
+        <a href="index.html"><img src="img/logo.png" /></a>
+
         <nav>
-            <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="menu">
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="shop.html">Shop</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
             </ul>
             <!-- Icons for for the user and cart -->
             <ul class="login-cart">
@@ -41,61 +43,12 @@
 
     <section>
         <header>
-            <!-- Logo goes here -->
-            <a href="index.html"><img src="img/logo.png" /></a>
-
-            <nav>
-                <ul class="menu">
-                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="shop.html">Shop</a></li>
-                    <li class="item"><a href="gallery.html">Gallery</a></li>
-                    <li class="item"><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- Icons for for the user and cart -->
-                <ul class="login-cart">
-                    <!--Login-->
-                    <li>
-                        <a href="login.html"><i class="fas fa-user"></i></a>
-                    </li>
-                    <!--Cart-->
-                    <li>
-                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="text-center mt-5">
+                <h1 class="text-dark icon-collapse">Your Cart</h1>
+            </div>
         </header>
 
-        <section>
-            <header>
-                <div class="text-center mt-5">
-                    <h1 class="text-dark icon-collapse">Your Cart</h1>
-                </div>
-            </header>
-
-            <article class="mt-5"></article>
-        </section>
-
-        <footer>
-            <h5>Planet wine</h5>
-            <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-            </article>
+        <article class="mt-5"></article>
     </section>
 
     <footer>
@@ -120,19 +73,10 @@
         <p>&copy; All Right Reserved</p>
     </footer>
 
+    <!-- <script src="scripts/index.js"></script> -->
     <script src="scripts/index.js"></script>
-</body>
-
-<!-- <script src="scripts/index.js"></script> -->
-<script src="scripts/cart.js"></script>
-<script src="scripts/index.js"></script>
-<script src="scripts/global-toggle.js"></script>
-</body>
-
-<!-- <script src="scripts/index.js"></script> -->
-<script src="scripts/index.js"></script>
-<script src="scripts/cart.js"></script>
-<script src="scripts/global-toggle.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/global-toggle.js"></script>
 </body>
 
 </html>

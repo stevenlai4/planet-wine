@@ -11,8 +11,10 @@ header {
   line-height: 1.4;
   margin: 0 auto; }
   .wrapper > h1 {
-    font-size: 1.5rem;
-    text-align: center; }
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem; }
   .wrapper > img {
     display: block;
     margin: 2rem auto 0 auto;
@@ -30,18 +32,22 @@ header {
       display: block;
       margin: 5px 0;
       font-size: 1.2rem; }
+    .wrapper > form > div > input {
+      box-shadow: inset -1px 1px 2px black; }
     .wrapper > form > div > div {
       display: none; }
     .wrapper > form > input {
       display: block;
-      margin: 1rem auto;
+      margin: 3rem auto 2rem auto;
       font-size: 1.2rem;
       background-color: #c7b198;
       padding: 0.8rem;
       border-radius: 5px;
       letter-spacing: 1px;
       text-decoration: none;
-      text-shadow: 0px 3px 3px #c7b198; }
+      text-shadow: 0px 3px 3px #c7b198;
+      line-height: 1rem;
+      width: 9rem; }
   .wrapper .backToHome {
     text-align: left;
     font-size: 1.5rem;
@@ -65,14 +71,17 @@ header {
     .wrapper > form > div > input,
     .wrapper > form > div > div {
       font-size: 1.5rem;
-      padding: 0 5px;
-      margin: 10px; }
+      padding: 5px 5px;
+      margin: 10px;
+      border-radius: 5px; }
     .wrapper > form > div div {
       display: block; }
     .wrapper > form > div > label {
       text-align: right; }
     .wrapper > form > div > input {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+    .wrapper > form > div .twoColumns {
+      grid-column: 2 / 4; } }
 .product-item {
   max-width: 100%; }
   @media screen and (min-width: 768px) {

@@ -16,13 +16,16 @@
 
 <body>
     <header>
+        <!-- Logo goes here -->
         <a href="index.html"><img src="img/logo.png" /></a>
+
         <nav>
-            <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="menu">
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="shop.html">Shop</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
             </ul>
             <!-- Icons for for the user and cart -->
             <ul class="login-cart">
@@ -39,8 +42,6 @@
     </header>
 
     <div class="wrapper">
-        <!--logo-->
-        <img src="./img/shop-img.png" alt="logo" />
         <h1>Shipping information</h1>
 
         <!--form-->
@@ -53,8 +54,7 @@
                 <div></div>
 
                 <label for="Street Address">STREET ADDRESS</label>
-                <input type="text" placeholder="STREET ADDRESS .." />
-                <div></div>
+                <input type="text" class="twoColumns" placeholder="STREET ADDRESS .." />
                 <div></div>
 
                 <label for="City">CITY</label>
@@ -89,11 +89,8 @@
 
         </article>
 
-        <button type="button" class="btn proceed-btn">
-            Proceed to checkout
-        </button></a>
         <div class="backToHome">
-            <a href="#"> <i class="fas fa-caret-left"></i>Back to Home</a>
+            <a href="cart.html"> <i class="fas fa-caret-left"></i>Back to Home</a>
         </div>
     </div>
 

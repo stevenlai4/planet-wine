@@ -1,8 +1,3 @@
-localStorage.setItem(1, 11);
-localStorage.setItem(3, 33);
-localStorage.setItem(5, 55);
-localStorage.setItem(7, 77);
-
 let products = [];
 
 class Cart {
