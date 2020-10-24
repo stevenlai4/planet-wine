@@ -6,7 +6,7 @@ localStorage.setItem(7, 77);
 let products = [];
 
 class Cart {
-    // get Products from localStorage
+    // get cart from localStorage
     static getLocal() {
         var cart = [];
         for (var i = 0; i < localStorage.length; i++) {
@@ -21,57 +21,69 @@ class Cart {
     static showCart(cart) {
         //display Cart in the browser
         let result = '';
+        let total = 0;
         cart.forEach(cartItem => {
             let product = products.find(product => product.id === cartItem.id);
+            let subTotal = parseFloat(cartItem.amount) * parseFloat(product.price);
+            total += subTotal;
+
             result += `
-                    <div>
-                        <img src=${product.image} alt="product" class="product-img">
-                        <input class="quantity-box"  data-name=${product.name} data-id=${product.id} type="number"  value="1" />
-                        <h3>${product.type}</h3>
-                        <h4>${product.price}</h4>
-                        <h4>Amount:  ${cartItem.amount} </h4>
-                        <h4>${product.description}</h4>
-                    </div>         
+                    <div class="container">
+                    <div class="d-flex my-4 flex-column flex-md-row align-items-center justify-content-around ">
+                        <!-- product 1 img -->
+                        <div class="product-item text-center">
+                            <img src=${product.image} alt="mall" />
+                        </div>
+                        <!-- product 1 title -->
+                        <div class="product-item text-center">
+                            <p class="item-title my-4">
+                            ${product.description}
+                            </p>
+                        </div>
+                        <!-- product 1 quantity and unit price -->
+                        <div class="product-item">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <p class="price mx-4">$${product.price} x ${cartItem.amount}</p>
+
+                            </div>
+                        </div>
+                        <!-- product 1 subtotal -->
+                        <div class="product-item">
+                            <p class="price my-5 mx-3 item-total">$${subTotal.toFixed(2)}</p>
+                        </div>  
+                    </div>  
+                </div>      
                 `;
         });
 
-        var outputDOM = document.querySelector('#output');
+
+        result += `<div class="line"></div>`;
+        result += `
+
+            <div class="container">
+            <div class="d-flex my-4 flex-column flex-md-row align-items-center justify-content-around ">
+                <!-- product 1 img -->
+                <div class="product-item text-center">
+                </div>
+                <!-- product 1 title -->
+                <div class="product-item text-center">
+                </div>
+                <!-- product 1 quantity and unit price -->
+                <div class="product-item">
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                        <p class="price mx-4">Total</p>
+                    </div>
+                </div>
+                <!-- product 1 subtotal -->
+                <div class="product-item">
+                    <p class="price my-5 mx-3 item-total">$${total.toFixed(2)}</p>
+                </div>  
+            </div>  
+        </div>            
+        `;
+
+        var outputDOM = document.querySelector('.cart-checkout');
         outputDOM.innerHTML = result;
-    }
-}
-
-class Customers {
-    // get Product from product.json file
-    async get() {
-
-        try {
-            let result = await fetch('customers.json');
-            let data = await result.json();
-            this.customers = data.map(customer => {
-                return customer;
-            });
-
-            return this.customers;
-        } catch (error) {
-            console.log(error);
-
-        }
-    }
-
-    // set Products to localStorage
-    static saveLocal(customers) {
-        localStorage.setItem("customers", JSON.stringify(customers));
-        localStorage.setItem("cart", JSON.stringify(customers));
-    }
-
-    // get Products from localStorage
-    static getLocal() {
-        var carts = [...localStorage.getItem("cart")]
-    }
-
-    //display Products in the browser
-    static display(customers) {
-
     }
 }
 
@@ -88,17 +100,27 @@ class Products {
             console.log(error);
         }
     }
-
-    static get(id) {
-        let products = JSON.parse(localStorage.getItem(products));
-        return products.find(product => product.id === id);
-    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    (new Products()).get().then(tempProducts => {
-        products = tempProducts;
-        Cart.showCart(Cart.getLocal());
-    })
+    (new Products()).get().then(
+
+        tempProducts => {
+
+            // get products from products.json file and save it to the global variable products
+            products = tempProducts;
+
+            // display shopping cart
+            Cart.showCart(Cart.getLocal());
+
+            //clear local storage on submitting the form
+            var form = document.querySelector('.checkout-form');
+            form.addEventListener("submit", event => {
+                localStorage.clear();
+                event.preventDefault();
+            }, true);
+
+        })
 });
+

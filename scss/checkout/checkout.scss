@@ -1,6 +1,8 @@
 // variables
 $header-background-color: #444444;
 $footer-backgroundColor: #444444;
+$primary-color: #c7b198;
+$secondary-color: #929292;
 
 $line-height: 1.4;
 
@@ -130,3 +132,46 @@ header {
         }
     }
 }
+
+
+
+.product-item {
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 25%;
+    }
+}
+
+.item-title {
+    color: $primary-color;
+}
+
+.quantity-box {
+    height: 40px;
+    width: 40px;
+}
+
+.proceed-btn {
+    background-color: $primary-color;
+    color: white;
+}
+
+.cont-shopping {
+    text-decoration: none;
+    color: $secondary-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 55%;
+        width: 30%;
+    }
+}
+
