@@ -31,22 +31,18 @@
 
     .result {
 
-
-        display: grid;
         margin: 10px auto;
         text-align: center;
-        width: 80%;
-        height: 2rem;
-
-        background-color: crimson;
+        width: 60%;
+        font-size: 2rem;
+        font-weight: bold;
 
         &.success {
-            border-color: lightgreen;
+            color: lightgreen;
         }
 
-
         &.fail {
-            border-color: crimson;
+            color: crimson;
         }
     }
 }

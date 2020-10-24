@@ -67,30 +67,30 @@ header {
   ##Device = Tablet or Desktop (Portrait). 
 */
 @media screen and (min-width: 1000px) {
-  .wrapper > form > div {
+  .wrapper > form > div.content {
     display: grid;
     grid-template-rows: 1.4;
     grid-template-columns: 5fr 3fr 3fr 5fr; }
-    .wrapper > form > div label,
-    .wrapper > form > div input,
-    .wrapper > form > div select,
-    .wrapper > form > div div {
+    .wrapper > form > div.content label,
+    .wrapper > form > div.content input,
+    .wrapper > form > div.content select,
+    .wrapper > form > div.content div {
       display: block;
       font-size: 1.5rem;
       padding: 3px 30px 3px 0;
       margin: 2px 0;
       border-radius: 5px;
       width: 100%; }
-    .wrapper > form > div > div {
+    .wrapper > form > div.content > div {
       display: block; }
-    .wrapper > form > div > label {
+    .wrapper > form > div.content > label {
       padding-right: 3rem;
       display: flex;
       align-items: center;
       justify-content: flex-end; }
-    .wrapper > form > div > input, .wrapper > form > div > select {
+    .wrapper > form > div.content > input, .wrapper > form > div.content > select {
       font-size: 1.2rem; }
-    .wrapper > form > div .twoColumns {
+    .wrapper > form > div.content .twoColumns {
       grid-column: 2 / 4; } }
 .line {
   width: 100%;

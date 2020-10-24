@@ -234,15 +234,14 @@ form .input-control {
     color: crimson;
     visibility: visible; }
 form .result {
-  display: grid;
   margin: 10px auto;
   text-align: center;
-  width: 80%;
-  height: 2rem;
-  background-color: crimson; }
+  width: 60%;
+  font-size: 2rem;
+  font-weight: bold; }
   form .result.success {
-    border-color: lightgreen; }
+    color: lightgreen; }
   form .result.fail {
-    border-color: crimson; }
+    color: crimson; }
 
 /*# sourceMappingURL=main.css.map */
