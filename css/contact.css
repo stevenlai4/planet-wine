@@ -20,7 +20,8 @@
   color: #000; }
   .wrapper-form h1 {
     text-align: center;
-    color: black; }
+    color: black;
+    font-size: 30px; }
   .wrapper-form input {
     border: #000;
     padding: 10px;
@@ -37,8 +38,11 @@
     width: 95%;
     height: 200px;
     border-radius: 5px; }
-  .wrapper-form .submit-btn {
+  .wrapper-form .submit-btn,
+  .wrapper-form .popup-btn {
     background-color: silver;
     margin: 1%; }
+  .wrapper-form .modal-header h2 {
+    font-size: 30px; }
 
 /*# sourceMappingURL=contact.css.map */
