@@ -97,26 +97,6 @@ class Products {
     }
 }
 
-//clear local storage on submitting the form and validation
-function validation(form) {
-
-}
-
-function addSubmitListener() {
-    var form = document.querySelector('.checkout-form');
-    form.addEventListener("submit", event => {
-
-        // clear all the key/value pairs in localStorage 
-        localStorage.clear();
-
-        validation(this);
-
-        // avoid refresh the page after submitting the form
-        event.preventDefault();
-    }, true);
-
-}
-
 document.addEventListener("DOMContentLoaded", () => {
 
     (new Products()).get().then(

@@ -49,32 +49,77 @@
             <hr />
             <div>
                 <label for="Name">FIRST NAME & LAST NAME</label>
-                <input type="text" placeholder="FIRST NAME .." />
-                <input type="text" placeholder="LAST NAME .." />
-                <div></div>
+                <div class="input-control">
+                    <input type="text" id="firstName" placeholder="FIRST NAME .." />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="input-control">
+                    <input type="text" id="lastName" placeholder="LAST NAME .." />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
 
                 <label for="Street Address">STREET ADDRESS</label>
-                <input type="text" class="twoColumns" placeholder="STREET ADDRESS .." />
-                <div></div>
+                <div class="input-control twoColumns">
+                    <input type="text" id="address" placeholder="STREET ADDRESS .." />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
+
 
                 <label for="City">CITY</label>
-                <input type="text" placeholder="CITY .." />
-                <div></div>
-                <div></div>
+                <div class="input-control">
+                    <select name="city" class="cities" id="cityId">
+                        <option value="">Select City</option>
+                    </select>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
+                <div class="hide"></div>
+
+                <label for="State">STATE</label>
+                <div class="input-control  success">
+                    <select name="state" class="states" id="stateId">
+                        <option value="">Select State</option>
+                    </select>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
+                <div class="hide"></div>
 
                 <label for="country">COUNTRY</label>
-                <input type="text" placeholder="COUNTRY .." />
-                <div></div>
-                <div></div>
+                <div class="input-control">
+                    <select name="country" class="countries" id="countryId">
+                        <option value="">Select Country</option>
+                    </select>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
+                <div class="hide"></div>
 
                 <label for="Postal code">POSTAL CODE</label>
-                <input type="text" placeholder="POSTAL CODE .." />
-                <div></div>
+                <div class="input-control">
+                    <input type="text" id="postCode" placeholder="POSTAL CODE .." />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
                 <div></div>
 
                 <label for="phone">PHONE</label>
-                <input type="text" placeholder="PHONE .." />
-                <div></div>
+                <div class="input-control">
+                    <input type="text" id="phone" placeholder="PHONE .." />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="hide"></div>
+                <div class="hide"></div>
             </div>
             <input type="Submit" value="Submit" id="Submit" />
             <hr />
@@ -117,7 +162,11 @@
         <p>&copy; All Right Reserved</p>
     </footer>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+
     <script src="scripts/index.js"></script>
+    <script src="scripts/validation.js"></script>
     <script src="scripts/checkout.js"></script>
 
 
