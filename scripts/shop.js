@@ -91,12 +91,28 @@ function displayWine(wineData) {
         var btnId = btn.id.match(/(\d+)/)[0];
         var input = document.querySelector("#wine" + btnId);
         btn.addEventListener("click", function() {
-            if (input.value > 0 && input.value <= 100) {
-                localStorage.setItem(btnId, input.value);
-            } else if (input.value == 0) {
-                localStorage.removeItem(btnId);
+            // Eliminating leading zero when there's one
+            input.value = Number(input.value);
+            //Validation
+            if (isNaN(input.value)) {
+                window.alert('Please enter an integer number for the quantity and add it again!');
+            } else if (input.value < 0 || input.value > 100) {
+                window.alert('Please enter a quantity number between 0 to 100 and add it again!');
+                if (input.value < 0) {
+                    input.value = 0;
+                } else {
+                    input.value = 100;
+                }
+            } else if (!Number.isInteger(Number(input.value))) {
+                window.alert('Please enter an integer number for the quantity and add it again!');
+                input.value = Math.floor(input.value);
             } else {
-                window.alert("Please enter a quantity number between 0 to 100");
+                //Add item
+                if (input.value == 0) {
+                    localStorage.removeItem(btnId);
+                } else if (input.value > 0 && input.value <= 100) {
+                    localStorage.setItem(btnId, input.value);
+                }
             }
         });
     });
