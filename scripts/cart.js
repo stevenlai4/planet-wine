@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class Products {
     async getProducts() {
         try {
-            let result = await fetch('products.json');
+            let result = await fetch('scripts/products.json');
             let data = await result.json();
             this.products = data.map((product) => {
                 return product;
