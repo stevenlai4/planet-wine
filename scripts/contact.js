@@ -41,6 +41,11 @@ function checkInputs(){
         //add success class
         setSuccessFor(question);
     }
+   
+    if (name.parentElement.className == 'contactForm success' && email.parentElement.className == 'contactForm success' && question.parentElement.className == 'contactForm success'){
+         // pop-up after successful submittion
+        swal("Thank you for getting in touch!", "We will get back in touch with you soon.");
+    }
 }  
 
 function setErrorFor(input,message){
@@ -65,14 +70,6 @@ function isEmail(email) {
 
 
  
-
-
-
-
-
-
-
-
 
 
 
