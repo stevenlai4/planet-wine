@@ -3,6 +3,7 @@ var toggle = document.querySelector('.toggle');
 var menu = document.querySelector('.menu');
 var centerContent = document.querySelector('.center-content');
 
+// Toggle Menu function that expands and collapses nav menu
 function toggleMenu() {
     if (menu.classList.contains('active-menu')) {
         menu.classList.remove('active-menu');
@@ -19,4 +20,5 @@ function toggleMenu() {
     }
 }
 
+// Add Event Listener to toggle bottom
 toggle.addEventListener('click', toggleMenu);
