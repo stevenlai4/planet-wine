@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const question = document.getElementById('question');
+var alphaOnly = /^[a-zA-Z]*$/;
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -17,9 +18,12 @@ function checkInputs(){
     if(nameValue === ''){
         //show error and add error class
         setErrorFor(name,"Name cannot be blank");
+    } else  if (nameValue.match(alphaOnly)){
+        //only accept alpha 
+        setSuccessFor(name);
     } else {
         //add success class
-        setSuccessFor(name);
+        setErrorFor(name,'Name is not valid, only alphabetical characters')
     }
 
     if(emailValue === ''){
@@ -68,14 +72,3 @@ function setSuccessFor(input) {
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-
- 
-
-
-
-
-
-
-
-
