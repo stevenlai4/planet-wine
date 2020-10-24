@@ -33,8 +33,6 @@ class Products {
     }
 }
 
-localStorage.clear();
-
 // Display Purchashed List
 const displayCart = () => {
     const article = document.querySelector('article');
@@ -147,10 +145,12 @@ const insertInput = (element) => {
         element.value = 0;
     } else if (isNaN(element.value)) {
         element.value = localStorage.getItem(id);
+    } else if (element.value < 0 || element.value > 100) {
+        window.alert('Please enter a quantity number between 0 to 100');
+        element.value = localStorage.getItem(id);
     } else if (!Number.isInteger(Number(element.value))) {
         element.value = Math.floor(element.value);
     }
-
     // Eliminating leading zero when there's one
     element.value = Number(element.value);
 
