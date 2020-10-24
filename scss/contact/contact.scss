@@ -35,7 +35,7 @@
         margin: 1%;
         width: 95%;
         display: block;
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 
     label {
@@ -49,7 +49,7 @@
         margin: 1%;
         width: 95%;
         height: 200px;
-        border-radius: 10px;
+        // border-radius: 10px;
     }
 
     .contactForm small{
@@ -57,7 +57,7 @@
         visibility: hidden;
         margin: 15px;
     }
-
+    //display error message
     .contactForm.error small{
         color: #e74c3c;
         visibility: visible;

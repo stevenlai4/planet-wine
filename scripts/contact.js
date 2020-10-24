@@ -43,8 +43,9 @@ function checkInputs(){
     }
    
     if (name.parentElement.className == 'contactForm success' && email.parentElement.className == 'contactForm success' && question.parentElement.className == 'contactForm success'){
-         // pop-up after successful submittion
+         // pop-up after successful submittion/reset form
         swal("Thank you for getting in touch!", "We will get back in touch with you soon.");
+        document.getElementById("form").reset();
     }
 }  
 
