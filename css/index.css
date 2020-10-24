@@ -135,20 +135,14 @@ table {
 
 @keyframes fade-in {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes fade-out {
   from {
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
 .index {
   background-image: url("../../img/index-bg.jpg");
   background-position: center;
@@ -156,85 +150,64 @@ table {
   background-repeat: no-repeat;
   height: 100vh;
   overflow-y: auto;
-  color: white;
-}
-.index .login-cart ul {
-  display: flex;
-  position: absolute;
-  right: 20px;
-  top: 50px;
-}
-.index .login-cart ul li {
-  margin-right: 25px;
-}
-.index .login-cart ul a {
-  color: white;
-}
-.index .login-cart ul i {
-  font-size: 40px;
-}
-.index .desktop-logo img {
-  width: 80px;
-  margin: 2% 0 0 2%;
-}
-.index .center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  animation-name: fade-in;
-  animation-duration: 3s;
-}
-.index .center-content h1 {
-  font-size: 10rem;
-  font-family: "Alex Brush", cursive;
-}
-.index .center-content p {
-  margin: 30px 0;
-}
+  color: white; }
+  .index .login-cart ul {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50px; }
+    .index .login-cart ul li {
+      margin-right: 25px; }
+    .index .login-cart ul a {
+      color: white; }
+    .index .login-cart ul i {
+      font-size: 40px; }
+  .index .desktop-logo img {
+    width: 80px;
+    margin: 2% 0 0 2%; }
+  .index .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 3s; }
+    .index .center-content h1 {
+      font-size: 10rem;
+      font-family: "Alex Brush", cursive; }
+    .index .center-content p {
+      margin: 30px 0; }
 
 @media screen and (max-width: 768px) {
   .index .login-cart ul {
-    display: none;
-  }
+    display: none; }
   .index .desktop-logo {
-    display: none;
-  }
+    display: none; }
   .index .center-content {
     display: none;
     animation-name: fade-out;
-    animation-duration: 2s;
-  }
-  .index .center-content h1 {
-    font-size: 7rem;
-  }
-  .index .center-content p {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
+    animation-duration: 2s; }
+    .index .center-content h1 {
+      font-size: 7rem; }
+    .index .center-content p {
+      padding-left: 4%;
+      padding-right: 4%; }
   .index .active-center-content {
     display: block;
     animation-name: fade-in;
-    animation-duration: 2s;
-  }
-}
+    animation-duration: 2s; } }
 @media screen and (max-width: 576px) {
   .index .tablet-mobile-nav .tablet-mobile-logo img {
-    width: 200px;
-  }
+    width: 200px; }
   .index .tablet-mobile-nav .nav-item:not(.tablet-mobile-logo) {
     font-size: 2rem;
-    margin: 25px 0;
-  }
+    margin: 25px 0; }
   .index .center-content h1 {
-    font-size: 5rem;
-  }
-}
+    font-size: 5rem; } }
 .index .tablet-mobile-nav {
-  display: none;
-}
+  display: none; }
 .index .center-content .desktop-nav {
   display: block;
   background-color: transparent;
@@ -290,22 +263,16 @@ table {
     margin: 40px 0;
   }
   .index .center-content .desktop-nav {
-    display: none;
-  }
+    display: none; }
   .index .active-menu .nav-item {
     display: block;
     animation-name: fade-in;
-    animation-duration: 2s;
-  }
-}
+    animation-duration: 2s; } }
 @media screen and (max-width: 576px) {
   .index .tablet-mobile-nav .tablet-mobile-logo img {
-    width: 200px;
-  }
+    width: 200px; }
   .index .tablet-mobile-nav .nav-item:not(.tablet-mobile-logo) {
     font-size: 2rem;
-    margin: 25px 0;
-  }
-}
+    margin: 25px 0; } }
 
 /*# sourceMappingURL=index.css.map */
