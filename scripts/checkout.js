@@ -102,6 +102,23 @@ class Products {
     }
 }
 
+//clear local storage on submitting the form and validation
+function validation(form) {
+
+}
+
+function addSubmitListener() {
+    var form = document.querySelector('.checkout-form');
+    form.addEventListener("submit", event => {
+        localStorage.clear();
+
+        validation(this);
+
+        event.preventDefault();
+    }, true);
+
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
     (new Products()).get().then(
@@ -115,12 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Cart.showCart(Cart.getLocal());
 
             //clear local storage on submitting the form
-            var form = document.querySelector('.checkout-form');
-            form.addEventListener("submit", event => {
-                localStorage.clear();
-                event.preventDefault();
-            }, true);
-
+            addSubmitListener();
         })
 });
 
