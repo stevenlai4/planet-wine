@@ -24,6 +24,7 @@
             @include flex-row;
             flex-wrap: wrap;
             width: 100%;
+            justify-content: flex-start;
             div {
                 @include basic-spacing;
                 width: 100%;
