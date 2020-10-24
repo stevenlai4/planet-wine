@@ -38,50 +38,53 @@
             </nav>
         </header>
 
+        <div class="contact-image"></div>
+
         <article class="main-content">
 
             <div class= "Form-title">
               <h1>Registration</h1>
 
             </div>
+            <form class="=RegForm">
+                <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="input-control" name="firstName"/>
             
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" class="input-control" required />
-          
-              <label class="right-inline">Last Name</label>
-              <input type="text" class="input-control" required />
-            </div>
-          
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" class="input-control" required />
-            </div>
-          
-            <div class="form-group">
-              <label>Address</label>
-              <textarea class="input-control"></textarea>
-            </div>
-          
-            <div class="form-group">
-              <label>Postal code</label>
-              <input type="" class="input-control" style="flex: 6" />    
-            </div>
-
-            <div class="form-group">
-                <label>Password</label>
+                <label class="right-inline">Last Name</label>
+                <input type="text" class="input-control" required />
+                </div>
+            
+                <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="input-control" required />
+                </div>
+            
+                <div class="form-group">
+                <label>Address</label>
+                <textarea class="input-control" required></textarea>
+                </div>
+            
+                <div class="form-group">
+                <label>Postal code</label>
                 <input type="" class="input-control" style="flex: 6" />    
-              </div>
+                </div>
 
-              <div class="form-group">
-                <label>Confirm-password</label>
-                <input type="" class="input-control" style="flex: 6" />    
-              </div>
-          
-            <div class="form-group">
-              <label>&nbsp;</label>
-              <button>Submit</button>
-            </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="input-control" style="flex: 6" />    
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm-password</label>
+                    <input type="password" class="input-control" style="flex: 6" />    
+                </div>
+            
+                <div class="form-group">
+                <label>&nbsp;</label>
+                <button onclick="return validate()">Submit</button>
+                </div>
+            </form>
 
             <article class="Exists">
                 <p>Already have an account? <br>
