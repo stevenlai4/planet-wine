@@ -264,12 +264,19 @@ table {
 .index.active {
   opacity: 0.90; }
 
+.pop-up-wrapper.active {
+  position: fixed;
+  top: 20%;
+  left: 8%;
+  right: 8%;
+  z-index: 1; }
+
 .pop-up-wrapper {
   position: fixed;
   top: 20%;
   left: 8%;
   right: 8%;
-  z-index: 1 !important;
+  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
