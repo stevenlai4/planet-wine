@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <main class="index">
+        <main class="index active">
             <!-- Nav for tablet size or smaller -->
             <nav class="tablet-mobile-nav">
                 <ul class="menu">
@@ -54,9 +54,9 @@
                     <!--Cart-->
                 </ul>
             </div>
+            
         <!-- START OUR POP-UP -->
-
-            <div class="pop-up-wrapper">
+            <div class="pop-up-wrapper" id="pop-up-wrapper">
                 <!--Creates the popup body-->
                 <div class="popup-overlay active-popup">
                     <!--Creates the popup content-->
@@ -67,13 +67,13 @@
                         <div class = "popup-text">
                             <h1>NEVER MISS A NEW RELEASE</h1>
                             <br>
-                        <p>We'd love to stay in touch with you and send a postcard from our Planet Winery time to time. Join our list to stay up to data on all things Planet Winery</p>
-                    </div>
+                            <p>We'd love to stay in touch with you and send a postcard from our Planet Winery time to time. Join our list to stay up to data on all things Planet Winery</p>
+                         </div>
                         <!--popup's close button-->
                         <div class = closeButton>
-                        <button class="close close-button-layout"><i class="far fa-times-circle"></i></button>
-                    </div>
-                </div>
+                            <button class="close close-button-layout"><i class="fas fa-times"></i></i></button>
+                        </div>
+                     </div>
                 </div>
             </div>
 
@@ -110,7 +110,6 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="scripts/index.js"></script>
         <script src="scripts/index_hamburger.js"></script>
-        <script src="scripts/18plusPopUp.js"></script>
-     
+        <script src="scripts/indexPopUp.js"></script>
     </body>
 </html>

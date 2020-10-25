@@ -1,4 +1,20 @@
+// Animation @keyframes
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+//background opacity
+.index.active{
+    opacity: 0.90;       
+}
+
 // Desktop Size
+//pop-up wrapper
 .pop-up-wrapper {
     position: fixed;
     top: 20%;
@@ -8,19 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    
 
-    .popup-photo{
-        display: flex;
-        width: 50%;
-        height: 100%;
-        overflow: hidden;
-
-        img{
-            width: auto;
-            height: 100%;
-        }   
-    }
-
+    //pop-up box
     .popup-overlay .active-popup {
         visibility: visible;
         text-align: center;
@@ -29,29 +37,42 @@
         margin: 0 auto;
         background-color:rgb(145, 106, 64);
         display:flex;
-    }
 
-    .popup-text{
-        font-family: $index-nav-font;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-        height: 100%;
-        margin-left: 5%;
-        
 
-        h1{
-            margin-top: 0;
-            font-size: 30px;
-          
+        //img of the popup
+        .popup-photo{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+
+            img{
+                width: auto;
+                height: 100%;
+            }   
+        }
+    
+        .popup-text{
+            font-family: $index-nav-font;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            margin-left: 5%;
+            
+            h1{
+                margin-top: 0;
+                font-size: 25px;
+            }
+        }
+
+        .closeButton i {
+            color: white;
         }
     }
 
-    i {
-        color: white;
-    }
-
+    //make popup active
     .popup-content .active-popup {
         visibility: visible;
         color: white;
@@ -66,46 +87,13 @@
     }
 }
 
-// // Tablet Size
-// @media screen and (max-width: map-get($breakpoint, tablet)) {}
-
-
-
-
-
-// // Mobile Size
-// @media screen and (min-width:500px) {
-
-//     .popup-overlay .active-popup {
-//         visibility: visible;
-//         text-align: center;
-//         width: 70%;
-//         height: 400px;
-//         margin: 0 auto;
-//         background-color:red;
-//         display:flex;
-//     }
-
-//     .popup-text{
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         width: 50%;
-//         height: 100%;
-//         margin-left: 5%;
-//     }
-
-//     .popup-photo{
-//         display: flex;
-//         width: 50%;
-//         height: 100%;
-//         overflow: hidden;
-
-//         img{
-//             width: auto;
-//             height: 100%;
-//         }   
-//     }
-
-// }
-
+// Mobile Size
+@media screen and (max-width: map-get($breakpoint, tablet)) {
+    .pop-up-wrapper {
+        .popup-overlay .active-popup {
+            width: 80%;
+            height: 400px;
+            background-color:rgb(145, 106, 64);
+        }
+    }
+}
