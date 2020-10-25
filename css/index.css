@@ -265,10 +265,6 @@ table {
   opacity: 0.90; }
 
 .pop-up-wrapper.active {
-  position: fixed;
-  top: 20%;
-  left: 8%;
-  right: 8%;
   z-index: 1; }
 
 .pop-up-wrapper {
