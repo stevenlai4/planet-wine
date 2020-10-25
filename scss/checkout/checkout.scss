@@ -14,188 +14,188 @@ $phoneLandscape: 1000px;
 
 // header including navigation bar and shopping cart
 header {
-    text-align: center;
-    font-family: 'Cormorant', Verdana, sans-serif;
-    text-transform: uppercase;
+  text-align: center;
+  font-family: "Cormorant", Verdana, sans-serif;
+  text-transform: uppercase;
 
-    > h2 {
-        font-size: 1.5rem;
-        line-height: $line-height;
-    }
-}   
+  > h2 {
+    font-size: 1.5rem;
+    line-height: $line-height;
+  }
+}
 
 .wrapper {
-    width: 90%;
-    line-height: $line-height;
-    margin: 0 auto;
+  width: 90%;
+  line-height: $line-height;
+  margin: 0 auto;
 
-    > h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 2rem;
-    }
+  > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
 
-    > img {
+  > img {
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 10%;
+  }
+
+  hr {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  > form {
+    width: 100%;
+    > div {
+      // each item is block displaying line after line
+      label,
+      input,
+      select,
+      > div {
         display: block;
-        margin: 2rem auto 0 auto;
-        width: 10%;
+        width: 90%;
+        margin: 5px 0px;
+        padding: 2px;
+        font-size: 1.2rem;
+      }
+
+      input,
+      select {
+        border: 2px solid lightgray;
+        box-shadow: inset -1px 2px 3px lightgray;
+      }
+
+      // hide <div>
+      > div .hide {
+        display: none;
+      }
     }
 
-    hr {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1rem;
+    // submit button
+    > input {
+      display: block;
+      margin: 3rem auto 2rem auto;
+      font-size: 1.2rem;
+      background-color: $palette-brown;
+      padding: 0.8rem;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-shadow: 0px px 3px $palette-brown;
+      line-height: 1rem;
+      width: 9rem;
     }
+  }
 
-    > form {
-        width: 100%;
-        > div {
-            // each item is block displaying line after line
-             label,
-             input,
-             select,
-            > div {
-                display: block;
-                width: 90%;
-                margin: 5px 0px;
-                padding: 2px;
-                font-size: 1.2rem;                
-            }
+  // back to Cart link
+  .backToHome {
+    text-align: left;
+    font-size: 1.5rem;
+    left: 10%;
 
-            input, select {
-                border: 2px solid lightgray;
-                box-shadow: inset -1px 2px 3px lightgray;
-            }          
+    > a {
+      text-decoration: none;
+      color: black;
 
-            // hide <div>
-            > div .hide {
-                display: none;
-            }
-        }
-
-        // submit button
-        > input {
-            display: block;
-            margin: 3rem auto 2rem auto;
-            font-size: 1.2rem;
-            background-color: $palette-brown;
-            padding: 0.8rem;
-            border-radius: 5px;
-            letter-spacing: 1px;
-            text-decoration: none;
-            text-shadow: 0px px 3px $palette-brown;
-            line-height: 1rem;
-            width: 9rem;
-        }
+      > i {
+        margin-right: 10px;
+        padding: 5px;
+      }
     }
-
-    // back to home link
-    .backToHome {
-        text-align: left;
-        font-size: 1.5rem;
-        left: 10%;
-
-        > a {
-            text-decoration: none;
-            color: black;
-
-            > i {
-                margin-right: 10px;
-                padding: 5px;
-            }
-        }
-    }
+  }
 }
 
 /* 
   ##Device = Tablet or Desktop (Portrait). 
 */
 @media screen and (min-width: $phoneLandscape) {
-    .wrapper {
-        > form {
-            > div.content {
-                display: grid;
-                grid-template-rows: $line-height;
-                grid-template-columns: 5fr 3fr 3fr 5fr;
+  .wrapper {
+    > form {
+      > div.content {
+        display: grid;
+        grid-template-rows: $line-height;
+        grid-template-columns: 5fr 3fr 3fr 5fr;
 
-                label,
-                input,
-                select,
-                div {
-                    display: block;
-                    font-size: 1.5rem;
-                    padding: 3px 30px 3px 0  ;
-                    margin: 2px 0;
-                    border-radius: 5px;
-                    width: 100%;
-                }
-
-                // <div> tag will show to form a 6 rows x 4 columns grid.
-                > div {
-                    display: block;
-                }
-
-                > label {
-                    padding-right: 3rem;
-                    display: flex;
-                    align-items:center;
-                    justify-content: flex-end;
-                }
-
-                > input, > select {
-                    font-size: 1.2rem;
-                }
-
-                // address needs two columns
-                .twoColumns{
-                    grid-column: 2 / 4;
-                }
-            }
+        label,
+        input,
+        select,
+        div {
+          display: block;
+          font-size: 1.5rem;
+          padding: 3px 30px 3px 0;
+          margin: 2px 0;
+          border-radius: 5px;
+          width: 100%;
         }
+
+        // <div> tag will show to form a 6 rows x 4 columns grid.
+        > div {
+          display: block;
+        }
+
+        > label {
+          padding-right: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+
+        > input,
+        > select {
+          font-size: 1.2rem;
+        }
+
+        // address needs two columns
+        .twoColumns {
+          grid-column: 2 / 4;
+        }
+      }
     }
+  }
 }
 
 // line separating total price and item price
 .line {
-    width: 100%;
-    border-bottom: 1px solid lightgray;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
 
-    @media screen and (min-width: 768px) {
-        margin-left: 55%;
-        width: 30%;
-    }
+  @media screen and (min-width: 768px) {
+    margin-left: 55%;
+    width: 30%;
+  }
 }
 
-
 .product-item {
-    max-width: 100%;
-    @media screen and (min-width: 768px) {
-        width: 25%;
-    }
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 25%;
+  }
 }
 
 .item-title {
-    color: $primary-color;
+  color: $primary-color;
 }
 
 .quantity-box {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .proceed-btn {
-    background-color: $primary-color;
-    color: white;
+  background-color: $primary-color;
+  color: white;
 }
 
 .cont-shopping {
-    text-decoration: none;
+  text-decoration: none;
+  color: $secondary-color;
+
+  &:hover {
     color: $secondary-color;
-
-    &:hover {
-        color: $secondary-color;
-    }
+  }
 }
-

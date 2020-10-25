@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  font-family: 'Cormorant', Verdana, sans-serif;
+  font-family: "Cormorant", Verdana, sans-serif;
   text-transform: uppercase; }
   header > h2 {
     font-size: 1.5rem;
@@ -35,7 +35,8 @@ header {
       margin: 5px 0px;
       padding: 2px;
       font-size: 1.2rem; }
-    .wrapper > form > div input, .wrapper > form > div select {
+    .wrapper > form > div input,
+    .wrapper > form > div select {
       border: 2px solid lightgray;
       box-shadow: inset -1px 2px 3px lightgray; }
     .wrapper > form > div > div .hide {
@@ -88,7 +89,8 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-end; }
-    .wrapper > form > div.content > input, .wrapper > form > div.content > select {
+    .wrapper > form > div.content > input,
+    .wrapper > form > div.content > select {
       font-size: 1.2rem; }
     .wrapper > form > div.content .twoColumns {
       grid-column: 2 / 4; } }

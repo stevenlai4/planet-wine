@@ -6,136 +6,136 @@ An eccommerce website about selling wine
 
 ## Roles
 
--   Project Manager / Scrum Master: KAREN MOK!
+- Project Manager / Scrum Master: KAREN MOK!
 
--   WireFrame: Karen, Steven, Kalvin
--   HTML: Kalvin, Karen, Wayne
--   CSS: Karen, Steven, Kalvin, Jimmy
--   Javascript: Wayne, Jimmy, Steven
+- WireFrame: Karen, Steven, Kalvin
+- HTML: Kalvin, Karen, Wayne
+- CSS: Karen, Steven, Kalvin, Jimmy
+- Javascript: Wayne, Jimmy, Steven
 
--   Github to do list: Everyone
+- Github to do list: Everyone
 
 ## Site Description & Purpose
 
 ### Functional
 
--   Login/Register
--   Navigation
--   Shopping Cart/Checkout
+- Login/Register
+- Navigation
+- Shopping Cart/Checkout
 
 ### Non-functional
 
--   18+ popup
--   Sorting/Filtering
--   User shopping cart interactions
+- 18+ popup
+- Sorting/Filtering
+- User shopping cart interactions
 
 ## Pages
 
--   Login
--   Register
--   Gallery
--   Landing Page
--   Shop
--   Cart
--   Checkout
--   Contact
+- Login
+- Register
+- Gallery
+- Landing Page
+- Shop
+- Cart
+- Checkout
+- Contact
 
 ## Designs
 
 ### Color Palette
 
--   #f0ece3
--   #dfd3c3
--   #c7b198
--   #596e79
+- #f0ece3
+- #dfd3c3
+- #c7b198
+- #596e79
 
 ### Font Choice
 
--   link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"
+- link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"
 
 ### Design Principles
 
--   Contrast
--   Alignment
--   Repetition
--   Proximity
+- Contrast
+- Alignment
+- Repetition
+- Proximity
 
 ## Prototype/Wireframe
 
 ### Header
 
--   Navbar (Nav items, Login link, Register link)
+- Navbar (Nav items, Login link, Register link)
 
 ### Sign In
 
--   Labels/Inputs: Account & Password
--   Login Button
--   Sign Up link
+- Labels/Inputs: Account & Password
+- Login Button
+- Sign Up link
 
 ![Login](./img/login-img.png)
 
 ### Sign Up
 
--   Labels/Inputs: Name, Birthday, Email, Phone, Address, Password & Confirm Password
--   Sign up button
--   Sign In link
+- Labels/Inputs: Name, Birthday, Email, Phone, Address, Password & Confirm Password
+- Sign up button
+- Sign In link
 
 ### Landing Page:
 
--   Brand / Logo
--   Banner / Carousel
--   Heading / Introduction
+- Brand / Logo
+- Banner / Carousel
+- Heading / Introduction
 
 ![Home](./img/index-img.png)
 
 ### Gallery:
 
--   Pictures
+- Pictures
 
 ![Gallery](./img/gallery-img.png)
 
 ### Shop:
 
--   Search
--   Filter
--   Wine Products (Picture, Types, Price, Name, Descrption)
--   Input for quantity(type=number)
+- Search
+- Filter
+- Wine Products (Picture, Types, Price, Name, Descrption)
+- Input for quantity(type=number)
 
 ![Shop](./img/shop-img.png)
 
 ### Cart:
 
--   Checkout Item list
--   Price/Total Price
--   Continue Shopping Link
--   Checkout Button
+- Checkout Item list
+- Price/Total Price
+- Continue Shopping Link
+- Checkout Button
 
 ![Cart](./img/cart-img.png)
 
 ### Checkout:
 
--   Shipping Info Form
--   Submit Button
--   Receipt
--   Back to Home Link
+- Shipping Info Form
+- Submit Button
+- Receipt
+- Back to Cart Link
 
 ![Checkout](./img/checkout-img.png)
 
 ### Contact
 
--   Feedback Form (Name, Customer Email, Message, Submit)
+- Feedback Form (Name, Customer Email, Message, Submit)
 
 ![contact](./img/contact-img.png)
 
 ### Footer
 
--   Address
--   Social Media
+- Address
+- Social Media
 
 ## Technology
 
--   HTML
--   CSS/SASS/Bootstrap/JQuery
--   Javascript
-    1. LocalStorage Data Structure: 1: {3}, 3: {4}, 4:{5}, 7:{1} (Key is the wine ID, Value is the quantity purchased)
--   JSON (Optional)
+- HTML
+- CSS/SASS/Bootstrap/JQuery
+- Javascript
+  1. LocalStorage Data Structure: 1: {3}, 3: {4}, 4:{5}, 7:{1} (Key is the wine ID, Value is the quantity purchased)
+- JSON (Optional)
