@@ -52,43 +52,52 @@
               <h1>Registration</h1>
 
             </div>
-            <form class="=RegForm">
-                <div class="form-group">
-                <label>First Name</label>
-                <input type="text" class="input-control" name="firstName"/>
-            
-                <label class="right-inline">Last Name</label>
-                <input type="text" class="input-control" required />
+            <form class="RegForm" id="RegForm">
+                <div class="formgroup">
+                    <label>First Name</label>
+                    <input type="text" id="firstName" class="input-control" name="firstName"/>
+                    <small>Errorttttttfdhhdfhfjgj</small>
+                </div>
+
+                <div class="formgroup">
+                    <label>Last Name</label>
+                    <input type="text" id="LastName" class="input-control">
+                    <small>Error</small>
                 </div>
             
-                <div class="form-group">
+                <div class="formgroup">
                 <label>Email</label>
-                <input type="email" class="input-control" required />
+                <input type="email" id="email" class="input-control"/>
+                <small>Error</small>
                 </div>
             
-                <div class="form-group">
+                <div class="formgroup">
                 <label>Address</label>
-                <textarea class="input-control" required></textarea>
+                <textarea class="input-control" id="address"></textarea>
+                <small>Error</small>
                 </div>
             
-                <div class="form-group">
+                <div class="formgroup">
                 <label>Postal code</label>
-                <input type="" class="input-control" style="flex: 6" />    
+                <input type="" class="input-control" id="postalCode" style="flex: 6" /> 
+                <small>Error</small>   
                 </div>
 
-                <div class="form-group">
+                <div class="formgroup">
                     <label>Password</label>
-                    <input type="password" class="input-control" style="flex: 6" />    
+                    <input type="password" class="input-control" id="password" style="flex: 6" />  
+                    <small>Error</small>  
                 </div>
 
-                <div class="form-group">
+                <div class="formgroup">
                     <label>Confirm-password</label>
-                    <input type="password" class="input-control" style="flex: 6" />    
+                    <input type="password" class="input-control" id="conPassword" style="flex: 6" />  
+                    <small>Error</small>  
                 </div>
             
-                <div class="form-group">
+                <div class="formgroup">
                 <label>&nbsp;</label>
-                <button onclick=" ">Submit</button>
+                <button>Submit</button>
                 </div>
             </form>
 
