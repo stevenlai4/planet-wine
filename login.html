@@ -41,8 +41,8 @@
         <br />
       </header>
 
-      <div class="Login">
-        <section class="Login-Form">
+      <section class="Login">
+        <div class="Login-Form">
           <form>
             <label for="user">Email</label><br />
             <input
@@ -62,6 +62,7 @@
 
             <button type="submit">Submit</button>
           </form>
+        </div>
 
           <div class="Create">
             <article>
@@ -70,12 +71,13 @@
                 New to Planet Wine? <br />
                 It only takes a moment to create an account.
               </p>
-              <button a href="register.html">Create Account</button>
-              <!-- Can be change to button either through css and style it as a button or make this a button and add the link through js -->
+              <button onclick="register.html" type="button">
+                Create Account
+              </button>
             </article>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
 
     <!-- banner photo -->
@@ -105,6 +107,7 @@
       <p>&copy; All Right Reserved</p>
     </footer>
 
+    <script src="scripts/global-toggle.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

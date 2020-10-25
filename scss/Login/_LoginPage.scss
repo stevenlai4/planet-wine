@@ -1,92 +1,110 @@
 // Login Page
 
-.Login-Title{
-    font-size: 55px;
-    text-align: center;
-    font-family: Cormorant;
-    margin-top: 3%;
+.Login-Title {
+  font-size: 50px;
+  text-align: center;
+  font-family: Cormorant;
+  margin-top: 3%;
 }
 
 // Login user name and password
 .Login-Form {
-   
-    width: 100%;
-    display: flex;
-    margin-bottom: 10%;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10%;
 
+  label {
+    font-size: 20px;
+  }
 
-    label {
-        font-size: 20px;
+  input {
+    padding: 15px 250px 15px 10px;
+    margin: 25px;
+    box-sizing: border-box;
+    font-size: 22px;
+    margin-left: auto;
+    overflow: hidden;
+  }
 
-
-    }
-    
-    input {
-        padding: 15px 250px 15px 10px;
-        margin: 25px;
-        box-sizing: border-box;
-        font-size: 22px;
-        margin-left: auto;
-        overflow: hidden;
-    }
-
-    button {
-        padding: 15px 30px;
-        background-color: #c7b198;
-        color: white;
-        font-size: 16px;
-        text-align: center;
-        margin-top: 15px;
-    }
-    
-
+  button {
+    padding: 15px 30px;
+    background-color: #c7b198;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 // Creating an account
-.Create { 
-    display: none;
-    margin: 0 0 0 26.5%;
+.Create {
+  margin: auto;
 
+  h5 {
+    font-size: 35px;
+    margin-bottom: 10%;
+  }
+  p {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
 
-    h5{
-        font-size: 35px;
-        margin-bottom: 10%;
-    }
-        p { 
-            font-size: 22px;
-            margin-bottom: 25px;
-          }
-
-    button {
-        padding: 15px 170px;
-        background-color: #c7b198;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 10%;
-    }
+  button {
+    padding: 15px 170px;
+    background-color: #c7b198;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+  }
 }
 
 // image
 .Login-image {
-    background:url('../../Images/barrels.jpg');
+  background: url("../../Images/barrels.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 450px;
+  margin-top: 8px;
+  background-position: center;
+
+  h1 {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+//screen sizes that are less than 768 pixels
+@media (max-width: 768px) {
+  .Login-Title {
+    font-size: 40px;
+    text-align: center;
+    font-family: Cormorant;
+    margin-top: 3%;
+  }
+
+  .Login-Form {
+    width: 100%;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .Login-image {
+    background: url("../../Images/barrels.jpg");
     width: 100%;
     background-size: cover;
-    height: 450px;
+    height: 200px;
     margin-top: 8px;
     background-position: center;
 
     h1 {
-        font-size: 100px;
-        color: white;
-        position: absolute;
-        text-align: center;;
-        margin: 9% 0 0 23%
-
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      margin: 9% 0 0 23%;
     }
-}
-
-@media (max-width: 768px) {
-
-
+  }
 }
