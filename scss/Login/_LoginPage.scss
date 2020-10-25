@@ -10,8 +10,7 @@
 // Login user name and password
 .Login-Form {
    
-    margin-left: 18%;
-    margin-top: 5%;
+    width: 100%;
     display: flex;
     margin-bottom: 10%;
 
@@ -45,7 +44,7 @@
 
 // Creating an account
 .Create { 
-    display: flex;
+    display: none;
     margin: 0 0 0 26.5%;
 
 
@@ -85,4 +84,9 @@
         margin: 9% 0 0 23%
 
     }
+}
+
+@media (max-width: 768px) {
+
+
 }

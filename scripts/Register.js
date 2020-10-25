@@ -1,63 +1,123 @@
-// alert("Hello! I am an alert box!!");
-const RegForm = document.getElementById('RegForm');
-const lastName = document.getElementById('lastName');
-const email = document.getElementById('email');
-const question = document.getElementById('question');
 var alphaOnly = /^[a-zA-Z]*$/;
-RegForm.addEventListener('submit', e => {
-    e.preventDefault();
-    checkInputs();
+document.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (validation(this)) {
+    swal(
+      "Thank you for your registration!",
+      "You will receive an email confirmation shortly."
+    );
+  }
 });
-function checkInputs(){
-    // get the values from the inputs
-    const lastNameValue = lastName.value.trim();
-    const emailValue = email.value.trim();
-    const questionValue = question.value.trim();
-    if(lastNameValue === ' '){
-        //show error and add error class
-        setErrorFor(lastName,"Last Name cannot be blank");
-    }  else {
-        //add success class
-        setSuccessFor(lastName);
+
+const validationFields = [
+  "firstName",
+  "LastName",
+  "email",
+  "address",
+  "postalCode",
+  "password",
+  "conPassword",
+];
+
+//clear local storage on submitting the form and validation
+function validation(form) {
+  function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      email
+    );
+  }
+
+  function isPostCode(postal) {
+    if (
+      /^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ]( )?\d[ABCEGHJKLMNPRSTVWXYZ]\d$/i.test(
+        postal
+      ) ||
+      /^\d{5}$|^\d{5}-\d{4}$/.test(postal)
+    )
+      return true;
+    else return false;
+  }
+
+  function isPhone(phone) {
+    if (/^\d{10}$/.test(phone)) return true;
+    else return false;
+  }
+
+  function isPassword(password) {
+    // Input Password and Submit [7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter]</h2
+    if (/^[A-Za-z]\w{7,14}$/.test(password)) {
+      return true;
+    } else {
+      return false;
     }
-    // if(emailValue === ''){
-    //     //show error and add error class
-    //     setErrorFor(email,"Email cannot be blank");
-    // } else if(!isEmail(emailValue)){
-    //     setErrorFor(email,'Email is not valid')
-    // } else {
-    //     //add success class
-    //     setSuccessFor(email);
-    // }
-    // if(questionValue === ''){
-    //     //show error and add error class
-    //     setErrorFor(question,"Please leave your questions");
-    // } else if(questionValue.length<10){
-    //     setErrorFor(question,'Must be at least 10 characters')
-    // } else {
-    //     //add success class
-    //     setSuccessFor(question);
-    // }
-    // if (name.parentElement.className == 'contactForm success' && email.parentElement.className == 'contactForm success' && question.parentElement.className == 'contactForm success'){
-    //      // pop-up after successful submittion/reset form
-    //     swal("Thank you for getting in touch!", "We will get back in touch with you soon.");
-    //     document.getElementById("form").reset();
-    // }
-}  
-function setErrorFor(input,message){
-    const formgroup = input.parentElement;
-    const small = formgroup.querySelector('small');
-    //add error message 
-    small.innerText = message;
-    //add error class
-    formgroup.className = 'formgroup error';
+  }
+
+  let isError = false;
+  let password = "";
+
+  validationFields.forEach((field) => {
+    const isRequired =
+      [
+        "firstName",
+        "LastName",
+        "email",
+        "address",
+        "postalCode",
+        "password",
+        "conPassword",
+      ].indexOf(field) != -1;
+
+    if (isRequired) {
+      const item = document.querySelector("#" + field);
+
+      if (item) {
+        const value = item.value.trim();
+        if (value === "") {
+          setErrorFor(item, field + " cannot be blank");
+          isError = true;
+        } else if (field === "email" && !isEmail(value)) {
+          setErrorFor(item, field + " is an invalid email");
+          isError = true;
+        } else if (field === "postalCode" && !isPostCode(value)) {
+          setErrorFor(item, field + " is an invalid post code");
+          isError = true;
+        } else if (field === "phone" && !isPhone(value)) {
+          setErrorFor(item, field + " is an invalid phone number");
+          isError = true;
+        } else if (field === "password" && isPassword(value)) {
+          setSuccessFor(item);
+          password = value;
+        } else if (field === "password" && !isPassword(value)) {
+          setErrorFor(item, field + " is an invalid password");
+          isError = true;
+          password = "";
+        } else if (field === "conPassword" && password !== value) {
+          setErrorFor(item, field + " is an invalid password");
+          isError = true;
+        } else {
+          setSuccessFor(item);
+        }
+      }
+    }
+  });
+
+  return isError === false;
+}
+
+function setErrorFor(input, message) {
+  const formgroup = input.parentElement;
+  const small = formgroup.querySelector("small");
+  //add error message
+  small.innerText = message;
+  //add error class
+  formgroup.classList.remove("success");
+  formgroup.classList.add("error");
 }
 function setSuccessFor(input) {
-    const formgroup = input.parentElement;
-    //add success class
-    formgroup.className = 'formgroup success';
-}
-//make sure the email is valid
-function isEmail(email) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+  const formgroup = input.parentElement;
+  const small = formgroup.querySelector("small");
+  //add success class
+  small.innerText = "";
+  formgroup.classList.remove("error");
+  formgroup.classList.add("success");
 }
