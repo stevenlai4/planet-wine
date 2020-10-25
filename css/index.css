@@ -261,36 +261,39 @@ table {
   top: 20%;
   left: 8%;
   right: 8%;
-  transform: translate(-50, 50);
   z-index: 1 !important;
   display: flex;
   align-items: center;
   justify-content: center; }
   .pop-up-wrapper .popup-photo {
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 100%;
     overflow: hidden; }
-  .pop-up-wrapper .popup-photo img {
-    width: auto;
-    height: 100%; }
+    .pop-up-wrapper .popup-photo img {
+      width: auto;
+      height: 100%; }
   .pop-up-wrapper .popup-overlay .active-popup {
     visibility: visible;
     text-align: center;
-    width: 80%;
+    width: 50%;
     height: 400px;
     margin: 0 auto;
-    background-color: #c7b198;
+    background-color: #916a40;
     display: flex; }
   .pop-up-wrapper .popup-text {
+    font-family: "Cormorant", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding: 10px; }
-  .pop-up-wrapper .pop-text p {
-    font-size: 2px; }
+    margin-left: 5%; }
+    .pop-up-wrapper .popup-text h1 {
+      margin-top: 0;
+      font-size: 30px; }
+  .pop-up-wrapper i {
+    color: white; }
   .pop-up-wrapper .popup-content .active-popup {
     visibility: visible;
     color: white; }
