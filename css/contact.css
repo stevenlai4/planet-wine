@@ -9,9 +9,9 @@
   justify-content: flex-end; }
 
 .wrapper-form {
-  margin: 10%;
+  margin: 5%;
   padding: 2%;
-  width: 80%;
+  width: 90%;
   background-color: #dfd3c3;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -30,8 +30,7 @@
     padding: 10px;
     margin: 1%;
     width: 95%;
-    display: block;
-    border-radius: 10px; }
+    display: block; }
   .wrapper-form label {
     display: inline-block;
     margin-left: 10px;
@@ -40,8 +39,7 @@
     padding: 10px;
     margin: 1%;
     width: 95%;
-    height: 200px;
-    border-radius: 10px; }
+    height: 200px; }
   .wrapper-form .contactForm small {
     font-size: 15px;
     visibility: hidden;

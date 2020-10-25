@@ -19,10 +19,10 @@ function checkInputs(){
         //show error and add error class
         setErrorFor(name,"Name cannot be blank");
     } else  if (nameValue.match(alphaOnly)){
-        //only accept alpha 
+        //only accept alpha , add success class
         setSuccessFor(name);
     } else {
-        //add success class
+        //add error class
         setErrorFor(name,'Name is not valid, only alphabetical characters')
     }
 
