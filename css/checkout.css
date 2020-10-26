@@ -2,8 +2,7 @@
   width: 90%;
   line-height: 1.4;
   margin: 0 auto;
-  font-family: "Cormorant", Verdana, sans-serif;
-  text-transform: capitalize; }
+  font-family: "Cormorant", Verdana, sans-serif; }
   .wrapper > h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -49,10 +48,10 @@
     text-align: left;
     font-size: 1.5rem;
     left: 10%; }
-    .wrapper .backToHome > a {
+    .wrapper .backToHome a {
       text-decoration: none;
       color: black; }
-      .wrapper .backToHome > a > i {
+      .wrapper .backToHome a > i {
         margin-right: 10px;
         padding: 5px; }
 
@@ -115,7 +114,9 @@
       padding-right: 0; }
     .wrapper > form > div.content > input,
     .wrapper > form > div.content > select {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .wrapper .product-item {
+    color: #929292; } }
 /* 
   ##Device = Tablet or Desktop (Portrait). 
 */
