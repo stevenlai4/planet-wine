@@ -92,8 +92,8 @@ const displayCart = () => {
             str += '</div>';
             str += '</div>';
 
-            str += '<div class="product-item">';
-            str += `<p id="total${key}" class="price my-5 mx-3 item-total">$${(
+            str += '<div class="product-price">';
+            str += `<p id="total${key}" class="price total-price my-4 item-total">$${(
                 productObj[key].price * localStorage.getItem(key)
             ).toFixed(2)}</p>`;
             str += '</div>';
