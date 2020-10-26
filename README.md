@@ -117,7 +117,7 @@ An eccommerce website about selling wine
 -   Shipping Info Form
 -   Submit Button
 -   Receipt
--   Back to Home Link
+-   Back to Cart Link
 
 ![Checkout](./img/checkout-img.png)
 
