@@ -1,54 +1,46 @@
-.contact-image {
-  height: 50vh;
-  width: 100%;
-  background: url("../img/banner-contact.jpg") center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end; }
+/*
+Error: Invalid CSS after "...rmorant', serif": expected "{", was ";"
+        on line 21 of /Users/karen/Desktop/BCIT_SSD/Front_end_essentials/front-end-project/front-end-project-nappingbed/scss/contact/contact.scss
 
-.wrapper-form {
-  margin: 5%;
-  padding: 2%;
-  width: 90%;
-  background-color: #dfd3c3;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  font-family: 'Cormorant', serif;
-  overflow: hidden;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-  color: #444444; }
-  .wrapper-form h1 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700; }
-  .wrapper-form input {
-    padding: 10px;
-    margin: 1%;
-    width: 95%;
-    display: block; }
-  .wrapper-form label {
-    display: inline-block;
-    margin-left: 10px;
-    position: relative; }
-  .wrapper-form textarea {
-    padding: 10px;
-    margin: 1%;
-    width: 95%;
-    height: 200px; }
-  .wrapper-form .contactForm small {
-    font-size: 15px;
-    visibility: hidden;
-    margin: 15px; }
-  .wrapper-form .contactForm.error small {
-    color: #e74c3c;
-    visibility: visible; }
-  .wrapper-form .submit-btn {
-    background-color: silver;
-    margin: 1%; }
+16:     background-color: #dfd3c3;
+17:     border-radius: 10px;
+18:     margin-bottom: 5%;
+19:     margin-top: 5%;
+20: <<<<<<< HEAD
+21:     font-family: 'Cormorant', serif;
+22:     overflow: hidden;
+23:     font-size: 20px;
+24:     font-weight: 400;
+25:     position: relative;
+26:     color: #444444;
 
-/*# sourceMappingURL=contact.css.map */
+Backtrace:
+/Users/karen/Desktop/BCIT_SSD/Front_end_essentials/front-end-project/front-end-project-nappingbed/scss/contact/contact.scss:21
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...rmorant', serif\": expected \"{\", was \";\"\A         on line 21 of /Users/karen/Desktop/BCIT_SSD/Front_end_essentials/front-end-project/front-end-project-nappingbed/scss/contact/contact.scss\A \A 16:     background-color: #dfd3c3;\A 17:     border-radius: 10px;\A 18:     margin-bottom: 5%;\A 19:     margin-top: 5%;\A 20: <<<<<<< HEAD\A 21:     font-family: 'Cormorant', serif;\A 22:     overflow: hidden;\A 23:     font-size: 20px;\A 24:     font-weight: 400;\A 25:     position: relative;\A 26:     color: #444444;"; }
