@@ -8,7 +8,7 @@ const arrToObj = (dataArr) => {
 };
 
 //On page load, load data to local variable
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
     products.getProducts().then((data) => {
         arrToObj(data);
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class Products {
     async getProducts() {
         try {
-            let result = await fetch('scripts/products.json');
+            let result = await fetch("scripts/products.json");
             let data = await result.json();
             this.products = data.map((product) => {
                 return product;
@@ -35,33 +35,33 @@ class Products {
 
 // Display Purchashed List
 const displayCart = () => {
-    const article = document.querySelector('article');
-    var str = '';
+    const article = document.querySelector("article");
+    var str = "";
     const lsLength = localStorage.length;
 
     // Displahy cart empty when no purchased items
     if (lsLength === 0) {
         str +=
             '<div class="cart-empty" style="text-align: center;"><p>Your Cart Is Empty</p></div>';
-        str += '<hr />';
+        str += "<hr />";
         str += '<div class="container">';
         str += '<div class="row my-4">';
         str += '<div class="col-md-6 text-center d-flex">';
         str += '<div class="p-2 continous-btn">';
         str += '<i class="fas fa-caret-left"></i>';
-        str += '</div>';
+        str += "</div>";
         str += '<div class="p-2 continous-btn">';
         str += '<a class="cont-shopping" href="shop.html">';
-        str += 'Continous Shopping</a>';
-        str += '</div>';
-        str += '</div>';
+        str += "Continous Shopping</a>";
+        str += "</div>";
+        str += "</div>";
         str += '<div class="col-md-6 d-flex flex-column">';
         str += '<div class="p-2 ml-auto">';
         str += `<button type="button" class="btn proceed-btn" style="background-color: grey; color: white;" disabled>Proceed To Checkout</button>`;
-        str += '</div>';
-        str += '</div>';
-        str += '</div>';
-        str += '</div>';
+        str += "</div>";
+        str += "</div>";
+        str += "</div>";
+        str += "</div>";
 
         article.innerHTML = str;
     } else {
@@ -74,12 +74,12 @@ const displayCart = () => {
                 '<div class="d-flex my-4 flex-column flex-md-row align-items-center justify-content-around">';
             str += '<div class="product-item text-center">';
             str += `<img src="${productObj[key].image}" alt="mall"/>`;
-            str += ' </div>';
+            str += " </div>";
             str += '<div class="product-item text-center">';
             str += '<p class="item-title my-4">';
             str += productObj[key].name;
-            str += '</p>';
-            str += '</div>';
+            str += "</p>";
+            str += "</div>";
             str += '<div class="product-item">';
             str +=
                 '<div class="d-flex flex-row align-items-center justify-content-center">';
@@ -89,17 +89,17 @@ const displayCart = () => {
                 key
             )}"/>`;
             str += `<i class="fas fa-minus-circle quantity-btn quantity-minus" data-wine-id="${key}"></i>`;
-            str += '</div>';
-            str += '</div>';
+            str += "</div>";
+            str += "</div>";
 
             str += '<div class="product-item">';
             str += `<p id="total${key}" class="price my-5 mx-3 item-total">$${
                 productObj[key].price * localStorage.getItem(key)
             }</p>`;
-            str += '</div>';
-            str += '</div>';
-            str += '</div>';
-            str += '<hr />';
+            str += "</div>";
+            str += "</div>";
+            str += "</div>";
+            str += "<hr />";
         }
 
         // Add Return Shop Link, Checkout Button, and Subtotal
@@ -108,22 +108,22 @@ const displayCart = () => {
         str += '<div class="col-md-6 text-center d-flex">';
         str += '<div class="p-2 continous-btn">';
         str += '<i class="fas fa-caret-left"></i>';
-        str += '</div>';
+        str += "</div>";
         str += '<div class="p-2 continous-btn">';
         str += '<a class="cont-shopping" href="shop.html">';
-        str += 'Continous Shopping</a>';
-        str += '</div>';
-        str += '</div>';
+        str += "Continous Shopping</a>";
+        str += "</div>";
+        str += "</div>";
         str += '<div class="col-md-6 d-flex flex-column">';
         str += '<div class="p-2 ml-auto">';
         str += '<a href="checkout.html">';
         str +=
             '<button type="button" class="btn proceed-btn">Proceed To Checkout</button>';
-        str += '</a>';
-        str += '</div>';
-        str += '</div>';
-        str += '</div>';
-        str += '</div>';
+        str += "</a>";
+        str += "</div>";
+        str += "</div>";
+        str += "</div>";
+        str += "</div>";
 
         article.innerHTML = str;
     }
@@ -133,7 +133,7 @@ const displayCart = () => {
 const calcTotalPrice = (id, quantity) => {
     const totalPrice = document.querySelector(`#total${id}`);
 
-    totalPrice.innerHTML = '$' + (productObj[id].price * quantity).toFixed(2);
+    totalPrice.innerHTML = "$" + (productObj[id].price * quantity).toFixed(2);
 };
 
 // Change total price when user insert into inputs
@@ -141,17 +141,17 @@ const insertInput = (element) => {
     const id = element.name.substring(4);
 
     // Valid date input then calc total price
-    if (element.value === '') {
-        window.alert('Please enter your quantity!');
+    if (element.value === "") {
+        window.alert("Please enter your quantity!");
         element.value = 0;
     } else if (isNaN(element.value)) {
-        window.alert('Please enter an integer number for the quantity!');
+        window.alert("Please enter an integer number for the quantity!");
         element.value = localStorage.getItem(id);
     } else if (element.value < 0 || element.value > 100) {
-        window.alert('Please enter a quantity number between 0 to 100!');
+        window.alert("Please enter a quantity number between 0 to 100!");
         element.value = localStorage.getItem(id);
     } else if (!Number.isInteger(Number(element.value))) {
-        window.alert('Please enter an integer number for the quantity!');
+        window.alert("Please enter an integer number for the quantity!");
         element.value = Math.floor(element.value);
     }
     // Eliminating leading zero when there's one
@@ -198,20 +198,20 @@ const decreaseQuantity = (element) => {
 
 // Add EventListeners to plus/minus buttons
 const addPlusInputMinusListener = () => {
-    const plusButtons = document.querySelectorAll('.quantity-plus');
-    const minusButtons = document.querySelectorAll('.quantity-minus');
-    const inputQuantity = document.querySelectorAll('.quantity-box');
+    const plusButtons = document.querySelectorAll(".quantity-plus");
+    const minusButtons = document.querySelectorAll(".quantity-minus");
+    const inputQuantity = document.querySelectorAll(".quantity-box");
 
     for (let i = 0; i < plusButtons.length; i++) {
-        plusButtons[i].addEventListener('click', function () {
+        plusButtons[i].addEventListener("click", function () {
             increaseQuantity(this);
         });
 
-        inputQuantity[i].addEventListener('change', function () {
+        inputQuantity[i].addEventListener("change", function () {
             insertInput(this);
         });
 
-        minusButtons[i].addEventListener('click', function () {
+        minusButtons[i].addEventListener("click", function () {
             decreaseQuantity(this);
         });
     }

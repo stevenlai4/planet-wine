@@ -1,105 +1,105 @@
 form {
-  width: 95%;
-  margin: auto;
+    width: 95%;
+    margin: auto;
 }
 
 textarea {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-content {
-  padding: 2%;
+    padding: 2%;
 
-  margin: auto;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  background-color: #dfd3c3;
-  width: 60%;
-  text-align: center;
-  font-family: "Cormorant", serif;
-
-  h1 {
-    font-size: 30px;
-    font-weight: 600;
-    padding-bottom: 2%;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    padding: 20px 8px;
-    background-color: #dfd3c3;
-    width: 95%;
     margin: auto;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
-  }
+    background-color: #dfd3c3;
+    width: 60%;
+    text-align: center;
+    font-family: "Cormorant", serif;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px 8px;
+        background-color: #dfd3c3;
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
 }
 
 /* form specific format*/
 .formgroup {
-  display: flex;
-  flex-direction: row;
-  width: auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
 
-  > label {
-    width: 10rem;
-    margin-top: 0px;
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: right;
-    margin-right: 1rem;
-  }
-  small {
-    height: 1rem;
-    display: block;
-    visibility: hidden;
-  }
+    > label {
+        width: 10rem;
+        margin-top: 0px;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: right;
+        margin-right: 1rem;
+    }
+    small {
+        height: 1rem;
+        display: block;
+        visibility: hidden;
+    }
 }
 
 .error small {
-  color: #e74c3c;
-  visibility: visible;
+    color: #e74c3c;
+    visibility: visible;
 }
 
 .formgroup .input-control,
 textarea {
-  text-align: left;
-  margin-bottom: 6px;
-  margin-right: 8px;
-  width: 100%;
-  font-size: 15px;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-right: 8px;
+    width: 100%;
+    font-size: 15px;
 }
 
 input,
 textarea {
-  width: 90%;
-  margin: 0;
+    width: 90%;
+    margin: 0;
 }
 
 button {
-  padding: 15px 30px;
-  text-align: center;
-  min-width: 100px;
+    padding: 15px 30px;
+    text-align: center;
+    min-width: 100px;
 }
 
 @media (max-width: 768px) {
-  .formgroup {
-    flex-direction: column;
+    .formgroup {
+        flex-direction: column;
 
-    > label {
-      text-align: left;
+        > label {
+            text-align: left;
+        }
     }
-  }
-  .formgroup .input-control {
-    margin-top: 2px;
-  }
+    .formgroup .input-control {
+        margin-top: 2px;
+    }
 
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 18px;
-    width: 5rem;
-    min-width: 100px;
-  }
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 18px;
+        width: 5rem;
+        min-width: 100px;
+    }
 }

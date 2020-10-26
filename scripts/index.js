@@ -1,20 +1,20 @@
 function createUUID() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (
         c
     ) {
         var r = (Math.random() * 16) | 0,
-            v = c == 'x' ? r : (r & 0x3) | 0x8;
+            v = c == "x" ? r : (r & 0x3) | 0x8;
         return v.toString(16);
     });
 }
 
 const RuturnCode = {
     //assinging values to constants
-    ERROR: 'Function return error',
-    SUCCESS: 'Function return success',
+    ERROR: "Function return error",
+    SUCCESS: "Function return success",
 };
 
-const CustomersFile = './customers.json';
+const CustomersFile = "./customers.json";
 
 class Wine {
     constructor(name, picture, brand, price, descrption, quantity) {
@@ -47,9 +47,9 @@ class CustomerInventory extends Wines {
         // add a number of wine into the database: check the quantities against the inventory
         var ret = RuturnCode.ERROR;
         var quantities = gInventory.get(name, quantity);
-        if (typeof quantities !== 'undefined' && quantity < quantities) {
+        if (typeof quantities !== "undefined" && quantity < quantities) {
             var customerQuantities = this.wines.get(name);
-            if (typeof customerQuantities !== 'undefined') {
+            if (typeof customerQuantities !== "undefined") {
                 this.wines.set(name, quantities + quantity);
             }
         }
@@ -61,22 +61,22 @@ class Inventory extends Wines {
     constructor() {
         super();
         this.wines.set(
-            'Russia Wine 1',
+            "Russia Wine 1",
             new Wine(
-                'Russia Wine 1',
-                '/images/russia/1.png',
+                "Russia Wine 1",
+                "/images/russia/1.png",
                 22.22,
-                'Drunk Russia Man',
+                "Drunk Russia Man",
                 100
             )
         );
         this.wines.set(
-            'China Wine 1',
+            "China Wine 1",
             new Wine(
-                'China Wine 1',
-                '/images/china/1.png',
+                "China Wine 1",
+                "/images/china/1.png",
                 22.22,
-                'Drunk China Man',
+                "Drunk China Man",
                 100
             )
         );
@@ -140,7 +140,7 @@ let gCustomers = new Customers();
 let gInventory = new Inventory();
 
 function test() {
-    gCustomers.add(new Customer('Karen Mok', '1900', '', '', '', ''));
+    gCustomers.add(new Customer("Karen Mok", "1900", "", "", "", ""));
     gCustomers.saveJSONFile();
 }
 
