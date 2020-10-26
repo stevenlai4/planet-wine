@@ -230,6 +230,8 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-family: "Cormorant", serif;
+  color: #929292;
 }
 
 .content {
@@ -246,7 +248,7 @@ footer {
 footer h5 {
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 footer h5,
 footer p {
