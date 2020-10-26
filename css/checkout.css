@@ -32,6 +32,8 @@
     .wrapper > form > div select {
       border: 2px solid lightgray;
       box-shadow: inset -1px 2px 3px lightgray; }
+    .wrapper > form input {
+      padding-left: 1rem; }
     .wrapper > form > input {
       display: block;
       margin: 3rem auto 2rem auto;

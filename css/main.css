@@ -218,10 +218,12 @@ footer {
 
 form .input-control {
   position: relative; }
-  form .input-control.success input {
+  form .input-control.success input, form .input-control.success select {
     border-color: #156115; }
-  form .input-control.error input {
+  form .input-control.error input, form .input-control.error select {
     border-color: #e74c3c; }
+  form .input-control input {
+    padding-left: 1rem; }
   form .input-control i {
     visibility: hidden;
     position: absolute;
