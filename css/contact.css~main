@@ -1,0 +1,54 @@
+.contact-image {
+  height: 50vh;
+  width: 100%;
+  background: url("../img/banner-contact.jpg") center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; }
+
+.wrapper-form {
+  margin: 5%;
+  padding: 2%;
+  width: 90%;
+  background-color: #dfd3c3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: 'Cormorant', serif;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative; }
+  .wrapper-form h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 700; }
+  .wrapper-form input {
+    padding: 10px;
+    margin: 1%;
+    width: 95%;
+    display: block; }
+  .wrapper-form label {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative; }
+  .wrapper-form textarea {
+    padding: 10px;
+    margin: 1%;
+    width: 95%;
+    height: 200px; }
+  .wrapper-form .contactForm small {
+    font-size: 15px;
+    visibility: hidden;
+    margin: 15px; }
+  .wrapper-form .contactForm.error small {
+    color: #e74c3c;
+    visibility: visible; }
+  .wrapper-form .submit-btn {
+    background-color: silver;
+    margin: 1%; }
+
+/*# sourceMappingURL=contact.css.map */
