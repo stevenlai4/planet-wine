@@ -1,16 +1,16 @@
 var productObj = {};
 
 // Convert json array data into object
-const arrToObj = (dataArr) => {
-    dataArr.forEach((data) => {
+const arrToObj = dataArr => {
+    dataArr.forEach(data => {
         productObj[data.id] = data;
     });
 };
 
 //On page load, load data to local variable
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
-    products.getProducts().then((data) => {
+    products.getProducts().then(data => {
         arrToObj(data);
 
         displayCart();
@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 class Products {
     async getProducts() {
         try {
-            let result = await fetch('scripts/products.json');
+            let result = await fetch("scripts/products.json");
             let data = await result.json();
-            this.products = data.map((product) => {
+            this.products = data.map(product => {
                 return product;
             });
             return this.products;
@@ -35,8 +35,8 @@ class Products {
 
 // Display Purchashed List
 const displayCart = () => {
-    const article = document.querySelector('article');
-    var str = '';
+    const article = document.querySelector("article");
+    var str = "";
     const lsLength = localStorage.length;
 
     // Displahy cart empty when no purchased items
@@ -72,12 +72,12 @@ const displayCart = () => {
                 '<div class="d-flex my-4 flex-column flex-md-row align-items-center justify-content-around">';
             str += '<div class="product-item text-center">';
             str += `<img src="${productObj[key].image}" alt="mall"/>`;
-            str += ' </div>';
+            str += " </div>";
             str += '<div class="product-item text-center">';
             str += '<p class="item-title my-4">';
             str += productObj[key].name;
-            str += '</p>';
-            str += '</div>';
+            str += "</p>";
+            str += "</div>";
             str += '<div class="product-item">';
             str +=
                 '<div class="d-flex flex-row align-items-center justify-content-center">';
@@ -87,8 +87,8 @@ const displayCart = () => {
                 key
             )}"/>`;
             str += `<i class="fas fa-minus-circle quantity-btn quantity-minus" data-wine-id="${key}"></i>`;
-            str += '</div>';
-            str += '</div>';
+            str += "</div>";
+            str += "</div>";
 
             str += '<div class="product-price">';
             str += `<p id="total${key}" class="price total-price my-4 item-total">$${(
@@ -118,7 +118,7 @@ const displayCart = () => {
         str += '</a>';
         str += '</div>';
         str += '</div>';
-
+      
         article.innerHTML = str;
     }
 };
@@ -127,25 +127,25 @@ const displayCart = () => {
 const calcTotalPrice = (id, quantity) => {
     const totalPrice = document.querySelector(`#total${id}`);
 
-    totalPrice.innerHTML = '$' + (productObj[id].price * quantity).toFixed(2);
+    totalPrice.innerHTML = "$" + (productObj[id].price * quantity).toFixed(2);
 };
 
 // Change total price when user insert into inputs
-const insertInput = (element) => {
+const insertInput = element => {
     const id = element.name.substring(4);
 
     // Valid date input then calc total price
-    if (element.value === '') {
-        window.alert('Please enter your quantity!');
+    if (element.value === "") {
+        window.alert("Please enter your quantity!");
         element.value = 0;
     } else if (isNaN(element.value)) {
-        window.alert('Please enter an integer number for the quantity!');
+        window.alert("Please enter an integer number for the quantity!");
         element.value = localStorage.getItem(id);
     } else if (element.value < 0 || element.value > 100) {
-        window.alert('Please enter a quantity number between 0 to 100!');
+        window.alert("Please enter a quantity number between 0 to 100!");
         element.value = localStorage.getItem(id);
     } else if (!Number.isInteger(Number(element.value))) {
-        window.alert('Please enter an integer number for the quantity!');
+        window.alert("Please enter an integer number for the quantity!");
         element.value = Math.floor(element.value);
     }
     // Eliminating leading zero when there's one
@@ -161,7 +161,7 @@ const insertInput = (element) => {
 };
 
 // Increase wine quantity when plus button clicked
-const increaseQuantity = (element) => {
+const increaseQuantity = element => {
     const id = element.dataset.wineId;
     const input = document.getElementsByName(`wine${id}`);
 
@@ -173,7 +173,7 @@ const increaseQuantity = (element) => {
 };
 
 // Decrease wine quantity when minus button clicked
-const decreaseQuantity = (element) => {
+const decreaseQuantity = element => {
     const id = element.dataset.wineId;
     const input = document.getElementsByName(`wine${id}`);
 
@@ -192,20 +192,20 @@ const decreaseQuantity = (element) => {
 
 // Add EventListeners to plus/minus buttons
 const addPlusInputMinusListener = () => {
-    const plusButtons = document.querySelectorAll('.quantity-plus');
-    const minusButtons = document.querySelectorAll('.quantity-minus');
-    const inputQuantity = document.querySelectorAll('.quantity-box');
+    const plusButtons = document.querySelectorAll(".quantity-plus");
+    const minusButtons = document.querySelectorAll(".quantity-minus");
+    const inputQuantity = document.querySelectorAll(".quantity-box");
 
     for (let i = 0; i < plusButtons.length; i++) {
-        plusButtons[i].addEventListener('click', function () {
+        plusButtons[i].addEventListener("click", function () {
             increaseQuantity(this);
         });
 
-        inputQuantity[i].addEventListener('change', function () {
+        inputQuantity[i].addEventListener("change", function () {
             insertInput(this);
         });
 
-        minusButtons[i].addEventListener('click', function () {
+        minusButtons[i].addEventListener("click", function () {
             decreaseQuantity(this);
         });
     }

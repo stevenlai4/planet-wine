@@ -262,4 +262,32 @@ footer ul a {
   font-size: 2rem;
 }
 
+form .input-control {
+  position: relative; }
+  form .input-control.success input {
+    border-color: lightgreen; }
+  form .input-control.error input {
+    border-color: crimson; }
+  form .input-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 1rem;
+    right: 10px; }
+  form .input-control.success i.fa-check-circle {
+    color: lightgreen;
+    visibility: visible; }
+  form .input-control.error i.fa-exclamation-circle {
+    color: crimson;
+    visibility: visible; }
+form .result {
+  margin: 10px auto;
+  text-align: center;
+  width: 60%;
+  font-size: 2rem;
+  font-weight: bold; }
+  form .result.success {
+    color: lightgreen; }
+  form .result.fail {
+    color: crimson; }
+
 /*# sourceMappingURL=main.css.map */
