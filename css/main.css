@@ -141,17 +141,16 @@ nav {
     display: flex;
     width: 5%;
     justify-content: space-around;
-    right: 20px;
-    top: 20px; }
-    nav .login-cart li {
-      padding-right: 20px; }
-      nav .login-cart li a {
-        color: white;
-        font-size: 20px;
-        transition: all .5s ease-in;
-        padding: 30px 0; }
-        nav .login-cart li a:hover {
-          color: #c7b198; }
+    right: 30px;
+    top: 15px; }
+    nav .login-cart li:not(:last-of-type) {
+      padding-right: 15px; }
+    nav .login-cart li a {
+      color: white;
+      font-size: 20px;
+      transition: all 0.5s ease-in; }
+      nav .login-cart li a:hover {
+        color: #c7b198; }
   nav .menu {
     margin: 0;
     padding: 0;
@@ -168,7 +167,7 @@ nav {
         line-height: 2;
         padding: 20px;
         color: white;
-        transition: all .5s ease-in; }
+        transition: all 0.5s ease-in; }
         nav .menu .item a:hover {
           color: #c7b198; }
   nav .active .item {
@@ -180,7 +179,11 @@ nav {
   .toggle .fas {
     color: White; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+  nav .login-cart {
+    right: 25px;
+    top: 22px; } }
+@media screen and (min-width: 992px) {
   .toggle {
     display: none; }
 
@@ -195,12 +198,26 @@ nav {
       padding-right: 110px; }
     nav .menu li:last-of-type {
       padding-right: 0; } }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Cormorant', serif;
+  color: #929292; }
+
+.content {
+  min-height: 100%; }
+
 footer {
   text-align: center;
   justify-content: space-around;
   background-color: #444444;
   color: white;
   padding: 20px 0; }
+  footer h5 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900; }
   footer h5,
   footer p {
     margin: 18px 0; }
@@ -215,6 +232,18 @@ footer {
     footer ul a {
       color: white;
       font-size: 2rem; }
+    footer ul .facebook:hover {
+      color: #3b5998; }
+    footer ul .twitter:hover {
+      color: #00b6f1; }
+    footer ul .instagram:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      -webkit-background-clip: text;
+      /* Also define standard property for compatibility */
+      background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    footer ul .youtube:hover {
+      color: #c31a1e; }
 
 form .input-control {
   position: relative; }

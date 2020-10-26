@@ -64,8 +64,8 @@ function displayWine(wineData) {
     wineData.forEach(wine => {
         out += "<div>";
         out += "<img src='" + wine.image + "'>";
-        out += "<h2>" + wine.name + "</h2>";
-        out += "<p>" + wine.price + "</p>";
+        out += '<h2>' + wine.name + '</h2>';
+        out += '<p>' + '$' + wine.price + '</p>';
         out +=
             "<input type='number' id='wine" +
             wine.id +

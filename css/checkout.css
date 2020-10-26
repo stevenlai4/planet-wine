@@ -176,9 +176,10 @@
       text-align: right;
       margin-right: 0;
       padding-right: 0; }
-    .wrapper > form > div.content > input,
-    .wrapper > form > div.content > select {
-      font-size: 1.2rem; } }
+    .wrapper > form > div.content input,
+    .wrapper > form > div.content select {
+      font-size: 1.2rem;
+      padding-left: 5px; } }
 .line {
   width: 100%;
   border-bottom: 1px solid lightgray; }
