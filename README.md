@@ -4,13 +4,11 @@
 
 ##### Team Members: Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
 
-An eccommerce website where a user can shop and order wine to be delivered!
+An eccommerce website to order wine!
 
 </div>
 
-<br />
-
-## :bust_in_silhouette: Roles:
+## Roles:
 
 #### Project Lead: <strong>Karen Mok</strong>
 
