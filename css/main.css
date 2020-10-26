@@ -226,6 +226,16 @@ nav .active .item {
     padding-right: 0;
   }
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: 100%;
+}
+
 footer {
   text-align: center;
   justify-content: space-around;

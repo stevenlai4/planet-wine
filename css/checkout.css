@@ -1,57 +1,70 @@
 header {
   text-align: center;
-  font-family: 'Cormorant', Verdana, sans-serif;
-  text-transform: uppercase; }
-  header > h2 {
-    font-size: 1.5rem;
-    line-height: 1.4; }
+  font-family: "Cormorant", Verdana, sans-serif;
+  text-transform: uppercase;
+}
+header > h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
 
 .wrapper {
   width: 90%;
   line-height: 1.4;
-  margin: 0 auto; }
-  .wrapper > h1 {
-    font-size: 1.5rem;
-    text-align: center; }
-  .wrapper > img {
-    display: block;
-    margin: 2rem auto 0 auto;
-    width: 10%; }
-  .wrapper hr {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem; }
-  .wrapper > form {
-    width: 100%; }
-    .wrapper > form > div > label,
-    .wrapper > form > div > input,
-    .wrapper > form > div > div {
-      display: block;
-      margin: 5px 0;
-      font-size: 1.2rem; }
-    .wrapper > form > div > div {
-      display: none; }
-    .wrapper > form > input {
-      display: block;
-      margin: 1rem auto;
-      font-size: 1.2rem;
-      background-color: #c7b198;
-      padding: 0.8rem;
-      border-radius: 5px;
-      letter-spacing: 1px;
-      text-decoration: none;
-      text-shadow: 0px 3px 3px #c7b198; }
-  .wrapper .backToHome {
-    text-align: left;
-    font-size: 1.5rem;
-    left: 10%; }
-    .wrapper .backToHome > a {
-      text-decoration: none;
-      color: black; }
-      .wrapper .backToHome > a > i {
-        margin-right: 10px;
-        padding: 5px; }
+  margin: 0 auto;
+}
+.wrapper > h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.wrapper > img {
+  display: block;
+  margin: 2rem auto 0 auto;
+  width: 10%;
+}
+.wrapper hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+.wrapper > form {
+  width: 100%;
+}
+.wrapper > form > div > label,
+.wrapper > form > div > input,
+.wrapper > form > div > div {
+  display: block;
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+.wrapper > form > div > div {
+  display: none;
+}
+.wrapper > form > input {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  background-color: #c7b198;
+  padding: 0.8rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-shadow: 0px 3px 3px #c7b198;
+}
+.wrapper .backToHome {
+  text-align: left;
+  font-size: 1.5rem;
+  left: 10%;
+}
+.wrapper .backToHome > a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper .backToHome > a > i {
+  margin-right: 10px;
+  padding: 5px;
+}
 
 /* 
   ##Device = Tablet or Desktop (Portrait). 
@@ -60,18 +73,24 @@ header {
   .wrapper > form > div {
     display: grid;
     grid-template-rows: 1.4;
-    grid-template-columns: 2fr 1fr 1fr 2fr; }
-    .wrapper > form > div > label,
-    .wrapper > form > div > input,
-    .wrapper > form > div > div {
-      font-size: 1.5rem;
-      padding: 0 5px;
-      margin: 10px; }
-    .wrapper > form > div div {
-      display: block; }
-    .wrapper > form > div > label {
-      text-align: right; }
-    .wrapper > form > div > input {
-      font-size: 1.2rem; } }
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+  }
+  .wrapper > form > div > label,
+.wrapper > form > div > input,
+.wrapper > form > div > div {
+    font-size: 1.5rem;
+    padding: 0 5px;
+    margin: 10px;
+  }
+  .wrapper > form > div div {
+    display: block;
+  }
+  .wrapper > form > div > label {
+    text-align: right;
+  }
+  .wrapper > form > div > input {
+    font-size: 1.2rem;
+  }
+}
 
 /*# sourceMappingURL=checkout.css.map */
