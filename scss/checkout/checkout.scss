@@ -18,7 +18,6 @@ $desktopMedium: 1250px;
     line-height: $line-height;
     margin: 0 auto;
     font-family: "Cormorant", Verdana, sans-serif;
-    text-transform: capitalize;
 
     > h1 {
         font-size: 2rem;
@@ -84,7 +83,7 @@ $desktopMedium: 1250px;
         font-size: 1.5rem;
         left: 10%;
 
-        > a {
+        a {
             text-decoration: none;
             color: black;
 
@@ -187,6 +186,10 @@ $desktopMedium: 1250px;
                     font-size: 1.2rem;
                 }
             }
+        }
+
+        .product-item {
+            color: $secondary-color;
         }
     }
 }

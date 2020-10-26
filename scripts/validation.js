@@ -104,13 +104,13 @@ function addSubmitListener() {
                 localStorage.clear();
                 if (submit) {
                     submit.outerHTML =
-                        `<div class='result success'><h1>Thank you for purchasing wines on PLANET WINE!</h1></div>` +
+                        `<div class='result success'><h1>Thank you for your purchase!</h1></div>` +
                         submit.outerHTML;
                 }
             } else {
                 if (submit) {
                     submit.outerHTML =
-                        `<div class='result fail'><h1>I am so sorry. Please try one more time.<h1></div>` +
+                        `<div class='result fail'><h1>Please try it again.<h1></div>` +
                         submit.outerHTML;
                 }
             }
