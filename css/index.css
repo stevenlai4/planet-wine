@@ -307,6 +307,8 @@ table {
         font-size: 25px; }
     .pop-up-wrapper .popup-overlay .active-popup .closeButton i {
       color: white; }
+    .pop-up-wrapper .popup-overlay .active-popup .closeButton {
+      padding: 2%; }
   .pop-up-wrapper .popup-content .active-popup {
     visibility: visible;
     color: white; }

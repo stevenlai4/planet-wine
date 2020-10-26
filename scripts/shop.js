@@ -63,7 +63,7 @@ function displayWine(wineData) {
         out += '<div>';
         out += "<img src='" + wine.image + "'>";
         out += '<h2>' + wine.name + '</h2>';
-        out += '<p>' + wine.price + '</p>';
+        out += '<p>' + '$' + wine.price + '</p>';
         out +=
             "<input type='number' id='wine" +
             wine.id +

@@ -32,7 +32,6 @@
     animation-name: fade-in;
     animation-duration: 0.5s;
     
-
     //pop-up box
     .popup-overlay .active-popup {
         visibility: visible;
@@ -42,7 +41,6 @@
         margin: 0 auto;
         background-color:rgb(145, 106, 64);
         display:flex;
-
 
         //img of the popup
         .popup-photo{
@@ -74,6 +72,10 @@
 
         .closeButton i {
             color: white;
+        }
+
+        .closeButton{
+            padding: 2%;
         }
     }
 

@@ -1,10 +1,16 @@
+body{
+    font-family: 'Cormorant', serif;
+    color: $secondary-color;
+}
+
 .sideArticle {
     @include flex-row;
     article {
         @include basic-spacing;
         h2 {
             font-weight: bold;
-            font-size: 1.25rem;
+            font-size: 1rem;
+            color: $primary-color;
         }
         &:nth-of-type(1) {
             width: 20rem;
@@ -22,7 +28,7 @@
         }
         &:nth-of-type(2) {
             @include flex-row;
-            flex-wrap: wrap;
+            flex-wrap: wrap; 
             width: 100%;
             justify-content: flex-start;
             div {
@@ -48,13 +54,14 @@
 }
 
 .imgArticle {
+    color: black;
     width: 100%;
     text-align: center;
     background-image: linear-gradient(
             rgba(255, 255, 255, 0.5),
             rgba(255, 255, 255, 0.5)
         ),
-        url('/img/index-img.png');
+        url('/img/shop-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem 0;
