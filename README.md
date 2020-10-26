@@ -1,14 +1,18 @@
+<div align="center">
+
 # Planet Wine :wine_glass:
 
 ##### Team Members: Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
 
 An eccommerce website where a user can shop and order wine to be delivered!
 
-## Roles
+</div>
+
+<br />
+
+## Roles :bust_in_silhouette:
 
 #### Project Lead: <strong>Karen Mok</strong>
-
-<br>
 
 - WireFrame: Karen, Steven, Kalvin
 - HTML: Kalvin, Karen, Wayne
