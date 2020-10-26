@@ -10,7 +10,7 @@ An eccommerce website where a user can shop and order wine to be delivered!
 
 <br />
 
-## Roles :bust_in_silhouette:
+## :bust_in_silhouette: Roles:
 
 #### Project Lead: <strong>Karen Mok</strong>
 
