@@ -289,10 +289,10 @@ form .input-control {
   position: relative;
 }
 form .input-control.success input {
-  border-color: lightgreen;
+  border-color: #156115;
 }
 form .input-control.error input {
-  border-color: crimson;
+  border-color: #e74c3c;
 }
 form .input-control i {
   visibility: hidden;
@@ -301,14 +301,13 @@ form .input-control i {
   right: 10px;
 }
 form .input-control.success i.fa-check-circle {
-  color: lightgreen;
+  color: #156115;
   visibility: visible;
 }
 form .input-control.error i.fa-exclamation-circle {
-  color: crimson;
+  color: #e74c3c;
   visibility: visible;
 }
-
 form .result {
   margin: 10px auto;
   text-align: center;
@@ -317,9 +316,10 @@ form .result {
   font-weight: bold;
 }
 form .result.success {
-  color: lightgreen;
+  color: #156115;
 }
 form .result.fail {
-  color: crimson;
+  color: #e74c3c;
 }
+
 /*# sourceMappingURL=main.css.map */
