@@ -1,0 +1,49 @@
+ form {
+    .input-control {
+
+        position: relative;
+
+        &.success input {
+            border-color: lightgreen;
+        }
+
+        &.error input {
+            border-color: crimson;
+        }
+
+        i {
+            visibility: hidden;
+            position: absolute;
+            top: 1rem;
+            right: 10px;
+        }
+
+        &.success i.fa-check-circle {
+            color:lightgreen;
+            visibility: visible;
+        }
+
+        &.error i.fa-exclamation-circle {
+            color: crimson;
+            visibility: visible;
+        } 
+    }
+
+    .result {
+
+        margin: 10px auto;
+        text-align: center;
+        width: 60%;
+        font-size: 2rem;
+        font-weight: bold;
+
+        &.success {
+            color: lightgreen;
+        }
+
+        &.fail {
+            color: crimson;
+        }
+    }
+}
+

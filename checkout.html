@@ -8,6 +8,16 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/checkout.css" />
     </head>
@@ -16,21 +26,23 @@
         <header>
             <!-- Logo goes here -->
             <a href="index.html"><img src="img/logo.png" /></a>
-            
+
             <nav>
                 <ul class="menu">
-                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    <li class="toggle">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </li>
                     <li class="item"><a href="index.html">Home</a></li>
                     <li class="item"><a href="shop.html">Shop</a></li>
                     <li class="item"><a href="gallery.html">Gallery</a></li>
                     <li class="item"><a href="contact.html">Contact</a></li>
                 </ul>
                 <!-- Icons for for the user and cart -->
-                <ul class="login-cart">  
+                <ul class="login-cart">
                     <!--Login-->
                     <li>
                         <a href="login.html"><i class="fas fa-user"></i></a>
-                    </li>  
+                    </li>
                     <!--Cart-->
                     <li>
                         <a href="cart.html"
@@ -42,53 +54,116 @@
         </header>
 
         <div class="wrapper">
-            <!--logo-->
-            <img src="./img/shop-img.png" alt="logo" />
             <h1>Shipping information</h1>
 
             <!--form-->
-            <form>
+            <form class="checkout-form">
                 <hr />
-                <div>
-                    <label for="Name">FIRST NAME & LAST NAME</label>
-                    <input type="text" placeholder="FIRST NAME .." />
-                    <input type="text" placeholder="LAST NAME .." />
-                    <div></div>
+                <div class="content">
+                    <div class="nameLabel label">
+                        <label for="Name">First Name & Last Name</label>
+                    </div>
+                    <div class="input-control firstName">
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="First Name .."
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="input-control lastName">
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="Last Name .."
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
 
-                    <label for="Street Address">STREET ADDRESS</label>
-                    <input type="text" placeholder="STREET ADDRESS .." />
-                    <div></div>
-                    <div></div>
+                    <div class="addressLabel label">
+                        <label for="Street">Street Address</label>
+                    </div>
+                    <div class="input-control address">
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Street Address .."
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
 
-                    <label for="City">CITY</label>
-                    <input type="text" placeholder="CITY .." />
-                    <div></div>
-                    <div></div>
+                    <div class="cityLabel label">
+                        <label for="City">City</label>
+                    </div>
+                    <div class="input-control city">
+                        <select name="city" class="cities" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
 
-                    <label for="country">COUNTRY</label>
-                    <input type="text" placeholder="COUNTRY .." />
-                    <div></div>
-                    <div></div>
+                    <div class="stateLabel label">
+                        <label for="State">State</label>
+                    </div>
+                    <div class="input-control state">
+                        <select name="state" class="states" id="stateId">
+                            <option value="">Select State</option>
+                        </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
 
-                    <label for="Postal code">POSTAL CODE</label>
-                    <input type="text" placeholder="POSTAL CODE .." />
-                    <div></div>
-                    <div></div>
+                    <div class="countryLabel label">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="input-control country">
+                        <select name="country" class="countries" id="countryId">
+                            <option value="">Select Country</option>
+                        </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
 
-                    <label for="phone">PHONE</label>
-                    <input type="text" placeholder="PHONE .." />
-                    <div></div>
+                    <div class="postalLabel label">
+                        <label for="Postal code">Post Code</label>
+                    </div>
+                    <div class="input-control postal">
+                        <input
+                            type="text"
+                            id="postCode"
+                            placeholder="Postal Code .."
+                        />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+
+                    <div class="phoneLabel label">
+                        <label for="phone">PHONE</label>
+                    </div>
+                    <div class="input-control phone">
+                        <input type="text" id="phone" placeholder="Phone .." />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
                 </div>
                 <input type="Submit" value="Submit" id="Submit" />
                 <hr />
             </form>
 
-            <div class="backToHome">
-                <a href="#"> <i class="fas fa-caret-left"></i>Back to Home</a>
-            </div>
-            <article>
-                <div id="output"></div>
+            <article class="mt-5">
+                <!-- product 1 in cart -->
+                <div class="container cart-checkout"></div>
             </article>
+
+            <div class="backToHome">
+                <a href="cart.html">
+                    <i class="fas fa-caret-left"></i>Back to Cart</a
+                >
+            </div>
         </div>
 
         <footer>
@@ -113,6 +188,11 @@
             <p>&copy; All Right Reserved</p>
         </footer>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//geodata.solutions/includes/countrystatecity.js"></script>
         <script src="scripts/index.js"></script>
+        <script src="scripts/validation.js"></script>
+        <script src="scripts/global-toggle.js"></script>
+        <script src="scripts/checkout.js"></script>
     </body>
 </html>
