@@ -308,6 +308,7 @@ form .input-control.error i.fa-exclamation-circle {
   color: crimson;
   visibility: visible;
 }
+
 form .result {
   margin: 10px auto;
   text-align: center;
@@ -321,5 +322,4 @@ form .result.success {
 form .result.fail {
   color: crimson;
 }
-
 /*# sourceMappingURL=main.css.map */
