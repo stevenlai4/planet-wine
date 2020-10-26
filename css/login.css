@@ -5,15 +5,21 @@
   margin-top: 3%;
 }
 
-.Login-Form {
+.Login {
   width: 100%;
   display: flex;
+  flex-direction: row;
   margin-bottom: 10%;
+  margin-left: 5%;
 }
-.Login-Form label {
-  font-size: 20px;
+.Login .Login-Form {
+  margin-top: 5%;
+  margin-left: 8%;
 }
-.Login-Form input {
+.Login .Login-Form label {
+  font-size: 25px;
+}
+.Login .Login-Form input {
   padding: 15px 250px 15px 10px;
   margin: 25px;
   box-sizing: border-box;
@@ -21,7 +27,7 @@
   margin-left: auto;
   overflow: hidden;
 }
-.Login-Form button {
+.Login .Login-Form button {
   padding: 15px 30px;
   background-color: #c7b198;
   color: white;
@@ -58,26 +64,143 @@
   margin-top: 8px;
   background-position: center;
 }
-.Login-image h1 {
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  text-align: center;
-  margin: auto;
-}
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .Login-Title {
     font-size: 40px;
-    text-align: center;
     font-family: Cormorant;
     margin-top: 3%;
   }
 
-  .Login-Form {
+  .Login {
     width: 100%;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  .Login .Login-Form {
+    margin-bottom: 7%;
+    margin-top: 1%;
+  }
+  .Login .Login-Form label {
+    font-size: 20px;
+  }
+  .Login .Login-Form input {
+    padding: 15px 100px 8px 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin-left: 2%;
+    overflow: hidden;
+  }
+  .Login .Login-Form button {
+    padding: 12px 30px;
+    align-content: center;
+    background-color: #c7b198;
+    color: white;
+    font-size: 13px;
     text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .Create {
+    margin-left: 18%;
+    margin-top: 5%;
+    margin-top: 1%;
+  }
+  .Create h5 {
+    font-size: 25px;
+  }
+  .Create p {
+    font-size: 18px;
+  }
+  .Create button {
+    padding: 16px 100px;
+    background-color: #c7b198;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .Create .Login-image {
+    background: url("../../Images/barrels.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 30px;
+    margin-top: -2%;
+    background-position: center;
+  }
+
+  .Login-image {
+    background: url("../../Images/barrels.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    margin-top: 8px;
+    background-position: center;
+  }
+  .Login-image h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 10% 0 0 15%;
+  }
+}
+@media (max-width: 768px) {
+  .Login-Title {
+    font-size: 40px;
+    font-family: Cormorant;
+    margin-top: 3%;
+  }
+
+  .Login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 16%;
+  }
+  .Login .Login-Form {
+    margin-bottom: 7%;
+  }
+  .Login .Login-Form label {
+    font-size: 25px;
+  }
+  .Login .Login-Form input {
+    padding: 15px 175px 10px 10px;
+    box-sizing: border-box;
+    font-size: 22px;
+    margin-left: 2%;
+    overflow: hidden;
+  }
+  .Login .Login-Form button {
+    padding: 16px 170px;
+    align-content: center;
+    background-color: #c7b198;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  .Login .Create {
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .Login .Create h5 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .Login .Create button {
+    padding: 16px 140px;
+    background-color: #c7b198;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
   }
 
   .Login-image {
@@ -87,12 +210,6 @@
     height: 200px;
     margin-top: 8px;
     background-position: center;
-  }
-  .Login-image h1 {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin: 9% 0 0 23%;
   }
 }
 

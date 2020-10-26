@@ -13,13 +13,18 @@
   </head>
   <body>
     <header>
+      <!-- Logo goes here -->
       <a href="index.html"><img src="img/logo.png" /></a>
+
       <nav>
-        <ul class="nav-items">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="menu">
+          <li class="toggle">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="shop.html">Shop</a></li>
+          <li class="item"><a href="gallery.html">Gallery</a></li>
+          <li class="item"><a href="contact.html">Contact</a></li>
         </ul>
         <!-- Icons for for the user and cart -->
         <ul class="login-cart">
@@ -45,13 +50,7 @@
         <div class="Login-Form">
           <form>
             <label for="user">Email</label><br />
-            <input
-              type="email"
-              id="user"
-              name="id"
-              placeholder="example@planetwine.com"
-              required
-            /><br />
+            <input type="email" id="user" name="id" required /><br />
             <label for="password">Password</label><br />
             <input
               type="password"
@@ -64,26 +63,21 @@
           </form>
         </div>
 
-          <div class="Create">
-            <article>
-              <h5>Create an account</h5>
-              <p>
-                New to Planet Wine? <br />
-                It only takes a moment to create an account.
-              </p>
-              <button onclick="register.html" type="button">
-                Create Account
-              </button>
-            </article>
-          </div>
+        <div class="Create">
+          <article>
+            <h5>Create an account</h5>
+            <p>
+              New to Planet Wine? <br />
+              It only takes a moment to create an account.
+            </p>
+            <a href="register.html"><button>Create Account</button></a>
+          </article>
         </div>
       </section>
     </div>
 
     <!-- banner photo -->
-    <div class="Login-image">
-      <h1>WELCOME TO PLANET WINE</h1>
-    </div>
+    <div class="Login-image"></div>
 
     <footer>
       <h5>Planet wine</h5>
