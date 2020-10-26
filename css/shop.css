@@ -11,6 +11,13 @@ body {
   font-family: 'Cormorant', serif;
   color: #929292; }
 
+h1 {
+  font-size: 40px;
+  color: #444444; }
+
+p {
+  color: #444444; }
+
 .sideArticle {
   display: flex;
   flex-direction: row;
