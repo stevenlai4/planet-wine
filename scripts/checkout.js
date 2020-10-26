@@ -28,7 +28,7 @@ class Cart {
                     <div class="d-flex my-4 flex-column flex-md-row align-items-center justify-content-around ">
                         <!-- product 1 img -->
                         <div class="product-item text-center">
-                            <img src=${product.image} alt="mall" />
+                            <img src='${product.image}' alt="mall" />
                         </div>
                         <!-- product 1 title -->
                         <div class="product-item text-center">
