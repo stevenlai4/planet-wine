@@ -147,3 +147,7 @@ An eccommerce website to order wine!
 - Javascript
   1. LocalStorage Data Structure: 1: {3}, 3: {4}, 4:{5}, 7:{1} (Key is the wine ID, Value is the quantity purchased)
 - JSON (Optional)
+
+### References
+
+- Gallery. Images from <a href="https://wallawallavintners.com/#gallery">Walla Walla Vinters</a>
