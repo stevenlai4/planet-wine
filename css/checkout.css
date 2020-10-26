@@ -1,16 +1,9 @@
-header {
-  text-align: center;
-  font-family: "Cormorant", Verdana, sans-serif;
-
-  text-transform: uppercase; }
-  header > h2 {
-    font-size: 1.5rem;
-    line-height: 1.4; }
-
 .wrapper {
   width: 90%;
   line-height: 1.4;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Cormorant", Verdana, sans-serif;
+  text-transform: capitalize; }
   .wrapper > h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -110,7 +103,8 @@ header {
       padding: 3px 30px 3px 0;
       margin: 2px 0;
       border-radius: 5px;
-      width: 100%; }
+      width: 100%;
+      text-transform: capitalize; }
     .wrapper > form > div.content > div {
       display: block; }
     .wrapper > form > div.content .label {
@@ -169,7 +163,8 @@ header {
       padding: 3px 30px 3px 0;
       margin: 2px 0;
       border-radius: 5px;
-      width: 100%; }
+      width: 100%;
+      text-transform: capitalize; }
     .wrapper > form > div.content > div {
       display: block; }
     .wrapper > form > div.content .label {

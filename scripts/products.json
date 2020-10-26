@@ -1,66 +1,66 @@
 [
     {
-        "id": "1",
-        "name": "Red Wine 1",
-        "type": "Red Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "1",
+      "name": "2018 Zinfandel 750mL",
+      "type": "Red Wine",
+      "price": 30.00,
+      "description": "This is Red Wine 1",
+      "image": "./img/2018 Zinfandel.jpeg"
     },
     {
-        "id": "2",
-        "name": "Red Wine 2",
-        "type": "Red Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "2",
+      "name": "2017 Estate Grown Cabernet Sauvignon 750mL",
+      "type": "Red Wine",
+      "price": 35.00,
+      "description": "This is Red Wine 2",
+      "image": "./img/2017 Estate Grown Cabernet Sauvignon.jpeg"
     },
     {
-        "id": "3",
-        "name": "Red Wine 3",
-        "type": "Red Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "3",
+      "name": "2018 Heritage Blend 750mL",
+      "type": "Red Wine",
+      "price": 45.00,
+      "description": "This is Red Wine 3",
+      "image": "./img/2018 Heritage Blend.jpeg"
     },
     {
-        "id": "4",
-        "name": "Red Wine 4",
-        "type": "Red Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "4",
+      "name": "2018 Chardonnay Shale and Stone 750mL",
+      "type": "White Wine",
+      "price": 30.00,
+      "description": "This is Red Wine 4",
+      "image": "./img/2018 Chardonnay Shale and Stone.jpeg"
     },
     {
-        "id": "5",
-        "name": "White Wine 5",
-        "type": "White Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "5",
+      "name": "2018 Chenin Blanc 750mL",
+      "type": "White Wine",
+      "price": 45.00,
+      "description": "This is White Wine 5",
+      "image": "./img/2018 Chenin Blanc.jpeg"
     },
     {
-        "id": "6",
-        "name": "White Wine 6",
-        "type": "White Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "6",
+      "name": "2018 Rachel Rossi Reserve Sauvignon Blanc 750mL",
+      "type": "White Wine",
+      "price": 75.00,
+      "description": "This is White Wine 6",
+      "image": "./img/2018 Rachel Rossi Reserve Sauvignon Blanc.jpeg"
     },
     {
-        "id": "7",
-        "name": "White Wine 7",
-        "type": "White Wine",
-        "price": 10.99,
-        "description": " Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "7",
+      "name": "2018 Planet Zinfandel 750mL",
+      "type": "Red Wine",
+      "price": 30.00,
+      "description": "This is White Wine 7",
+      "image": "./img/2018 Zinfandel.jpeg"
     },
     {
-        "id": "8",
-        "name": "White Wine 8",
-        "type": "White Wine",
-        "price": 10.99,
-        "description": " Kenwood Vineyards Sonoma Coast Merlot 2018",
-        "image": "./img/BottleShot_Yoakim_Zin.png"
+      "id": "8",
+      "name": "2019 Sauvignon Blanc 750mL",
+      "type": "White Wine",
+      "price": 30.00,
+      "description": "This is White Wine 8",
+      "image": "./img/2019 Sauvignon Blanc.jpeg"
     }
 ]
