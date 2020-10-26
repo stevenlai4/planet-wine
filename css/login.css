@@ -1,5 +1,5 @@
 .Login-Title {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   font-family: Cormorant;
   margin-top: 3%;
@@ -17,11 +17,11 @@
   margin-left: 8%;
 }
 .Login .Login-Form label {
-  font-size: 25px;
+  font-size: 20px;
 }
 .Login .Login-Form input {
-  padding: 15px 250px 15px 10px;
-  margin: 25px;
+  padding: 10px 80px 15px 10px;
+  margin: 2px;
   box-sizing: border-box;
   font-size: 22px;
   margin-left: auto;
@@ -38,20 +38,21 @@
 
 .Create {
   margin: auto;
+  margin-top: 5%;
 }
 .Create h5 {
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 10%;
 }
 .Create p {
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 22.5px;
+  margin-bottom: 20px;
 }
 .Create button {
-  padding: 15px 170px;
+  padding: 13px 40px;
   background-color: #c7b198;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   margin-top: 10%;
 }
