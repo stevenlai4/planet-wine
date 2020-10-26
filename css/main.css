@@ -243,6 +243,11 @@ footer {
   color: white;
   padding: 20px 0;
 }
+footer h5 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 footer h5,
 footer p {
   margin: 18px 0;
@@ -261,33 +266,58 @@ footer ul a {
   color: white;
   font-size: 2rem;
 }
+footer ul .facebook:hover {
+  color: #3b5998;
+}
+footer ul .twitter:hover {
+  color: #00b6f1;
+}
+footer ul .instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer ul .youtube:hover {
+  color: #c31a1e;
+}
 
 form .input-control {
-  position: relative; }
-  form .input-control.success input {
-    border-color: lightgreen; }
-  form .input-control.error input {
-    border-color: crimson; }
-  form .input-control i {
-    visibility: hidden;
-    position: absolute;
-    top: 1rem;
-    right: 10px; }
-  form .input-control.success i.fa-check-circle {
-    color: lightgreen;
-    visibility: visible; }
-  form .input-control.error i.fa-exclamation-circle {
-    color: crimson;
-    visibility: visible; }
+  position: relative;
+}
+form .input-control.success input {
+  border-color: lightgreen;
+}
+form .input-control.error input {
+  border-color: crimson;
+}
+form .input-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+}
+form .input-control.success i.fa-check-circle {
+  color: lightgreen;
+  visibility: visible;
+}
+form .input-control.error i.fa-exclamation-circle {
+  color: crimson;
+  visibility: visible;
+}
 form .result {
   margin: 10px auto;
   text-align: center;
   width: 60%;
   font-size: 2rem;
-  font-weight: bold; }
-  form .result.success {
-    color: lightgreen; }
-  form .result.fail {
-    color: crimson; }
+  font-weight: bold;
+}
+form .result.success {
+  color: lightgreen;
+}
+form .result.fail {
+  color: crimson;
+}
 
 /*# sourceMappingURL=main.css.map */
