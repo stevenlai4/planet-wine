@@ -1,8 +1,8 @@
 var productObj = {};
 
 // Convert json array data into object
-const arrToObj = (dataArr) => {
-    dataArr.forEach((data) => {
+const arrToObj = dataArr => {
+    dataArr.forEach(data => {
         productObj[data.id] = data;
     });
 };
@@ -10,7 +10,7 @@ const arrToObj = (dataArr) => {
 //On page load, load data to local variable
 document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
-    products.getProducts().then((data) => {
+    products.getProducts().then(data => {
         arrToObj(data);
 
         displayCart();
@@ -23,7 +23,7 @@ class Products {
         try {
             let result = await fetch("scripts/products.json");
             let data = await result.json();
-            this.products = data.map((product) => {
+            this.products = data.map(product => {
                 return product;
             });
             return this.products;
@@ -137,7 +137,7 @@ const calcTotalPrice = (id, quantity) => {
 };
 
 // Change total price when user insert into inputs
-const insertInput = (element) => {
+const insertInput = element => {
     const id = element.name.substring(4);
 
     // Valid date input then calc total price
@@ -167,7 +167,7 @@ const insertInput = (element) => {
 };
 
 // Increase wine quantity when plus button clicked
-const increaseQuantity = (element) => {
+const increaseQuantity = element => {
     const id = element.dataset.wineId;
     const input = document.getElementsByName(`wine${id}`);
 
@@ -179,7 +179,7 @@ const increaseQuantity = (element) => {
 };
 
 // Decrease wine quantity when minus button clicked
-const decreaseQuantity = (element) => {
+const decreaseQuantity = element => {
     const id = element.dataset.wineId;
     const input = document.getElementsByName(`wine${id}`);
 
