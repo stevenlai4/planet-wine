@@ -44,22 +44,20 @@ const displayCart = () => {
         str +=
             '<div class="cart-empty" style="text-align: center;"><p>Your Cart Is Empty</p></div>';
         str += '<hr />';
-        str += '<div class="container">';
-        str += '<div class="row my-4">';
-        str += '<div class="col-md-6 text-center d-flex">';
-        str += '<div class="p-2 continous-btn">';
+        str += '<div class="container d-sm-flex justify-content-between-sm">';
+        str += '<div class="d-none d-sm-block d-sm-flex">';
+        str += '<div class="p-2 continous-btn align-self-center">';
         str += '<i class="fas fa-caret-left"></i>';
         str += '</div>';
-        str += '<div class="p-2 continous-btn">';
-        str += '<a class="cont-shopping" href="shop.html">';
+        str += '<div class="p-2 continous-btn align-self-center">';
+        str += '<a class="cont-shopping" href="shop.html ">';
         str += 'Continous Shopping</a>';
         str += '</div>';
         str += '</div>';
-        str += '<div class="col-md-6 d-flex flex-column">';
-        str += '<div class="p-2 ml-auto">';
+        str += '<div class="p-2 ml-auto text-center">';
+        str += '<a href="checkout.html">';
         str += `<button type="button" class="btn proceed-btn" style="background-color: grey; color: white;" disabled>Proceed To Checkout</button>`;
-        str += '</div>';
-        str += '</div>';
+        str += '</a>';
         str += '</div>';
         str += '</div>';
 
@@ -103,25 +101,21 @@ const displayCart = () => {
         }
 
         // Add Return Shop Link, Checkout Button, and Subtotal
-        str += '<div class="container">';
-        str += '<div class="row my-4">';
-        str += '<div class="col-md-6 text-center d-flex">';
-        str += '<div class="p-2 continous-btn">';
+        str += '<div class="container d-sm-flex justify-content-between-sm">';
+        str += '<div class="d-none d-sm-block d-sm-flex">';
+        str += '<div class="p-2 continous-btn align-self-center">';
         str += '<i class="fas fa-caret-left"></i>';
         str += '</div>';
-        str += '<div class="p-2 continous-btn">';
-        str += '<a class="cont-shopping" href="shop.html">';
+        str += '<div class="p-2 continous-btn align-self-center">';
+        str += '<a class="cont-shopping" href="shop.html ">';
         str += 'Continous Shopping</a>';
         str += '</div>';
         str += '</div>';
-        str += '<div class="col-md-6 d-flex flex-column">';
-        str += '<div class="p-2 ml-auto">';
+        str += '<div class="p-2 ml-auto text-center">';
         str += '<a href="checkout.html">';
         str +=
             '<button type="button" class="btn proceed-btn">Proceed To Checkout</button>';
         str += '</a>';
-        str += '</div>';
-        str += '</div>';
         str += '</div>';
         str += '</div>';
 
