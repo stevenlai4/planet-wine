@@ -1,11 +1,6 @@
 $primary-color: #c7b198;
 $secondary-color: #929292;
 
-body {
-    color: $secondary-color;
-    font-family: 'Cormorant', serif;
-}
-
 h1 {
     font-size: 40px;
 }
@@ -14,8 +9,13 @@ hr {
     width: 85%;
 }
 
-.product-item {
-    max-width: 100%;
+.product-price {
+    max-width: 30%;
+
+    .total-price {
+        margin-right: 0;
+    }
+
     @media screen and (min-width: 768px) {
         width: 25%;
     }

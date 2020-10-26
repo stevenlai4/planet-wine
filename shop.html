@@ -19,21 +19,23 @@
         <header>
             <!-- Logo goes here -->
             <a href="index.html"><img src="img/logo.png" /></a>
-            
+
             <nav>
                 <ul class="menu">
-                    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    <li class="toggle">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </li>
                     <li class="item"><a href="index.html">Home</a></li>
                     <li class="item"><a href="shop.html">Shop</a></li>
                     <li class="item"><a href="gallery.html">Gallery</a></li>
                     <li class="item"><a href="contact.html">Contact</a></li>
                 </ul>
                 <!-- Icons for for the user and cart -->
-                <ul class="login-cart">  
+                <ul class="login-cart">
                     <!--Login-->
                     <li>
                         <a href="login.html"><i class="fas fa-user"></i></a>
-                    </li>  
+                    </li>
                     <!--Cart-->
                     <li>
                         <a href="cart.html"
@@ -44,7 +46,7 @@
             </nav>
         </header>
 
-        <section>
+        <section class="content">
             <header>
                 <h1>Shop</h1>
                 <p>
@@ -102,16 +104,15 @@
 
                 <article id="wineDisplay"></article>
             </div>
-
-            <article class="imgArticle">
-                <!-- Use background image for this article with opacitiy set lower -->
-                <h5>Your next order ships free.</h5>
-                <p>
-                    Receive exclusive offers and access to products before the
-                    others.
-                </p>
-            </article>
         </section>
+        <article class="imgArticle">
+            <!-- Use background image for this article with opacitiy set lower -->
+            <h5>Your next order ships free.</h5>
+            <p>
+                Receive exclusive offers and access to products before the
+                others.
+            </p>
+        </article>
 
         <footer>
             <h5>Planet wine</h5>
@@ -120,16 +121,24 @@
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a class="facebook" href="#"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="twitter" href="#"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="instagram" href="#"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="youtube" href="#"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
                     </li>
                 </ul>
             </div>
@@ -137,7 +146,7 @@
         </footer>
 
         <script src="scripts/index.js"></script>
-        <script src="scripts/shop.js"></script>
         <script src="scripts/global-toggle.js"></script>
+        <script src="scripts/shop.js"></script>
     </body>
 </html>
