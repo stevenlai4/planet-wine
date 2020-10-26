@@ -1,14 +1,15 @@
- form {
+form {
+    $success-color: rgb(21, 97, 21);
+    $failed-color: #e74c3c;
     .input-control {
-
         position: relative;
 
         &.success input {
-            border-color: lightgreen;
+            border-color: $success-color;
         }
 
         &.error input {
-            border-color: crimson;
+            border-color: $failed-color;
         }
 
         i {
@@ -19,18 +20,17 @@
         }
 
         &.success i.fa-check-circle {
-            color:lightgreen;
+            color: $success-color;
             visibility: visible;
         }
 
         &.error i.fa-exclamation-circle {
-            color: crimson;
+            color: $failed-color;
             visibility: visible;
-        } 
+        }
     }
 
     .result {
-
         margin: 10px auto;
         text-align: center;
         width: 60%;
@@ -38,12 +38,11 @@
         font-weight: bold;
 
         &.success {
-            color: lightgreen;
+            color: $success-color;
         }
 
         &.fail {
-            color: crimson;
+            color: $failed-color;
         }
     }
 }
-
