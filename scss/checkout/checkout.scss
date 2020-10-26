@@ -13,22 +13,12 @@ $palette-blue: #596e79;
 $phoneLandscape: 670px;
 $desktopMedium: 1250px;
 
-// header including navigation bar and shopping cart
-header {
-    text-align: center;
-    font-family: "Cormorant", Verdana, sans-serif;
-    text-transform: uppercase;
-
-    > h2 {
-        font-size: 1.5rem;
-        line-height: $line-height;
-    }
-}
-
 .wrapper {
     width: 90%;
     line-height: $line-height;
     margin: 0 auto;
+    font-family: "Cormorant", Verdana, sans-serif;
+    text-transform: capitalize;
 
     > h1 {
         font-size: 2rem;
@@ -176,6 +166,7 @@ header {
                     margin: 2px 0;
                     border-radius: 5px;
                     width: 100%;
+                    text-transform: capitalize;
                 }
 
                 // <div> tag will show to form a 6 rows x 4 columns grid.
@@ -269,6 +260,7 @@ header {
                     margin: 2px 0;
                     border-radius: 5px;
                     width: 100%;
+                    text-transform: capitalize;
                 }
 
                 // <div> tag will show to form a 6 rows x 4 columns grid.

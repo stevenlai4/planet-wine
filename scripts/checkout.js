@@ -33,7 +33,7 @@ class Cart {
                         <!-- product 1 title -->
                         <div class="product-item text-center">
                             <p class="item-title my-4">
-                            ${product.description}
+                            '${product.description}'
                             </p>
                         </div>
                         <!-- product 1 quantity and unit price -->
