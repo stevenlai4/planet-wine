@@ -283,9 +283,10 @@ $desktopMedium: 1250px;
                     padding-right: 0;
                 }
 
-                > input,
-                > select {
+                input,
+                select {
                     font-size: 1.2rem;
+                    padding-left: 5px;
                 }
             }
         }
