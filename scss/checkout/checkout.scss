@@ -158,6 +158,24 @@ $desktopMedium: 1250px;
                 .phone {
                     grid-area: 8/2/9/3;
                 }
+                .creditCardNumberLabel {
+                    grid-area: 9/1/10/2;
+                }
+                .creditCardNumber {
+                    grid-area: 9/2/10/3;
+                }
+                .expirationDateLabel {
+                    grid-area: 10/1/11/2;
+                }
+                .expirationDate {
+                    grid-area: 10/2/11/3;
+                }
+                .CVWLabel {
+                    grid-area: 11/1/12/2;
+                }
+                .CVW {
+                    grid-area: 11/2/12/3;
+                }
 
                 label,
                 input,
@@ -255,6 +273,24 @@ $desktopMedium: 1250px;
                 }
                 .phone {
                     grid-area: 7/2/8/3;
+                }
+                .creditCardNumberLabel {
+                    grid-area: 8/1/9/2;
+                }
+                .creditCardNumber {
+                    grid-area: 8/2/9/3;
+                }
+                .expirationDateLabel {
+                    grid-area: 9/1/19/2;
+                }
+                .expirationDate {
+                    grid-area: 9/2/10/3;
+                }
+                .CVWLabel {
+                    grid-area: 10/1/11/2;
+                }
+                .CVW {
+                    grid-area: 10/2/11/3;
                 }
 
                 label,
