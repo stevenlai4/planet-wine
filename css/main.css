@@ -142,7 +142,6 @@ header img {
 nav {
     background-color: #444444;
     position: relative;
-
     display: flex;
     border-radius: 0px 0px 5px 5px;
 }
@@ -151,17 +150,16 @@ nav .login-cart {
     display: flex;
     width: 5%;
     justify-content: space-around;
-    right: 20px;
-    top: 20px;
+    right: 30px;
+    top: 15px;
 }
-nav .login-cart li {
-    padding-right: 20px;
+nav .login-cart li:not(:last-of-type) {
+    padding-right: 15px;
 }
 nav .login-cart li a {
     color: white;
     font-size: 20px;
     transition: all 0.5s ease-in;
-    padding: 30px 0;
 }
 nav .login-cart li a:hover {
     color: #c7b198;
@@ -201,7 +199,13 @@ nav .active .item {
     color: White;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+    nav .login-cart {
+        right: 25px;
+        top: 22px;
+    }
+}
+@media screen and (min-width: 992px) {
     .toggle {
         display: none;
     }
@@ -222,13 +226,29 @@ nav .active .item {
         padding-right: 0;
     }
 }
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Cormorant", serif;
+    color: #929292;
+}
+
+.content {
+    min-height: 100%;
+}
+
 footer {
     text-align: center;
     justify-content: space-around;
     background-color: #444444;
     color: white;
-
     padding: 20px 0;
+}
+footer h5 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 footer h5,
 footer p {
@@ -247,6 +267,29 @@ footer ul li:not(:last-of-type) {
 footer ul a {
     color: white;
     font-size: 2rem;
+}
+footer ul .facebook:hover {
+    color: #3b5998;
+}
+footer ul .twitter:hover {
+    color: #00b6f1;
+}
+footer ul .instagram:hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+footer ul .youtube:hover {
+    color: #c31a1e;
 }
 
 form .input-control {

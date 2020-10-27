@@ -9,12 +9,12 @@
 }
 
 //background opacity
-.index.active{
-    opacity: 0.90;  
+.index.active {
+    opacity: 0.9;
 }
 
 //active class will be removed when pop up is closed
-.pop-up-wrapper.active{
+.pop-up-wrapper.active {
     z-index: 1;
 }
 
@@ -25,13 +25,13 @@
     top: 20%;
     left: 8%;
     right: 8%;
-    z-index: -1 ;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
     animation-name: fade-in;
     animation-duration: 0.5s;
-    
+
     //pop-up box
     .popup-overlay .active-popup {
         visibility: visible;
@@ -39,32 +39,32 @@
         width: 50%;
         height: 400px;
         margin: 0 auto;
-        background-color:rgb(145, 106, 64);
-        display:flex;
+        background-color: rgb(145, 106, 64);
+        display: flex;
 
         //img of the popup
-        .popup-photo{
+        .popup-photo {
             display: flex;
             width: 50%;
             height: 100%;
             overflow: hidden;
 
-            img{
+            img {
                 width: auto;
                 height: 100%;
-            }   
+            }
         }
-    
-        .popup-text{
-            font-family: $index-nav-font;
+
+        .popup-text {
+            // font-family: $index-nav-font;
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 50%;
             height: 100%;
             margin-left: 5%;
-            
-            h1{
+
+            h1 {
                 margin-top: 0;
                 font-size: 25px;
             }
@@ -74,7 +74,7 @@
             color: white;
         }
 
-        .closeButton{
+        .closeButton {
             padding: 2%;
         }
     }
@@ -100,7 +100,7 @@
         .popup-overlay .active-popup {
             width: 80%;
             height: 400px;
-            background-color:rgb(145, 106, 64);
+            background-color: rgb(145, 106, 64);
         }
     }
 }
