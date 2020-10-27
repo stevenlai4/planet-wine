@@ -156,7 +156,6 @@ nav {
         position: relative; }
         nav .login-cart li .cartGroup .cartNumber {
           position: absolute;
-          bottom: 10px;
           left: 6px;
           color: #916a40;
           font-size: 12px; }

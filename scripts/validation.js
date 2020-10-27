@@ -150,6 +150,7 @@ function addSubmitListener() {
             if (validation(this)) {
                 // clear all the key/value pairs in localStorage
                 localStorage.clear();
+                updateCartNumber();
                 if (submit) {
                     submit.outerHTML =
                         `<div class='result success'><h1>Thank you for your purchase!</h1></div>` +
