@@ -146,5 +146,6 @@ var filter = document.querySelectorAll('.filter');
 filter.forEach((order) =>
     order.addEventListener('change', function () {
         showProducts();
+        shopModal();
     })
 );
