@@ -7,6 +7,9 @@ const validationFields = [
     "countryId",
     "postCode",
     "phone",
+    "expirationDate",
+    "creditCardNumber",
+    "CVW",
 ];
 
 //clear local storage on submitting the form and validation
@@ -45,6 +48,36 @@ function validation(form) {
         else return false;
     }
 
+    function isCVW(phone) {
+        if (/^\d{10}$/.test(phone)) return true;
+        else return false;
+    }
+
+    function isCreditCartNumber(number) {
+        if (/^(?:3[47][0-9]{13})$/.test(number)) return true;
+        else return false;
+    }
+
+    function isExpireDate(expiryDate) {
+        var today = new Date(); // gets the current date
+        var today_mm = today.getMonth() + 1; // extracts the month portion
+        var today_yy = today.getFullYear() % 100; // extracts the year portion and changes it from yyyy to yy format
+
+        if (today_mm < 10) {
+            // if today's month is less than 10
+            today_mm = "0" + today_mm; // prefix it with a '0' to make it 2 digits
+        }
+
+        var mm = expiryDate.substring(0, 2); // get the mm portion of the expiryDate (first two characters)
+        var yy = expiryDate.substring(3); // get the yy portion of the expiryDate (from index 3 to end)
+
+        if (yy > today_yy || (yy == today_yy && mm >= today_mm)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     let isError = false;
 
     validationFields.forEach(field => {
@@ -58,6 +91,9 @@ function validation(form) {
                 "countryId",
                 "postCode",
                 "phone",
+                "expirationDate",
+                "creditCardNumber",
+                "CVW",
             ].indexOf(field) != -1;
 
         if (isRequired) {
@@ -76,6 +112,18 @@ function validation(form) {
                     isError = true;
                 } else if (field === "phone" && !isPhone(value)) {
                     setErrorFor(item, field + " is an invalid phone number");
+                    isError = true;
+                } else if (
+                    field === "creditCardNumber" &&
+                    !isCreditCartNumber(value)
+                ) {
+                    setErrorFor(item, field + " is an invalid credit number");
+                    isError = true;
+                } else if (field === "CVW" && !isCVW(value)) {
+                    setErrorFor(item, field + " is an invalid CVW");
+                    isError = true;
+                } else if (field === "expirationDate" && !isExpireDate(value)) {
+                    setErrorFor(item, field + " is an invalid expired date");
                     isError = true;
                 } else {
                     setSuccessFor(item);
