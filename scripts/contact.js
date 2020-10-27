@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const question = document.getElementById('question');
-var alphaOnly = /^[a-zA-Z]*$/;
+var alphaOnly = /^[a-zA-Z ]*$/;
 form.addEventListener('submit', e => {
     e.preventDefault();
     checkInputs();
