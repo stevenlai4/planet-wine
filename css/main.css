@@ -175,7 +175,8 @@ nav {
         line-height: 2;
         padding: 20px;
         color: white;
-        transition: all .5s ease-in; }
+        transition: all .5s ease-in;
+        text-transform: uppercase; }
         nav .menu .item a:hover {
           color: #c7b198; }
   nav .active .item {
