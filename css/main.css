@@ -141,16 +141,17 @@ nav {
     display: flex;
     width: 5%;
     justify-content: space-around;
-    right: 30px;
-    top: 15px; }
-    nav .login-cart li:not(:last-of-type) {
-      padding-right: 15px; }
-    nav .login-cart li a {
-      color: white;
-      font-size: 20px;
-      transition: all 0.5s ease-in; }
-      nav .login-cart li a:hover {
-        color: #c7b198; }
+    right: 20px;
+    top: 20px; }
+    nav .login-cart li {
+      padding-right: 20px; }
+      nav .login-cart li a {
+        color: white;
+        font-size: 20px;
+        transition: all .5s ease-in;
+        padding: 30px 0; }
+        nav .login-cart li a:hover {
+          color: #c7b198; }
   nav .menu {
     margin: 0;
     padding: 0;
@@ -167,7 +168,7 @@ nav {
         line-height: 2;
         padding: 20px;
         color: white;
-        transition: all 0.5s ease-in; }
+        transition: all .5s ease-in; }
         nav .menu .item a:hover {
           color: #c7b198; }
   nav .active .item {
@@ -179,11 +180,7 @@ nav {
   .toggle .fas {
     color: White; }
 
-@media screen and (min-width: 768px) {
-  nav .login-cart {
-    right: 25px;
-    top: 22px; } }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .toggle {
     display: none; }
 

@@ -7,6 +7,10 @@ section header {
   section header p {
     padding: 1rem 20%; }
 
+h1 {
+  font-size: 40px;
+  color: #444444; }
+
 .sideArticle {
   display: flex;
   flex-direction: row;
