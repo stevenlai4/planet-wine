@@ -95,6 +95,18 @@
       grid-area: 8/1/9/2; }
     .wrapper > form > div.content-checkout .phone {
       grid-area: 8/2/9/3; }
+    .wrapper > form > div.content-checkout .creditCardNumberLabel {
+      grid-area: 9/1/10/2; }
+    .wrapper > form > div.content-checkout .creditCardNumber {
+      grid-area: 9/2/10/3; }
+    .wrapper > form > div.content-checkout .expirationDateLabel {
+      grid-area: 10/1/11/2; }
+    .wrapper > form > div.content-checkout .expirationDate {
+      grid-area: 10/2/11/3; }
+    .wrapper > form > div.content-checkout .CVWLabel {
+      grid-area: 11/1/12/2; }
+    .wrapper > form > div.content-checkout .CVW {
+      grid-area: 11/2/12/3; }
     .wrapper > form > div.content-checkout label,
     .wrapper > form > div.content-checkout input,
     .wrapper > form > div.content-checkout select,
@@ -157,6 +169,18 @@
       grid-area: 7/1/8/2; }
     .wrapper > form > div.content-checkout .phone {
       grid-area: 7/2/8/3; }
+    .wrapper > form > div.content-checkout .creditCardNumberLabel {
+      grid-area: 8/1/9/2; }
+    .wrapper > form > div.content-checkout .creditCardNumber {
+      grid-area: 8/2/9/3; }
+    .wrapper > form > div.content-checkout .expirationDateLabel {
+      grid-area: 9/1/19/2; }
+    .wrapper > form > div.content-checkout .expirationDate {
+      grid-area: 9/2/10/3; }
+    .wrapper > form > div.content-checkout .CVWLabel {
+      grid-area: 10/1/11/2; }
+    .wrapper > form > div.content-checkout .CVW {
+      grid-area: 10/2/11/3; }
     .wrapper > form > div.content-checkout label,
     .wrapper > form > div.content-checkout input,
     .wrapper > form > div.content-checkout select,
