@@ -1,12 +1,16 @@
-# Wine Ecommerce website | Planet Wine
+<div align="center">
 
-###### Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
+# Planet Wine :wine_glass:
 
-An eccommerce website about selling wine
+##### Team Members: Karen Mok, Steven Lai, Jianming tu, Wayne Lee, Kalvin Tang
 
-## Roles
+An eccommerce website to order wine!
 
--   Project Manager / Scrum Master: KAREN MOK!
+</div>
+
+## Roles:
+
+#### Project Lead: <strong>Karen Mok</strong>
 
 -   WireFrame: Karen, Steven, Kalvin
 -   HTML: Kalvin, Karen, Wayne
@@ -17,17 +21,19 @@ An eccommerce website about selling wine
 
 ## Site Description & Purpose
 
-### Functional
+**Functional**:
 
--   Login/Register
--   Navigation
--   Shopping Cart/Checkout
+-   Login/Register- Where a customer can login or create a new account to the website.
 
-### Non-functional
+-   Navigation- Which will let users easily browse through various pages.
 
--   18+ popup
--   Sorting/Filtering
--   User shopping cart interactions
+-   Shopping cart- will hold the item and tally the price based on the customer selection.
+
+**Non-functional**:
+
+-   Message pop ups after contact and registration if passes form validations
+-   Sorting/Filtering - Allows a user filter out different wine selections
+-   User shopping cart interactions - Allows a user to adjust the quantity of the selected item within the cart.
 
 ## Pages
 
@@ -42,18 +48,18 @@ An eccommerce website about selling wine
 
 ## Designs
 
-### Color Palette
+**Color Palette**:
 
 -   #f0ece3
 -   #dfd3c3
 -   #c7b198
 -   #596e79
 
-### Font Choice
+**Font Choice**:
 
--   link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"
+-   link: href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"
 
-### Design Principles
+**Design Principles**:
 
 -   Contrast
 -   Alignment
@@ -62,23 +68,25 @@ An eccommerce website about selling wine
 
 ## Prototype/Wireframe
 
-### Header
+### Header:
 
 -   Navbar (Nav items, Login link, Register link)
 
-### Sign In
+### Sign In:
 
 -   Labels/Inputs: Account & Password
 -   Login Button
 -   Sign Up link
 
-![Login](./img/login-img.png)
+<img src="https://i.imgur.com/sdc3fiS.png" alt=“login” width="90%">
 
-### Sign Up
+### Sign Up:
 
--   Labels/Inputs: Name, Birthday, Email, Phone, Address, Password & Confirm Password
+-   Labels/Inputs: First Name, Last Name, Email, Address, Password & Confirm Password
 -   Sign up button
 -   Sign In link
+
+<img src="https://i.imgur.com/V3u8j3r.png" alt=“signUp” width="90%">
 
 ### Landing Page:
 
@@ -86,13 +94,13 @@ An eccommerce website about selling wine
 -   Banner / Carousel
 -   Heading / Introduction
 
-![Home](./img/index-img.png)
+<img src="https://i.imgur.com/v6pbpti.png" alt=“landingPage” width="90%">
 
 ### Gallery:
 
--   Pictures
+-   Picture gallery with a variety of images
 
-![Gallery](./img/gallery-img.png)
+<img src="https://i.imgur.com/ImG4I6B.png" alt=“Gallery” width="90%">
 
 ### Shop:
 
@@ -101,7 +109,7 @@ An eccommerce website about selling wine
 -   Wine Products (Picture, Types, Price, Name, Descrption)
 -   Input for quantity(type=number)
 
-![Shop](./img/shop-img.png)
+<img src="https://i.imgur.com/PmLv1CY.png" alt=“Shop” width="90%">
 
 ### Cart:
 
@@ -110,7 +118,7 @@ An eccommerce website about selling wine
 -   Continue Shopping Link
 -   Checkout Button
 
-![Cart](./img/cart-img.png)
+<img src="https://i.imgur.com/ecCKnHH.png" alt=“Cart” width="90%">
 
 ### Checkout:
 
@@ -119,13 +127,13 @@ An eccommerce website about selling wine
 -   Receipt
 -   Back to Cart Link
 
-![Checkout](./img/checkout-img.png)
+<img src="https://i.imgur.com/m74OlTR.png" alt=“checkout” width="90%">
 
 ### Contact
 
 -   Feedback Form (Name, Customer Email, Message, Submit)
 
-![contact](./img/contact-img.png)
+<img src="https://i.imgur.com/hp8AXVh.png" alt="Contact" width="90%">
 
 ### Footer
 
@@ -139,3 +147,7 @@ An eccommerce website about selling wine
 -   Javascript
     1. LocalStorage Data Structure: 1: {3}, 3: {4}, 4:{5}, 7:{1} (Key is the wine ID, Value is the quantity purchased)
 -   JSON (Optional)
+
+### References
+
+-   Gallery. Images from <a href="https://wallawallavintners.com/#gallery">Walla Walla Vinters</a>

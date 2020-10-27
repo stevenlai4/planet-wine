@@ -8,7 +8,13 @@
             src="https://kit.fontawesome.com/19a6b4f60e.js"
             crossorigin="anonymous"
         ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/register.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/register.css" />
     </head>
     <body>
         <header>
@@ -41,35 +47,80 @@
             </nav>
         </header>
 
-        <section class="content">
-            <header>
-                <h1>Account Registeration</h1>
-            </header>
+        <div class="contact-image"></div>
 
-            <article>
-                <form>
-                    <label for="user">Email</label><br />
-                    <input type="email" id="user" name="id" required /><br />
-                    <label for="password">Password</label><br />
+        <article class="register content">
+            <h1 class="form-title">Registration</h1>
+            <form class="RegForm" id="RegForm">
+                <div class="formgroup">
+                    <label>First Name</label>
+                    <div class="input-control">
+                        <input type="text" id="firstName" name="firstName" />
+                        <small></small>
+                    </div>
+                </div>
 
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        required
-                    /><br />
+                <div class="formgroup">
+                    <label>Last Name</label>
+                    <div class="input-control">
+                        <input type="text" id="LastName" />
+                        <small></small>
+                    </div>
+                </div>
 
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="formgroup">
+                    <label>Email</label>
+                    <div class="input-control">
+                        <input type="email" id="email" />
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="formgroup">
+                    <label>Address</label>
+                    <div class="input-control">
+                        <input id="address"></input>
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="formgroup">
+                    <label>Postal Code</label>
+                    <div class="input-control">
+                        <input type="" id="postalCode" />
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="formgroup">
+                    <label>Password</label>
+                    <div class="input-control">
+                        <input type="password" id="password" />
+                        <small></small>
+                    </div>
+                </div>
+
+                <div class="formgroup">
+                    <label>Confirm-Password</label>
+                    <div class="input-control">
+                        <input
+                            type="password"
+                            id="conPassword"
+                        />
+                        <small></small>
+                    </div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <article class="Exists">
+                <p>
+                    Already have an account? <br />
+                    Sign in <a href="login.html">here</a>
+                </p>
             </article>
-
-            <article>
-                <h5>Sign in to account</h5>
-                <p>Already have an account? Sign in here.</p>
-                <a href="login.html">Account Login</a>
-                <!-- Same issue as the link on login.html -->
-            </article>
-        </section>
+        </article>
 
         <footer>
             <h5>Planet wine</h5>
@@ -100,8 +151,8 @@
             </div>
             <p>&copy; All Right Reserved</p>
         </footer>
-
-        <script src="scripts/index.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="scripts/global-toggle.js"></script>
+        <script src="scripts/Register.js"></script>
     </body>
 </html>

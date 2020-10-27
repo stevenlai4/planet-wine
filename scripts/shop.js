@@ -3,7 +3,7 @@ var localData;
 //On page load, load data to local variable
 document.addEventListener("DOMContentLoaded", () => {
     const products = new Products();
-    products.getProducts().then(data => {
+    products.getProducts().then((data) => {
         localData = data;
         showProducts();
     });
@@ -15,7 +15,7 @@ class Products {
         try {
             let result = await fetch("scripts/products.json");
             let data = await result.json();
-            this.products = data.map(product => {
+            this.products = data.map((product) => {
                 return product;
             });
             return this.products;
@@ -61,11 +61,11 @@ function displayWine(wineData) {
     //For displaying the wine on page
     var out = "";
     document.querySelector("#wineDisplay").innerHTML = "";
-    wineData.forEach(wine => {
+    wineData.forEach((wine) => {
         out += "<div>";
         out += "<img src='" + wine.image + "'>";
-        out += '<h2>' + wine.name + '</h2>';
-        out += '<p>' + '$' + wine.price + '</p>';
+        out += "<h2>" + wine.name + "</h2>";
+        out += "<p>" + "$" + wine.price + "</p>";
         out +=
             "<input type='number' id='wine" +
             wine.id +
@@ -92,7 +92,7 @@ function displayWine(wineData) {
 
     //Add click listener to button
     const addBtns = document.querySelectorAll(".addButton");
-    addBtns.forEach(btn => {
+    addBtns.forEach((btn) => {
         var btnId = btn.id.match(/(\d+)/)[0];
         var input = document.querySelector("#wine" + btnId);
         btn.addEventListener("click", function () {
@@ -131,7 +131,7 @@ function displayWine(wineData) {
 
 //Rewrite page each time filter is activated
 var filter = document.querySelectorAll(".filter");
-filter.forEach(order =>
+filter.forEach((order) =>
     order.addEventListener("change", function () {
         showProducts();
     })
