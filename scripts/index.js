@@ -2,18 +2,26 @@ function updateCartNumber() {
     var cartNumber = document.querySelector(".cartNumber");
     var cartNumberList = document.querySelector(".cartNumberList");
 
-    if (localStorage.length > 0 && localStorage.length < 10) {
-        cartNumber.innerHTML = localStorage.length;
-    } else if (localStorage.length >= 10) {
-        cartNumber.innerHTML = "9+";
+    var total = 0;
+
+    for(var i=0; i<localStorage.length; i++) {
+        total += parseInt(localStorage.getItem(localStorage.key(i)));
+    }
+
+    if (total > 0 && total < 100) {
+        cartNumber.innerHTML = total;
+    } else if (total >= 100) {
+        cartNumber.innerHTML = "99+";
     } else {
         cartNumber.innerHTML = "";
     }
 
-    if (cartNumber.innerHTML != "") {
-        cartNumberList.innerHTML = " (" + cartNumber.innerHTML + ")";
-    } else {
-        cartNumberList.innerHTML = "";
+    if (cartNumberList != null) {
+        if (cartNumber.innerHTML != "") {
+            cartNumberList.innerHTML = " (" + cartNumber.innerHTML + ")";
+        } else {
+            cartNumberList.innerHTML = "";
+        }
     }
 }
 
