@@ -44,6 +44,17 @@
         i {
             font-size: 40px;
         }
+
+        .cartGroup {
+            position: relative;
+            .cartNumber {
+                position: absolute;
+                bottom: 12px;
+                left: 24px;
+                color: rgb(145, 106, 64);
+                font-size: 18px;
+            }
+        }
     }
 
     .desktop-logo img {

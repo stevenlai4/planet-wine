@@ -152,6 +152,14 @@ nav {
         padding: 30px 0; }
         nav .login-cart li a:hover {
           color: #c7b198; }
+      nav .login-cart li .cartGroup {
+        position: relative; }
+        nav .login-cart li .cartGroup .cartNumber {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          color: #916a40;
+          font-size: 12px; }
   nav .menu {
     margin: 0;
     padding: 0;

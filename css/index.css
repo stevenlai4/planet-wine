@@ -155,6 +155,14 @@ table {
       color: white; }
     .index .login-cart ul i {
       font-size: 40px; }
+    .index .login-cart ul .cartGroup {
+      position: relative; }
+      .index .login-cart ul .cartGroup .cartNumber {
+        position: absolute;
+        bottom: 12px;
+        left: 24px;
+        color: #916a40;
+        font-size: 18px; }
   .index .desktop-logo img {
     width: 80px;
     margin: 2% 0 0 2%; }
