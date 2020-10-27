@@ -1,102 +1,87 @@
-form {
-  width: 95%;
-  margin: auto;
-}
-
-textarea {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.main-content {
-  padding: 2%;
-  margin: auto;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  background-color: #dfd3c3;
-  width: 60%;
+.register {
   text-align: center;
-  font-family: "Cormorant", serif;
 }
-.main-content h1 {
+.register .form-title {
   font-size: 30px;
   font-weight: 600;
-  padding-bottom: 2%;
+  margin: 40px 0;
+  color: #444444;
 }
-
-@media (max-width: 768px) {
-  .main-content {
-    padding: 20px 8px;
-    background-color: #dfd3c3;
-    width: 95%;
-    margin: auto;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-  }
+.register .RegForm {
+  width: 70%;
+  margin: auto;
+  background-color: #dfd3c3;
+  padding: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* form specific format*/
-.formgroup {
+.register .RegForm .formgroup {
   display: flex;
-  flex-direction: row;
-  width: auto;
+  margin: 20px 0;
+  width: 100%;
 }
-.formgroup > label {
-  width: 10rem;
-  margin-top: 0px;
-  font-weight: bold;
-  font-size: 1rem;
+.register .RegForm label {
   text-align: right;
-  margin-right: 1rem;
+  width: 15%;
+  margin-right: 20px;
+  font-size: 20px;
 }
-.formgroup small {
-  height: 1rem;
+.register .RegForm .input-control {
+  width: 80%;
+}
+.register .RegForm .input-control input {
+  width: 100%;
+  padding: 5px;
+}
+.register .RegForm .input-control small {
+  min-height: 1rem;
+  margin-top: 5px;
   display: block;
   visibility: hidden;
+  text-align: left;
 }
-
-.error small {
+.register .RegForm button {
+  background-color: silver;
+  padding: 10px 3%;
+}
+.register .RegForm .error small {
   color: #e74c3c;
   visibility: visible;
 }
-
-.formgroup .input-control,
-textarea {
-  text-align: left;
-  margin-bottom: 6px;
-  margin-right: 8px;
-  width: 100%;
-  font-size: 15px;
+.register .Exists {
+  margin: 35px 0;
+}
+.register .Exists p {
+  font-size: 20px;
 }
 
-input,
-textarea {
-  width: 90%;
-  margin: 0;
-}
-
-button {
-  padding: 15px 30px;
-  text-align: center;
-  min-width: 100px;
-}
-
-@media (max-width: 768px) {
-  .formgroup {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  .register {
+    width: 90%;
+    margin: auto;
   }
-  .formgroup > label {
+  .register .RegForm {
+    width: 90%;
+    background-color: #dfd3c3;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .register .RegForm .formgroup {
     text-align: left;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
   }
-
-  .formgroup .input-control {
-    margin-top: 2px;
+  .register .RegForm label {
+    text-align: left;
+    font-size: 20px;
+    margin: 0 0 100px 0;
   }
-
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 18px;
-    width: 5rem;
-    min-width: 100px;
+  .register .RegForm .input-control {
+    width: 95%;
+  }
+  .register .RegForm .input-control input {
+    width: 100%;
+    padding: 5px;
   }
 }
 
