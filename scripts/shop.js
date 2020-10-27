@@ -134,6 +134,8 @@ function displayWine(wineData) {
                 } else if (input.value > 0 && input.value <= 100) {
                     localStorage.setItem(btnId, input.value);
                 }
+
+                updateCartNumber();
             }
         });
     });
@@ -144,5 +146,6 @@ var filter = document.querySelectorAll('.filter');
 filter.forEach((order) =>
     order.addEventListener('change', function () {
         showProducts();
+        shopModal();
     })
 );

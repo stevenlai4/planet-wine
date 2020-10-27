@@ -157,6 +157,8 @@ const insertInput = element => {
         localStorage.setItem(id, element.value);
     }
 
+    updateCartNumber();
+
     calcTotalPrice(id, element.value.trim());
 };
 
@@ -170,6 +172,7 @@ const increaseQuantity = element => {
         localStorage.setItem(id, input[0].value);
         calcTotalPrice(id, input[0].value);
     }
+    updateCartNumber();
 };
 
 // Decrease wine quantity when minus button clicked
@@ -188,6 +191,7 @@ const decreaseQuantity = element => {
 
         calcTotalPrice(id, input[0].value);
     }
+    updateCartNumber();
 };
 
 // Add EventListeners to plus/minus buttons
