@@ -4,13 +4,14 @@ h1 {
 hr {
   width: 85%; }
 
-.product-price {
-  max-width: 30%; }
-  .product-price .total-price {
-    margin-right: 0; }
+.product-item, .product-price {
+  max-width: 100%; }
   @media screen and (min-width: 768px) {
-    .product-price {
+    .product-item, .product-price {
       width: 25%; } }
+
+.product-price .total-price {
+  margin-right: 0; }
 
 .item-title {
   color: #c7b198; }
