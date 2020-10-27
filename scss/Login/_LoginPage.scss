@@ -1,0 +1,112 @@
+// Login Page ---- Desktop
+
+.Login-Title {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Cormorant", serif;
+    margin-top: 3%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .Main-Article {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+        .Article {
+            width: auto;
+            height: 15rem;
+            margin: 1rem 2rem;
+            @media screen and (min-width: 768px) {
+                width: 30%;
+            }
+
+            @media screen and (min-width: 992px) {
+                width: 40%;
+            }
+        }
+
+        // Login user name and password
+        .Article:nth-of-type(1) {
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                label {
+                    font-size: 20px;
+                }
+
+                input {
+                    width: 100%;
+                    align-self: center;
+                    padding: 0.25rem 0;
+                    box-sizing: border-box;
+                    font-size: 1.25rem;
+                    overflow: hidden;
+                }
+
+                button {
+                    width: 30%;
+                    @media screen and (min-width: 768px) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        // Creating an account
+        .Article:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+
+            a {
+                width: 30%;
+
+                button {
+                    width: 100%;
+                }
+
+                @media screen and (min-width: 768px) {
+                    width: 50%;
+                }
+            }
+        }
+
+        button {
+            height: 3rem;
+            background-color: #c7b198;
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+// image
+.Login-image {
+    background: url("/img/barrels.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 20rem;
+    margin-top: 0.5rem;
+    background-position: center;
+}
+
