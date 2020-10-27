@@ -4,11 +4,13 @@ form {
     .input-control {
         position: relative;
 
-        &.success input {
+        &.success input,
+        &.success select {
             border-color: $success-color;
         }
 
-        &.error input {
+        &.error input,
+        &.error select {
             border-color: $failed-color;
         }
 

@@ -1,11 +1,13 @@
-header img {
-    display: block;
+$primary-color: #c7b198;
+
+header img{
+    display:block;
     margin: 20px auto;
     width: 150px;
 }
 
-nav {
-    background-color: #444444;
+nav {     
+    background-color:#444444;
     position: relative;
     display: flex;
     border-radius: 0px 0px 5px 5px;
@@ -15,18 +17,18 @@ nav {
         display: flex;
         width: 5%;
         justify-content: space-around;
-        right: 30px;
-        top: 15px;
+        right: 20px;
+        top: 20px;
 
         li {
-            &:not(:last-of-type) {
-                padding-right: 15px;
-            }
+            padding-right: 20px;
+            
 
             a {
-                color: white;
+                color: white; 
                 font-size: 20px;
-                transition: all 0.5s ease-in;
+                transition: all .5s ease-in;
+                padding:30px 0;
 
                 &:hover {
                     color: $primary-color;
@@ -38,7 +40,7 @@ nav {
     .menu {
         margin: 0;
         padding: 0;
-        width: 100%;
+        width:100% ;
         display: flex;
         flex-direction: column;
 
@@ -51,10 +53,10 @@ nav {
                 text-align: center;
                 font-size: 20px;
                 line-height: 2;
-                padding: 20px;
+                padding: 20px ;
                 color: white;
-                transition: all 0.5s ease-in;
-
+                transition: all .5s ease-in;
+        
                 &:hover {
                     color: $primary-color;
                 }
@@ -73,21 +75,13 @@ nav {
     padding: 2%;
 
     .fas {
-        color: White;
+        color:White;
     }
 }
 
-@media screen and (min-width: map-get($breakpoint, tablet)) {
-    nav {
-        .login-cart {
-            right: 25px;
-            top: 22px;
-        }
-    }
-}
 
 // Desktop Size
-@media screen and (min-width: map-get($breakpoint, desktop)) {
+@media screen and (min-width:900px) {
     .toggle {
         display: none;
     }
@@ -96,19 +90,20 @@ nav {
             top: 30px;
         }
 
+
         .menu {
             display: flex;
             flex-direction: row;
             justify-content: center;
-
-            .item {
+        
+            .item{
                 display: block;
                 padding-right: 110px;
             }
 
-            li:last-of-type {
+            li:last-of-type{
                 padding-right: 0;
             }
-        }
+        } 
     }
 }

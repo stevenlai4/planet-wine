@@ -51,70 +51,45 @@
                 </ul>
             </nav>
         </header>
-
-        <section class="content">
-            <!-- Banner image -->
-            <div class="contact-image"></div>
-
+         <!-- Banner image -->
+         <div class="contact-image"></div>
+​
+        <section>
+            <!-- Form -->
             <div class="wrapper-form">
-                <form>
+                <form class = "form" id="form">
                     <h1>Questions?</h1>
-                    <label for="Name">Name</label>
-                    <br/>
-                    <input
-                        id="Name"
-                        type="text" 
-                        placeholder="Enter your name .." required>
-                    <br/>
-
-                    <label for="Email">Email</label>
                     <br>
-                    <input
-                        id="Email"
-                        type="email"
-                        placeholder="Enter your Email .. " required>
-                    <br>
-
-                    <label for="Question">Question</label>
-                    <textarea
-                        placeholder="Leave your questions .."></textarea>
-                    <br>
-
-                    <div class="text-center">
-                        <button 
-                            class="btn submit-btn"
-                            value="Submit" data-toggle="modal"
-                            data-target="#contactModal"> 
-                            Submit
-                        </button>
+                    <div class = "contactForm">
+                        <label for="Name">Name</label>
+                        <input type="text" placeholder="Enter your name .." id="name">
+                        <small>Error Msg</small> 
                     </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title" id="contactModalLabel">Thank you for getting in touch! </h3>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <h3>We appreciate you contacting us. We will get back in touch with you soon!</h3>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn popup-btn" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                    <br>
+                    <div class = "contactForm">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="Enter your Email .. " id="email">
+                        <small>Error Msg</small>  
+                    </div>
+                    <br>
+                    <div class = "contactForm">
+                        <label for="Question">Question</label>
+                        <textarea placeholder="Leave your questions .." id="question"></textarea>
+                        <small>Error Msg</small>         
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn submit-btn">Submit</button>
                     </div>
                 </form>
             </div>
         </section>
-
+​
         <!-- Footer section -->
         <footer>
             <h5>Planet wine</h5>
             <p>3700 Willingdon Ave, Burnaby, BC V5G 3H2</p>
-
+​
             <div class="social">
                 <ul>
                     <li>
@@ -133,11 +108,14 @@
             </div>
             <p>&copy; All Right Reserved</p>
         </footer>
-
-        <script src="scripts/index.js"></script>
-        <script src="scripts/global-toggle.js"></script>
+​
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/global-toggle.js"></script>
+        <script src="scripts/contact.js"></script>
+ 
     </body>
 </html>
