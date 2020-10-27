@@ -9,15 +9,16 @@ hr {
     width: 85%;
 }
 
-.product-price {
-    max-width: 30%;
-
-    .total-price {
-        margin-right: 0;
-    }
-
+.product-item, .product-price {
+    max-width: 100%;
     @media screen and (min-width: 768px) {
         width: 25%;
+    }
+}
+
+.product-price {
+    .total-price {
+        margin-right: 0;
     }
 }
 
