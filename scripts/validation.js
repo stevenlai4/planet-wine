@@ -54,7 +54,7 @@ function validation(form) {
     }
 
     function isCreditCartNumber(number) {
-        if (/^\d{10}$/.test(number)) return true;
+        if (/^\d{12}$/.test(number)) return true;
         else return false;
     }
 
