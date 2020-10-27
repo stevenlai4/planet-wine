@@ -48,13 +48,13 @@ function validation(form) {
         else return false;
     }
 
-    function isCVW(phone) {
-        if (/^\d{10}$/.test(phone)) return true;
+    function isCVW(cvw) {
+        if (/\d{3}$/.test(cvw)) return true;
         else return false;
     }
 
     function isCreditCartNumber(number) {
-        if (/^(?:3[47][0-9]{13})$/.test(number)) return true;
+        if (/^\d{10}$/.test(number)) return true;
         else return false;
     }
 
@@ -69,7 +69,7 @@ function validation(form) {
         }
 
         var mm = expiryDate.substring(0, 2); // get the mm portion of the expiryDate (first two characters)
-        var yy = expiryDate.substring(3); // get the yy portion of the expiryDate (from index 3 to end)
+        var yy = expiryDate.substring(3, 5); // get the yy portion of the expiryDate (from index 3 to end)
 
         if (yy > today_yy || (yy == today_yy && mm >= today_mm)) {
             return true;
