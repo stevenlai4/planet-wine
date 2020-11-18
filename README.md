@@ -10,8 +10,6 @@ An eccommerce website to order wine!
 
 ## Roles:
 
-#### Project Lead: <strong>Karen Mok</strong>
-
 -   WireFrame: Karen, Steven, Kalvin
 -   HTML: Kalvin, Karen, Wayne
 -   CSS: Karen, Steven, Kalvin, Jimmy
